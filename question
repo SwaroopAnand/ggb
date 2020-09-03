@@ -1,3 +1,11 @@
+
+If(slide==1, If(holdValue==0,If(check1==true, SetValue[count, count+1], SetValue[count, count -1])))
+If(slide==1, If(holdValue==0,If(check2==true, SetValue[count, count+1], SetValue[count, count -1])))
+If(slide==1, If(holdValue==0,If(check3==true, SetValue[count, count+1], SetValue[count, count -1])))
+If(slide==1, If(holdValue==0,If(check4==true, SetValue[count, count+1], SetValue[count, count -1])))
+If(slide==1,If(holdValue==0,If(count ==4, SetValue[check,1], SetValue[check,2]), SetValue[check,2]))
+
+
 {{8, 6, 14}, {12, 5, 17}}
 
 {{7, 4, 11}, {12, 7, 19}}
