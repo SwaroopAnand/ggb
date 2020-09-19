@@ -1,0 +1,10 @@
+function CreateFunction() {
+
+    var g = ggbApplet;
+    for (var i = 1; i < 16; i++) {
+        g.evalCommand('ques' + i + ' = false');
+    }
+    g.evalCommand('Button("Next")');
+    g.evalCommand('Slider(0, 16, 1, 1, 100, false, true, false)');
+}
+CreateFunction()
