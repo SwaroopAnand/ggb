@@ -1,5 +1,6 @@
 #goes in Algebra input
 #For the create button
+ans = {3, 2, 4, 4, 3, 4, 4, 3, 4, 2, 3, 1}
 AAA = (0.46, 0.46)
 quesOne = false
 quesTwo = false
@@ -37,7 +38,6 @@ checkAns = {checkA, checkB, checkC, checkD}
 checkAns1 = RemoveUndefined(checkAns)
 q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
 qtotal = 13
-ans = {3, 2, 4, 4, 3, 4, 4, 3, 4, 2, 3, 1}
 rightAns = {Element(ans, q)}
 eval = checkAns1 ≟ rightAns
 enter = ?
