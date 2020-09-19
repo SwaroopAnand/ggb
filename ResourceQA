@@ -66,7 +66,8 @@ Check = Button( )
 #check
 SetValue[check,-1]
 If(q<13 && eval == true, SetValue[check,1])
-If(q == 1 && enter == Element(ans,q), SetValue[check, 1])
+If(q == 13 && enter == Element(ans,q), SetValue[check, 1])
+If(q == 14 && Opt1 == true, SetValue[check, 1])
 If(check == 1, SetValue[RightAnswers, RightAnswers +1], SetValue[WrongAnswers, WrongAnswers+1])
 If(q==1 && check == 1, SetValue[quesOne,true])
 If(q==2 && check == 1, SetValue[quesTwo,true])
