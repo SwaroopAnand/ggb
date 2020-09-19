@@ -1,6 +1,6 @@
 #goes in Algebra input
 ## Set all the question boolens here
-quesOne = falseK̊
+quesOne = false
 quesTwo = false
 quesThree = false
 quesFour = false
@@ -10,7 +10,7 @@ quesSeven = false
 quesEight = false
 quesNine = false
 quesTen = false
-quesEleven = falseK
+quesEleven = false
 quesTwelve = false
 quesThirteen = false
 quesFourteen = false
@@ -50,6 +50,8 @@ showWrongAnswers = Text(If(WrongAnswers < 10, "0" + WrongAnswers, wA))
 finalScore == ?
 
 #Advanced
+0 < q < qtotal
+
 
 #Scripts
 
@@ -110,6 +112,14 @@ SetValue[b, false]
 SetValue[c, false]
 SetValue[d, false]
 If(q==15, SetValue[finalScore, RightAnswers])
+SetValue[check,0]
+
+#Back
+SetValue[q,q+1]
+SetValue[a, false]
+SetValue[b, false]
+SetValue[c, false]
+SetValue[d, false]
 SetValue[check,0]
 
 
