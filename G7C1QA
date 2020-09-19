@@ -1,0 +1,68 @@
+{{"Bake the Cake!", "del", "del", "del", "del"},
+{"If a person can travel 15 miles in 1/4 hour, then at this\\n
+rate, he can travel 30 miles in an hour.", "Correct because he can travel another 15 miles within the hour", "Incorrect because his speed is 60 miles per hour", "Ambiguous because we do not know his speed", "Correct because 15 divided by 1/4 is 30"},
+{"A machine in a soft drink factory fills 1080 bottles in 3/2\\n
+hours. How many bottles will it fill in a minute?", "32", "24", "36", "12"},
+{"Flash sale!", "del", "del", "del", "del"},
+{"A roller coaster ride!", "del", "del", "del", "del"},
+{"If a car travels equal distances in equal intervals of time,\\n
+the distance-time graph of this car will be a:", "Curve", "Straight line", "Zig zag", "horizontal line"},
+{"As per given table find the luminous intensity of a\\n
+20 w LED bulb.", "1200", "1400", "2200", "2000"},
+{"Two ratios with equal value are called______________", "Equivalent ratios", "Similar ratios", "Reciprocal ratis", "None of the above"},
+{"What does a ratio depict, between two quantities?", "Equality", "Proportion", "Difference", "None of the above "},
+{"An improper fraction is always:", "Lesser than 1", "Greater than 1", "Equal to 1", "Between -1 and 1"}}
+
+
+{0, 2, 4, 0, 0, 2, 4, 1, 2, 2}
+
+
+
+
+
+
+If a person can travel 15 miles in ¼ hour, then at this rate, he can travel 30 miles in an hour.
+Correct because he can travel another 15 miles within the hour
+Incorrect because his speed is 60 miles per hour
+Ambiguous because we do not know his speed
+Correct because 15 divided by ¼ is 30
+A machine in a soft drink factory fills 1080 bottles in 3/2 hours. How many bottles will it fill in a minute?
+32
+24
+36
+12
+Flash sale!
+del
+del
+del
+del
+A roller coaster ride!
+del
+del
+del
+del
+If a car travels equal distances in equal intervals of time, the distance-time graph of this car will be a:
+Curve
+Straight line
+Zig zag
+horizontal line
+As per given table find the luminous intensity of a 20 w LED bulb.
+1200
+1400
+2200
+2000
+Two ratios with equal value are called______________
+Equivalent ratios
+Similar ratios
+Reciprocal ratis
+None of the above
+What does a ratio depict, between two quantities?
+Equality
+Proportion
+Difference
+None of the above
+An improper fraction is always:
+Lesser than 1
+Greater than 1
+Equal to 1
+Between -1 and 1

@@ -1,0 +1,125 @@
+#goes in Algebra input
+## Set all the question boolens here
+quesOne = falseK̊
+quesTwo = false
+quesThree = false
+quesFour = false
+quesFive = false
+quesSix = false
+quesSeven = false
+quesEight = false
+quesNine = false
+quesTen = false
+quesEleven = falseK
+quesTwelve = false
+quesThirteen = false
+quesFourteen = false
+quesFifteen = false
+
+response = {quesOne, quesTwo, quesThree, quesFour, quesFive, quesSix, quesSeven, quesEight, quesNine, quesTen, quesEleven, quesTwelve, quesThirteen, quesFourteen, quesFifteen}
+
+##set boolens for validating answers
+a = false
+b = false
+c = false
+d = false
+
+checkA = If(a ≟ true, 1, ?)
+checkB = If(b ≟ true, 2, ?)
+checkC = If(c ≟ true, 3, ?)
+checkD = If(d ≟ true, 4, ?)
+
+checkAns = {checkA, checkB, checkC, checkD}
+checkAns1 = RemoveUndefined(checkAns)
+
+ans = {3, 2, 4, 4, 3, 4, 4, 3, 4, 2, 3, 1}
+rightAns = {Element(ans, q)}
+
+eval = checkAns1 ≟ rightAns
+
+
+
+##Text defination
+
+rA = Text(RightAnswers)
+wA = Text( WrongAnswers )
+
+showRightAnswers = Text(If(RightAnswers < 10, "0" + RightAnswers, rA))
+showWrongAnswers = Text(If(WrongAnswers < 10, "0" + WrongAnswers, wA))
+
+finalScore == ?
+
+#Advanced
+
+#Scripts
+
+#Home
+## use in home button, Set all the boolen values to initial point
+SetValue[quesOne,false]
+SetValue[quesTwo,false]
+SetValue[quesThree,false]
+SetValue[quesFour,false]
+SetValue[quesFive,false]
+SetValue[quesSix,false]
+SetValue[quesSeven,false]
+SetValue[quesEight,false]
+SetValue[quesNine,false]
+SetValue[quesTen,false]
+SetValue[quesEleven,false]
+SetValue[quesTwelve,false]
+SetValue[quesThirteen,false]
+SetValue[quesFourteen,false]
+SetValue[quesFifteen,false]
+SetValue[finalScore, ?]
+
+SetValue[q,0]
+SetValue[a, false]
+SetValue[b, false]
+SetValue[c, false]
+SetValue[d, false]
+SetValue[RightAnswers,0]
+SetValue[WrongAnswers, 0]
+SetValue[check,0]
+
+#check
+SetValue[check,-1]
+If(q<13 && eval == true, SetValue[check,1])
+If(check == 1, SetValue[RightAnswers, RightAnswers +1], SetValue[WrongAnswers, WrongAnswers+1])
+If(q==1 && check == 1, SetValue[quesOne,true])
+If(q==2 && check == 1, SetValue[quesTwo,true])
+If(q==3 && check == 1, SetValue[quesThree,true])
+If(q==4 && check == 1, SetValue[quesFour,true])
+If(q==5 && check == 1, SetValue[quesFive,true])
+If(q==6 && check == 1, SetValue[quesSix,true])
+If(q==7 && check == 1, SetValue[quesSeven,true])
+If(q==8 && check == 1, SetValue[quesEight,true])
+If(q==9 && check == 1, SetValue[quesNine,true])
+If(q==10 && check == 1, SetValue[quesTen,true])
+If(q==11 && check == 1, SetValue[quesEleven,true])
+If(q==12 && check == 1, SetValue[quesTwelve,true])
+If(q==13 && check == 1, SetValue[quesThirteen,true])
+If(q==14 && check == 1, SetValue[quesFourteen,true])
+If(q==15 && check == 1, SetValue[quesFifteen,true])
+
+
+
+#Next
+SetValue[q,q+1]
+SetValue[a, false]
+SetValue[b, false]
+SetValue[c, false]
+SetValue[d, false]
+If(q==15, SetValue[finalScore, RightAnswers])
+SetValue[check,0]
+
+
+#Next at q == 10
+If(q==10 && check == 1, SetValue[quesTen,true])
+If(RightAnswers >= 7, SetValue[q, q+1])
+If(RightAnswers < 7, SetValue[q, qtotal])
+If(RightAnswers < 7, SetValue[finalScore, RightAnswers])
+SetValue[a, false]
+SetValue[b, false]
+SetValue[c, false]
+SetValue[d, false]
+SetValue[check,0]

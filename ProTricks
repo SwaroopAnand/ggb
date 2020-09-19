@@ -1,0 +1,5 @@
+
+#To Create center alilgned text
+
+startp = (Corner(name, 2) - Corner(name, 1)) / 2
+showName = Text(name, center - (x(startp), y(startp)))
