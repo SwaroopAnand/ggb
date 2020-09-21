@@ -17,11 +17,16 @@ quesTwelve = false
 quesThirteen = false
 quesFourteen = false
 quesFifteen = false
-
 response = {quesOne, quesTwo, quesThree, quesFour, quesFive, quesSix, quesSeven, quesEight, quesNine, quesTen, quesEleven, quesTwelve, quesThirteen, quesFourteen, quesFifteen}
-
 RightAnswers  = Slider( 0, 20, 1, 1, 200, false, true, false, false )
 WrongAnswers = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+rA = Text(RightAnswers)
+wA = Text(WrongAnswers )
+showRightAnswers = Text(If(RightAnswers < 10, "0" + RightAnswers, rA))
+showWrongAnswers = Text(If(WrongAnswers < 10, "0" + WrongAnswers, wA))
+finalScore = ?
+finalResult = false
+
 q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
 qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
 check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
@@ -38,6 +43,7 @@ checkAns = {checkA, checkB, checkC, checkD}
 checkAns1 = RemoveUndefined(checkAns)
 q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
 qtotal = 13
+
 rightAns = {Element(ans, q)}
 eval = checkAns1 ≟ rightAns
 enter = ?
@@ -58,12 +64,6 @@ Opt2 = IsInRegion(D2 , drag)
 Opt3 = IsInRegion(D3 , drag)
 Opt4 = IsInRegion(D4 , drag)
 
-rA = Text(RightAnswers)
-wA = Text(WrongAnswers )
-showRightAnswers = Text(If(RightAnswers < 10, "0" + RightAnswers, rA))
-showWrongAnswers = Text(If(WrongAnswers < 10, "0" + WrongAnswers, wA))
-
-finalScore = ?
 
 Next = Button( )
 Back = Button( )
@@ -115,6 +115,8 @@ SetValue[Opt2, false]
 SetValue[Opt3, false]
 SetValue[Opt4, false]
 If(q==15, SetValue[finalScore, RightAnswers])
+If(q==15, SetValue[finalResult, true])
+
 SetValue[check,0]
 
 #Back
@@ -136,6 +138,7 @@ If(q==10 && check == 1, SetValue[quesTen,true])
 If(RightAnswers >= 7, SetValue[q, q+1])
 If(RightAnswers < 7, SetValue[q, qtotal])
 If(RightAnswers < 7, SetValue[finalScore, RightAnswers])
+If(RightAnswers < 7, SetValue[finalResult, true])
 SetValue[a, false]
 SetValue[b, false]
 SetValue[c, false]
