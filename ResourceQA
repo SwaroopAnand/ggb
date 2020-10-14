@@ -28,7 +28,7 @@ finalScore = ?
 finalResult = false
 
 q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
-qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = 13
 check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
 
 a = false
@@ -41,13 +41,12 @@ checkC = If(c ≟ true, 3, ?)
 checkD = If(d ≟ true, 4, ?)
 checkAns = {checkA, checkB, checkC, checkD}
 checkAns1 = RemoveUndefined(checkAns)
-q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
-qtotal = 13
-
 rightAns = {Element(ans, q)}
 eval = checkAns1 ≟ rightAns
+
 enter = ?
 InputBox( enter )
+SetVisibleInView( InputBox1, 1, false)
 
 P1 = (2.0, 2.0)
 P2 = (3.0, 2.0)
@@ -149,6 +148,7 @@ SetValue[Opt3, false]
 SetValue[Opt4, false]
 SetValue[check,0]
 
+
 #Home
 ## use in home button, Set all the boolen values to initial point
 SetValue[quesOne,false]
@@ -167,6 +167,7 @@ SetValue[quesThirteen,false]
 SetValue[quesFourteen,false]
 SetValue[quesFifteen,false]
 SetValue[finalScore, ?]
+SetValue[finalResult, ?]
 
 SetValue[q,0]
 SetValue[a, false]
@@ -234,3 +235,28 @@ showRightAnswers = Text(If(RightAnswers < 10, "0" + RightAnswers, rA))
 showWrongAnswers = Text(If(WrongAnswers < 10, "0" + WrongAnswers, wA))
 
 finalScore == ?
+
+
+##Set image and checkboxs
+ab = 2
+bc = 4
+AAA=(6,5)
+BBB = (x(AAA) +ab, y(AAA))
+CCC = (x(BBB), y(BBB)+bc)
+DDD = (x(AAA), y(CCC))
+
+c1 = Corner( pic1, 1 )
+SetCoords(pic1, x(AAA'), y(AAA'))
+SetConditionToShowObject( pic1, q==1 )
+SetLayer( pic1, 0 )
+
+c2 = Corner( pic2, 1 )
+SetCoords(pic2, x(AAA), y(AAA))
+SetConditionToShowObject( pic2, q==2 )
+SetLayer( pic2, 0 )
+
+c3 = Corner( pic3, 1 )
+SetCoords(pic3, x(AAA), y(AAA))
+SetConditionToShowObject( pic3, q==3 )
+SetLayer( pic3, 0 )
+

@@ -1,0 +1,152 @@
+## set boolens for each sound
+tempo = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+play_{ignore} = Slider( 0, 16, 1, tempo, 200, false, true, false, false )
+
+
+soundOne1 = false
+soundTwo1 = false
+soundThree1 = false
+soundFour1 = false
+soundOne2 = false
+soundTwo2 = false
+soundThree2 = false
+soundFour2 = false
+soundOne3 = false
+soundTwo3 = false
+soundThree3 = false
+soundFour3 = false
+soundOne4 = false
+soundTwo4 = false
+soundThree4 = false
+soundFour4 = false
+soundOne5 = false
+soundTwo5 = false
+soundThree5 = false
+soundFour5 = false
+soundOne6 = false
+soundTwo6 = false
+soundThree6 = false
+soundFour6 = false
+soundOne7 = false
+soundTwo7 = false
+soundThree7 = false
+soundFour7 = false
+soundOne8 = false
+soundTwo8 = false
+soundThree8 = false
+soundFour8 = false
+soundOne9 = false
+soundTwo9 = false
+soundThree9 = false
+soundFour9 = false
+soundOne10 = false
+soundTwo10 = false
+soundThree10 = false
+soundFour10 = false
+soundOne11 = false
+soundTwo11 = false
+soundThree11 = false
+soundFour11 = false
+soundOne12 = false
+soundTwo12 = false
+soundThree12 = false
+soundFour12 = false
+soundOne13 = false
+soundTwo13 = false
+soundThree13 = false
+soundFour13 = false
+soundOne14 = false
+soundTwo14 = false
+soundThree14 = false
+soundFour14 = false
+soundOne15 = false
+soundTwo15 = false
+soundThree15 = false
+soundFour15 = false
+soundOne16 = false
+soundTwo16 = false
+soundThree16 = false
+soundFour16 = false
+soundOne17 = false
+soundTwo17 = false
+soundThree17 = false
+soundFour17 = false
+soundOne18 = false
+soundTwo18 = false
+soundThree18 = false
+soundFour18 = false
+
+
+Script inside the slider play_{ignore}
+If(0 <play_{ignore}< 2 && soundOne1 == true, RunClickScript( playSoundOne ))
+If(0 <play_{ignore}< 2 && soundTwo1 == true, RunClickScript( playSoundTwo ))
+If(0 <play_{ignore}< 2 && soundThree1 == true, RunClickScript( playSoundThree ))
+If(0 <play_{ignore}< 2 && soundFour1 == true, RunClickScript( playSoundFour ))
+If(1 <play_{ignore}< 3 && soundOne2 == true, RunClickScript( playSoundOne ))
+If(1 <play_{ignore}< 3 && soundTwo2 == true, RunClickScript( playSoundTwo ))
+If(1 <play_{ignore}< 3 && soundThree2 == true, RunClickScript( playSoundThree ))
+If(1 <play_{ignore}< 3 && soundFour2 == true, RunClickScript( playSoundFour ))
+If(2 <play_{ignore}< 4 && soundOne3 == true, RunClickScript( playSoundOne ))
+If(2 <play_{ignore}< 4 && soundTwo3 == true, RunClickScript( playSoundTwo ))
+If(2 <play_{ignore}< 4 && soundThree3 == true, RunClickScript( playSoundThree ))
+If(2 <play_{ignore}< 4 && soundFour3 == true, RunClickScript( playSoundFour ))
+If(3 <play_{ignore}< 5 && soundOne4 == true, RunClickScript( playSoundOne ))
+If(3 <play_{ignore}< 5 && soundTwo4 == true, RunClickScript( playSoundTwo ))
+If(3 <play_{ignore}< 5 && soundThree4 == true, RunClickScript( playSoundThree ))
+If(3 <play_{ignore}< 5 && soundFour4 == true, RunClickScript( playSoundFour ))
+If(4 <play_{ignore}< 6 && soundOne5 == true, RunClickScript( playSoundOne ))
+If(4 <play_{ignore}< 6 && soundTwo5 == true, RunClickScript( playSoundTwo ))
+If(4 <play_{ignore}< 6 && soundThree5 == true, RunClickScript( playSoundThree ))
+If(4 <play_{ignore}< 6 && soundFour5 == true, RunClickScript( playSoundFour ))
+If(5 <play_{ignore}< 7 && soundOne6 == true, RunClickScript( playSoundOne ))
+If(5 <play_{ignore}< 7 && soundTwo6 == true, RunClickScript( playSoundTwo ))
+If(5 <play_{ignore}< 7 && soundThree6 == true, RunClickScript( playSoundThree ))
+If(5 <play_{ignore}< 7 && soundFour6 == true, RunClickScript( playSoundFour ))
+If(6 <play_{ignore}< 8 && soundOne7 == true, RunClickScript( playSoundOne ))
+If(6 <play_{ignore}< 8 && soundTwo7 == true, RunClickScript( playSoundTwo ))
+If(6 <play_{ignore}< 8 && soundThree7 == true, RunClickScript( playSoundThree ))
+If(6 <play_{ignore}< 8 && soundFour7 == true, RunClickScript( playSoundFour ))
+If(7 <play_{ignore}< 9 && soundOne8 == true, RunClickScript( playSoundOne ))
+If(7 <play_{ignore}< 9 && soundTwo8 == true, RunClickScript( playSoundTwo ))
+If(7 <play_{ignore}< 9 && soundThree8 == true, RunClickScript( playSoundThree ))
+If(7 <play_{ignore}< 9 && soundFour8 == true, RunClickScript( playSoundFour ))
+If(8 <play_{ignore}< 10 && soundOne9 == true, RunClickScript( playSoundOne ))
+If(8 <play_{ignore}< 10 && soundTwo9 == true, RunClickScript( playSoundTwo ))
+If(8 <play_{ignore}< 10 && soundThree9 == true, RunClickScript( playSoundThree ))
+If(8 <play_{ignore}< 10 && soundFour9 == true, RunClickScript( playSoundFour ))
+If(9 <play_{ignore}< 11 && soundOne10 == true, RunClickScript( playSoundOne ))
+If(9 <play_{ignore}< 11 && soundTwo10 == true, RunClickScript( playSoundTwo ))
+If(9 <play_{ignore}< 11 && soundThree10 == true, RunClickScript( playSoundThree ))
+If(9 <play_{ignore}< 11 && soundFour10 == true, RunClickScript( playSoundFour ))
+If(10 <play_{ignore}< 12 && soundOne11 == true, RunClickScript( playSoundOne ))
+If(10 <play_{ignore}< 12 && soundTwo11 == true, RunClickScript( playSoundTwo ))
+If(10 <play_{ignore}< 12 && soundThree11 == true, RunClickScript( playSoundThree ))
+If(10 <play_{ignore}< 12 && soundFour11 == true, RunClickScript( playSoundFour ))
+If(11 <play_{ignore}< 13 && soundOne12 == true, RunClickScript( playSoundOne ))
+If(11 <play_{ignore}< 13 && soundTwo12 == true, RunClickScript( playSoundTwo ))
+If(11 <play_{ignore}< 13 && soundThree12 == true, RunClickScript( playSoundThree ))
+If(11 <play_{ignore}< 13 && soundFour12 == true, RunClickScript( playSoundFour ))
+If(12 <play_{ignore}< 14 && soundOne13 == true, RunClickScript( playSoundOne ))
+If(12 <play_{ignore}< 14 && soundTwo13 == true, RunClickScript( playSoundTwo ))
+If(12 <play_{ignore}< 14 && soundThree13 == true, RunClickScript( playSoundThree ))
+If(12 <play_{ignore}< 14 && soundFour13 == true, RunClickScript( playSoundFour ))
+If(13 <play_{ignore}< 15 && soundOne14 == true, RunClickScript( playSoundOne ))
+If(13 <play_{ignore}< 15 && soundTwo14 == true, RunClickScript( playSoundTwo ))
+If(13 <play_{ignore}< 15 && soundThree14 == true, RunClickScript( playSoundThree ))
+If(13 <play_{ignore}< 15 && soundFour14 == true, RunClickScript( playSoundFour ))
+If(14 <play_{ignore}< 16 && soundOne15 == true, RunClickScript( playSoundOne ))
+If(14 <play_{ignore}< 16 && soundTwo15 == true, RunClickScript( playSoundTwo ))
+If(14 <play_{ignore}< 16 && soundThree15 == true, RunClickScript( playSoundThree ))
+If(14 <play_{ignore}< 16 && soundFour15 == true, RunClickScript( playSoundFour ))
+If(15 <play_{ignore}< 17 && soundOne16 == true, RunClickScript( playSoundOne ))
+If(15 <play_{ignore}< 17 && soundTwo16 == true, RunClickScript( playSoundTwo ))
+If(15 <play_{ignore}< 17 && soundThree16 == true, RunClickScript( playSoundThree ))
+If(15 <play_{ignore}< 17 && soundFour16 == true, RunClickScript( playSoundFour ))
+If(16 <play_{ignore}< 18 && soundOne17 == true, RunClickScript( playSoundOne ))
+If(16 <play_{ignore}< 18 && soundTwo17 == true, RunClickScript( playSoundTwo ))
+If(16 <play_{ignore}< 18 && soundThree17 == true, RunClickScript( playSoundThree ))
+If(16 <play_{ignore}< 18 && soundFour17 == true, RunClickScript( playSoundFour ))
+If(17 <play_{ignore}< 19 && soundOne18 == true, RunClickScript( playSoundOne ))
+If(17 <play_{ignore}< 19 && soundTwo18 == true, RunClickScript( playSoundTwo ))
+If(17 <play_{ignore}< 19 && soundThree18 == true, RunClickScript( playSoundThree ))
+If(17 <play_{ignore}< 19 && soundFour18 == true, RunClickScript( playSoundFour ))

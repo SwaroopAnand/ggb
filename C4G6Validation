@@ -1,0 +1,9 @@
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = 6
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+enter1 = ?
+IBenter1 = InputBox( enter1 )
+SetConditionToShowObject( IBenter1, 0 < q < qtotal && q!= 2)
+ShowLabel( IBenter1, false )
+

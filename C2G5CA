@@ -1,0 +1,161 @@
+aaa = Corner( 4 )
+AS = Slider( 650, 960, 310, 1, 200, false, true, false, false )
+AAA = (x(aaa), y(aaa) - AS * 0.0264583333)
+
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+name = ""
+badgeNo = ?
+IBname = InputBox( name )
+IBbadgeNo = InputBox( badgeNo )
+SetConditionToShowObject( IBname, q == 0)
+SetConditionToShowObject( IBbadgeNo, q == 0)
+ShowLabel( IBname, false )
+ShowLabel( IBbadgeNo, false )
+
+showName = Text( name )
+SetConditionToShowObject( showName, 0<q<qtotal)
+showBadge = Text( badgeNo )
+SetConditionToShowObject( showBadge, 0<q<qtotal)
+
+enterHabitat = ?
+enterGreenHouse = ?
+IBenterHabitat = InputBox( enterHabitat )
+IBenterGreenHouse = InputBox( enterGreenHouse )
+SetConditionToShowObject( IBenterHabitat, q == 2)
+SetConditionToShowObject( IBenterGreenHouse, q == 2)
+ShowLabel( IBenterHabitat, false )
+ShowLabel( IBenterGreenHouse, false )
+
+
+enterHabitatEqu = ?
+enterGreenHouseEqu = ?
+IBenterHabitatEqu = InputBox( enterHabitatEqu )
+IBenterGreenHouseEqu = InputBox( enterGreenHouseEqu )
+SetConditionToShowObject( IBenterHabitatEqu, q == 3)
+SetConditionToShowObject( IBenterGreenHouseEqu, q == 3)
+ShowLabel( IBenterHabitatEqu, false )
+ShowLabel( IBenterGreenHouseEqu, false )
+
+checkHM = enterHabitatEqu == HabitateLevel
+checkGM = enterGreenHouseEqu == GreenHouseLevel
+
+notEnoughSolarPanels = false
+needMinOneGreenHouse = false
+
+
+Habitats = Slider( 1, 5, 1, 1, 200, false, true, false, false )
+GreenHouses =  Slider( 1, 5, 1, 1, 200, false, true, false, false )
+Habitats2 = Slider( 1, 2, 1, 1, 200, false, true, false, false )
+GreenHouses2 =  Slider( 1, 2, 1, 1, 200, false, true, false, false )
+SolarPannels =  Slider( 0, 5, 1, 1, 200, false, true, false, false )
+Antennaes =  Slider( 0, 3, 1, 1, 200, false, true, false, false )
+Rovers =  Slider( 0, 3, 1, 1, 200, false, true, false, false )
+
+showHabitats = Text(Habitats)
+showGreenHouses = Text(GreenHouses)
+showSolarPannels = Text(SolarPannels)
+showAntennaes = Text(Antennaes
+showRovers = Text(Rovers)
+
+P_H = (5,1)
+P_G = (6,1)
+P_S = (7,1)
+P_A = (8,1)
+P_R = (9,1)
+
+
+P1 = (2,2)
+P2 = (3,2)
+P3 = (3,3)
+P4 = (2,3)
+dragOut = Polygon(P1, P2, P3, P4)
+
+pointList = {P_H, P_G, P_S, P_A, P_R}
+IfDragedOut = Sum(Sequence(If(IsInRegion(Element(pointList, k), dragOut), 1, 0), k, 1, Length(pointList)))
+
+
+badgeLevel = Slider( 0, 2, 1, 1, 200, false, true, false, false )
+HabitateLevel = Slider( 1, 4, 1, 1, 200, false, true, false, false )
+GreenHouseLevel = Slider( 1, 3, 1, 1, 200, false, true, false, false )
+
+HM = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+GM = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+
+HMList = {{"[25-(5+15)]÷5 =", "25-5+15÷5 =", "[(25-5)+15]÷5 =", "25-[(5+15)÷5] ="},
+{"[(12+(16÷4)]÷4-2 =", "[12+(16÷4)÷4-4] =", "12+[(16÷(4÷4)]-4 =", "(12+16)÷(4÷4)-4 ="},
+{"[35-(5+15)]÷5 =", "35-[(5+15)÷5] =", "35-5+15÷5 =", "[(35-5)+15)]÷5 ="},
+{"2\times 12-9+6÷3 =","2 \times \{(12-9+6)÷3\} =", "\{2 \times (12-9)+6\}÷3 =", "\{2 \times 12-(9+6)÷3\} ="}}
+
+GMList = {{"9^2÷3^2-2^2 \times 2 =","[(9^2÷3^2)-(2^2 \times 2)] =", "9^2÷[3^2-(2^2 \times 2)] =", "81÷[(3^2-2^2) \times 2] ="},
+{"2 \times 5+2^2-6÷3 =", "\{2 \times (5+2^2)\}-6÷3 =", "\{(2 \times5) +2^2\}-6÷3 =", "2 \times \{(5+4)-6\}÷3 ="},
+{"5-1 \times 2^2-4÷2 =","5-1 \times\{ 2^2-(4÷2)\} =","\{(5-1) \times 2^2\}-4÷2 =","5-\{(1 \times 2^2)+(4÷2)\} ="}}
+
+HMList2 = {{"\{2^4 + (-14)\} ÷ 2 =", "2^4 + \{(-14) ÷ 2\} ="},
+{"\{3^3 + (-21)\} ÷ 3 =", "3^3 + (-21) ÷ 3 ="},
+{"(-16 + 2^6)  ÷ 4^2 =", "-16 + (2^6  ÷ 4^2) ="},
+{"2^2 - (-4) ÷ 2 =", "\{2^2 - (-4)\} ÷ 2 ="}}
+
+GMList2 = {{"(-27 + 6 \times 3)÷3^2 =", "-27 + (6 \times 3) ÷3^2 ="},
+{ "2 \times (3^2 - 2^3) =", "(2 \times 3^2) - 2^3 ="},
+{ "(3^3 - 3^2) + (-15) =", "3^3 - (3^2 + (-15)) ="}}
+
+
+#Begin
+If(badgeN == 10, SetValue[badgeLevel, 2], SetValue[badgeLevel,1])
+If(Length(name)!=0 && (badgeNo == 10 || badgeNo == 25), SetValue[q, 1])
+SetValue[notEnoughSolarPanels, false]
+SetValue[needMinOneGreenHouse, false]
+
+
+#Next
+If(q!=2, SetValue[q,q+1])
+If(q == 2 && 0< enterHabitat <=4 && 0<enterGreenHouse <=3 , SetValue[HabitateLevel, enterHabitat])
+If(q == 2 && 0< enterHabitat <=4 && 0<enterGreenHouse <=3 , SetValue[GreenHouseLevel, enterGreenHouse])
+If(q == 2 && 0< enterHabitat <=4 && 0<enterGreenHouse <=3 , SetValue[q, q+1])
+If(q == 2 && (enterHabitat >4 || enterGreenHouse >3) , SetValue[notEnoughSolarPanels, true])
+If(q == 2 && enterGreenHouse == 0 , SetValue[needMinOneGreenHouse, true])
+
+#Check
+If(q == 3, SetValue[HM, -1])
+If(q == 3, SetValue[GM, -1])
+If(q ==3 && badgeLevel ≟ 1 && HabitateLevel ≟ 1 && Habitats ≟ 1 && checkHM== true, SetValue[HM, 1])
+If(q ==3 && badgeLevel ≟ 1 && HabitateLevel ≟ 2 && Habitats ≟ 1 && checkHM== true, SetValue[HM, 1])
+If(q ==3 && badgeLevel ≟ 1 && HabitateLevel ≟ 3 && Habitats ≟ 1 && checkHM== true, SetValue[HM, 1])
+If(q ==3 && badgeLevel ≟ 1 && HabitateLevel ≟ 4 && Habitats ≟ 3 && checkHM== true, SetValue[HM, 1])
+If(q ==3 && badgeLevel ≟ 1 && GreenHouseLevel ≟ 1 && GreenHouses ≟ 2 && checkGM== true, SetValue[GM, 1])
+If(q ==3 && badgeLevel ≟ 1 && GreenHouseLevel ≟ 2 && GreenHouses ≟ 4 && checkGM== true, SetValue[GM, 1])
+If(q ==3 && badgeLevel ≟ 1 && GreenHouseLevel ≟ 3 && GreenHouses ≟ 2 && checkGM== true, SetValue[GM, 1])
+
+If(q ==3 && badgeLevel ≟ 2 && HabitateLevel ≟ 1 && Habitats2 ≟ 1 && checkHM== true, SetValue[HM, 1])
+If(q ==3 && badgeLevel ≟ 2 && HabitateLevel ≟ 2 && Habitats2 ≟ 1 && checkHM== true, SetValue[HM, 1])
+If(q ==3 && badgeLevel ≟ 2 && HabitateLevel ≟ 3 && Habitats2 ≟ 1 && checkHM== true, SetValue[HM, 1])
+If(q ==3 && badgeLevel ≟ 2 && HabitateLevel ≟ 4 && Habitats2 ≟ 2 && checkHM== true, SetValue[HM, 1])
+If(q ==3 && badgeLevel ≟ 2 && GreenHouseLevel ≟ 1 && GreenHouses2 ≟ 1 && checkGM== true, SetValue[GM, 1])
+If(q ==3 && badgeLevel ≟ 2 && GreenHouseLevel ≟ 2 && GreenHouses2 ≟ 1 && checkGM== true, SetValue[GM, 1])
+If(q ==3 && badgeLevel ≟ 2 && GreenHouseLevel ≟ 3 && GreenHouses2 ≟ 1 && checkGM== true, SetValue[GM, 1])
+
+
+#Next for q==3
+SetValue[q,q+1]
+
+If(q == 5 && IfDragOut == 0, SetValue, q, q+1)
+
+
+#points
+P_R2 = (28.27999,13.62639)
+P_R3 = (28.27999,13.62639)
+P_H2 = (32.38097,13.78428)
+P_H3 = (32.38097,13.78428)
+P_H4 = (32.38097,13.78428)
+P_S2 = (36.79342,13.62639)
+P_S3 = (36.79342,13.62639)
+P_S4 = (36.79342,13.62639)
+P_S5 = (36.79342,13.62639)
+P_G2 = (42.50365,13.73165)
+P_G3 = (42.50365,13.73165)
+P_A2 = (47.51316,13.91527)
+P_A3 = (47.51316,13.91527)

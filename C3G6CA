@@ -1,0 +1,1970 @@
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+enterName = ?
+IBenterName = InputBox( enterName )
+SetConditionToShowObject( IBenterName, q==0)
+ShowLabel( IBenterName, false )
+
+selectMalls = false
+selectFireStation = false
+selectPoliceStation = false
+selectThemePark = false
+
+
+P_A = (1,2)
+P_H = (2,2)
+P_S = (3,2)
+P_M = (4,2)
+P_P = (5,2)
+P_R = (6,2)
+P_C = (7,2)
+
+
+A11=0
+H11=0
+S11=0
+M11=0
+P11=0
+R11=0
+C11=0
+
+A12=0
+H12=0
+S12=0
+M12=0
+P12=0
+R12=0
+C12=0
+
+A13=0
+H13=0
+S13=0
+M13=0
+P13=0
+R13=0
+C13=0
+
+A14=0
+H14=0
+S14=0
+M14=0
+P14=0
+R14=0
+C14=0
+
+A15=0
+H15=0
+S15=0
+M15=0
+P15=0
+R15=0
+C15=0
+
+A16=0
+H16=0
+S16=0
+M16=0
+P16=0
+R16=0
+C16=0
+
+A17=0
+H17=0
+S17=0
+M17=0
+P17=0
+R17=0
+C17=0
+
+A21=0
+H21=0
+S21=0
+M21=0
+P21=0
+R21=0
+C21=0
+
+A22=0
+H22=0
+S22=0
+M22=0
+P22=0
+R22=0
+C22=0
+
+A23=0
+H23=0
+S23=0
+M23=0
+P23=0
+R23=0
+C23=0
+
+A24=0
+H24=0
+S24=0
+M24=0
+P24=0
+R24=0
+C24=0
+
+A25=0
+H25=0
+S25=0
+M25=0
+P25=0
+R25=0
+C25=0
+
+A26=0
+H26=0
+S26=0
+M26=0
+P26=0
+R26=0
+C26=0
+
+A27=0
+H27=0
+S27=0
+M27=0
+P27=0
+R27=0
+C27=0
+
+A31=0
+H31=0
+S31=0
+M31=0
+P31=0
+R31=0
+C31=0
+
+A32=0
+H32=0
+S32=0
+M32=0
+P32=0
+R32=0
+C32=0
+
+A33=0
+H33=0
+S33=0
+M33=0
+P33=0
+R33=0
+C33=0
+
+A34=0
+H34=0
+S34=0
+M34=0
+P34=0
+R34=0
+C34=0
+
+A35=0
+H35=0
+S35=0
+M35=0
+P35=0
+R35=0
+C35=0
+
+A36=0
+H36=0
+S36=0
+M36=0
+P36=0
+R36=0
+C36=0
+
+A37=0
+H37=0
+S37=0
+M37=0
+P37=0
+R37=0
+C37=0
+
+A41=0
+H41=0
+S41=0
+M41=0
+P41=0
+R41=0
+C41=0
+
+A42=0
+H42=0
+S42=0
+M42=0
+P42=0
+R42=0
+C42=0
+
+A43=0
+H43=0
+S43=0
+M43=0
+P43=0
+R43=0
+C43=0
+
+A44=0
+H44=0
+S44=0
+M44=0
+P44=0
+R44=0
+C44=0
+
+A45=0
+H45=0
+S45=0
+M45=0
+P45=0
+R45=0
+C45=0
+
+A46=0
+H46=0
+S46=0
+M46=0
+P46=0
+R46=0
+C46=0
+
+A47=0
+H47=0
+S47=0
+M47=0
+P47=0
+R47=0
+C47=0
+
+A51=0
+H51=0
+S51=0
+M51=0
+P51=0
+R51=0
+C51=0
+
+A52=0
+H52=0
+S52=0
+M52=0
+P52=0
+R52=0
+C52=0
+
+A53=0
+H53=0
+S53=0
+M53=0
+P53=0
+R53=0
+C53=0
+
+A54=0
+H54=0
+S54=0
+M54=0
+P54=0
+R54=0
+C54=0
+
+A55=0
+H55=0
+S55=0
+M55=0
+P55=0
+R55=0
+C55=0
+
+A56=0
+H56=0
+S56=0
+M56=0
+P56=0
+R56=0
+C56=0
+
+A57=0
+H57=0
+S57=0
+M57=0
+P57=0
+R57=0
+C57=0
+
+A61=0
+H61=0
+S61=0
+M61=0
+P61=0
+R61=0
+C61=0
+
+A62=0
+H62=0
+S62=0
+M62=0
+P62=0
+R62=0
+C62=0
+
+A63=0
+H63=0
+S63=0
+M63=0
+P63=0
+R63=0
+C63=0
+
+A64=0
+H64=0
+S64=0
+M64=0
+P64=0
+R64=0
+C64=0
+
+A65=0
+H65=0
+S65=0
+M65=0
+P65=0
+R65=0
+C65=0
+
+A66=0
+H66=0
+S66=0
+M66=0
+P66=0
+R66=0
+C66=0
+
+A67=0
+H67=0
+S67=0
+M67=0
+P67=0
+R67=0
+C67=0
+
+A71=0
+H71=0
+S71=0
+M71=0
+P71=0
+R71=0
+C71=0
+
+A72=0
+H72=0
+S72=0
+M72=0
+P72=0
+R72=0
+C72=0
+
+A73=0
+H73=0
+S73=0
+M73=0
+P73=0
+R73=0
+C73=0
+
+A74=0
+H74=0
+S74=0
+M74=0
+P74=0
+R74=0
+C74=0
+
+A75=0
+H75=0
+S75=0
+M75=0
+P75=0
+R75=0
+C75=0
+
+A76=0
+H76=0
+S76=0
+M76=0
+P76=0
+R76=0
+C76=0
+
+A77=0
+H77=0
+S77=0
+M77=0
+P77=0
+R77=0
+C77=0
+
+sumAppartments = A11+A12+A13+A14+A15+A16+A17+A21+A22+A23+A24+A25+A26+A27+A31+A32+A33+A34+A35+A36+A37+A41+A42+A43+A44+A45+A46+A47+A51+A52+A53+A54+A55+A56+A57+A61+A62+A63+A64+A65+A66+A67+A71+A72+A73+A74+A75+A76+A77
+sumHospitals = H11+H12+H13+H14+H15+H16+H17+H21+H22+H23+H24+H25+H26+H27+H31+H32+H33+H34+H35+H36+H37+H41+H42+H43+H44+H45+H46+H47+H51+H52+H53+H54+H55+H56+H57+H61+H62+H63+H64+H65+H66+H67+H71+H72+H73+H74+H75+H76+H77
+sumSchools = S11+S12+S13+S14+S15+S16+S17+S21+S22+S23+S24+S25+S26+S27+S31+S32+S33+S34+S35+S36+S37+S41+S42+S43+S44+S45+S46+S47+S51+S52+S53+S54+S55+S56+S57+S61+S62+S63+S64+S65+S66+S67+S71+S72+S73+S74+S75+S76+S77
+sumMarkets = M11+M12+M13+M14+M15+M16+M17+M21+M22+M23+M24+M25+M26+M27+M31+M32+M33+M34+M35+M36+M37+M41+M42+M43+M44+M45+M46+M47+M51+M52+M53+M54+M55+M56+M57+M61+M62+M63+M64+M65+M66+M67+M71+M72+M73+M74+M75+M76+M77
+sumPlaygrounds = P11+P12+P13+P14+P15+P16+P17+P21+P22+P23+P24+P25+P26+P27+P31+P32+P33+P34+P35+P36+P37+P41+P42+P43+P44+P45+P46+P47+P51+P52+P53+P54+P55+P56+P57+P61+P62+P63+P64+P65+P66+P67+P71+P72+P73+P74+P75+P76+P77
+sumRestaurants = R11+R12+R13+R14+R15+R16+R17+R21+R22+R23+R24+R25+R26+R27+R31+R32+R33+R34+R35+R36+R37+R41+R42+R43+R44+R45+R46+R47+R51+R52+R53+R54+R55+R56+R57+R61+R62+R63+R64+R65+R66+R67+R71+R72+R73+R74+R75+R76+R77
+sumChoice = C11+C12+C13+C14+C15+C16+C17+C21+C22+C23+C24+C25+C26+C27+C31+C32+C33+C34+C35+C36+C37+C41+C42+C43+C44+C45+C46+C47+C51+C52+C53+C54+C55+C56+C57+C61+C62+C63+C64+C65+C66+C67+C71+C72+C73+C74+C75+C76+C77
+
+
+addAppartments = false
+addHospitals = false
+addSchools = false
+addMarkets = false
+addPlaygrounds = false
+addRestaurants = false
+addChoice = false
+
+showImage11 = false
+showAppartments11 = false
+showHospitals11 = false
+showSchools11 = false
+showMarkets11 = false
+showPlaygrounds11 = false
+showRestaurants11 = false
+showChoice11 = false
+
+showImage12 = false
+showAppartments12 = false
+showHospitals12 = false
+showSchools12 = false
+showMarkets12 = false
+showPlaygrounds12 = false
+showRestaurants12 = false
+showChoice12 = false
+
+showImage13 = false
+showAppartments13 = false
+showHospitals13 = false
+showSchools13 = false
+showMarkets13 = false
+showPlaygrounds13 = false
+showRestaurants13 = false
+showChoice13 = false
+
+showImage14 = false
+showAppartments14 = false
+showHospitals14 = false
+showSchools14 = false
+showMarkets14 = false
+showPlaygrounds14 = false
+showRestaurants14 = false
+showChoice14 = false
+
+showImage15 = false
+showAppartments15 = false
+showHospitals15 = false
+showSchools15 = false
+showMarkets15 = false
+showPlaygrounds15 = false
+showRestaurants15 = false
+showChoice15 = false
+
+showImage16 = false
+showAppartments16 = false
+showHospitals16 = false
+showSchools16 = false
+showMarkets16 = false
+showPlaygrounds16 = false
+showRestaurants16 = false
+showChoice16 = false
+
+showImage17 = false
+showAppartments17 = false
+showHospitals17 = false
+showSchools17 = false
+showMarkets17 = false
+showPlaygrounds17 = false
+showRestaurants17 = false
+showChoice17 = false
+
+showImage21 = false
+showAppartments21 = false
+showHospitals21 = false
+showSchools21 = false
+showMarkets21 = false
+showPlaygrounds21 = false
+showRestaurants21 = false
+showChoice21 = false
+
+showImage22 = false
+showAppartments22 = false
+showHospitals22 = false
+showSchools22 = false
+showMarkets22 = false
+showPlaygrounds22 = false
+showRestaurants22 = false
+showChoice22 = false
+
+showImage23 = false
+showAppartments23 = false
+showHospitals23 = false
+showSchools23 = false
+showMarkets23 = false
+showPlaygrounds23 = false
+showRestaurants23 = false
+showChoice23 = false
+
+showImage24 = false
+showAppartments24 = false
+showHospitals24 = false
+showSchools24 = false
+showMarkets24 = false
+showPlaygrounds24 = false
+showRestaurants24 = false
+showChoice24 = false
+
+showImage25 = false
+showAppartments25 = false
+showHospitals25 = false
+showSchools25 = false
+showMarkets25 = false
+showPlaygrounds25 = false
+showRestaurants25 = false
+showChoice25 = false
+
+showImage26 = false
+showAppartments26 = false
+showHospitals26 = false
+showSchools26 = false
+showMarkets26 = false
+showPlaygrounds26 = false
+showRestaurants26 = false
+showChoice26 = false
+
+showImage27 = false
+showAppartments27 = false
+showHospitals27 = false
+showSchools27 = false
+showMarkets27 = false
+showPlaygrounds27 = false
+showRestaurants27 = false
+showChoice27 = false
+
+showImage31 = false
+showAppartments31 = false
+showHospitals31 = false
+showSchools31 = false
+showMarkets31 = false
+showPlaygrounds31 = false
+showRestaurants31 = false
+showChoice31 = false
+
+showImage32 = false
+showAppartments32 = false
+showHospitals32 = false
+showSchools32 = false
+showMarkets32 = false
+showPlaygrounds32 = false
+showRestaurants32 = false
+showChoice32 = false
+
+showImage33 = false
+showAppartments33 = false
+showHospitals33 = false
+showSchools33 = false
+showMarkets33 = false
+showPlaygrounds33 = false
+showRestaurants33 = false
+showChoice33 = false
+
+showImage34 = false
+showAppartments34 = false
+showHospitals34 = false
+showSchools34 = false
+showMarkets34 = false
+showPlaygrounds34 = false
+showRestaurants34 = false
+showChoice34 = false
+
+showImage35 = false
+showAppartments35 = false
+showHospitals35 = false
+showSchools35 = false
+showMarkets35 = false
+showPlaygrounds35 = false
+showRestaurants35 = false
+showChoice35 = false
+
+showImage36 = false
+showAppartments36 = false
+showHospitals36 = false
+showSchools36 = false
+showMarkets36 = false
+showPlaygrounds36 = false
+showRestaurants36 = false
+showChoice36 = false
+
+showImage37 = false
+showAppartments37 = false
+showHospitals37 = false
+showSchools37 = false
+showMarkets37 = false
+showPlaygrounds37 = false
+showRestaurants37 = false
+showChoice37 = false
+
+showImage41 = false
+showAppartments41 = false
+showHospitals41 = false
+showSchools41 = false
+showMarkets41 = false
+showPlaygrounds41 = false
+showRestaurants41 = false
+showChoice41 = false
+
+showImage42 = false
+showAppartments42 = false
+showHospitals42 = false
+showSchools42 = false
+showMarkets42 = false
+showPlaygrounds42 = false
+showRestaurants42 = false
+showChoice42 = false
+
+showImage43 = false
+showAppartments43 = false
+showHospitals43 = false
+showSchools43 = false
+showMarkets43 = false
+showPlaygrounds43 = false
+showRestaurants43 = false
+showChoice43 = false
+
+showImage44 = false
+showAppartments44 = false
+showHospitals44 = false
+showSchools44 = false
+showMarkets44 = false
+showPlaygrounds44 = false
+showRestaurants44 = false
+showChoice44 = false
+
+showImage45 = false
+showAppartments45 = false
+showHospitals45 = false
+showSchools45 = false
+showMarkets45 = false
+showPlaygrounds45 = false
+showRestaurants45 = false
+showChoice45 = false
+
+showImage46 = false
+showAppartments46 = false
+showHospitals46 = false
+showSchools46 = false
+showMarkets46 = false
+showPlaygrounds46 = false
+showRestaurants46 = false
+showChoice46 = false
+
+showImage47 = false
+showAppartments47 = false
+showHospitals47 = false
+showSchools47 = false
+showMarkets47 = false
+showPlaygrounds47 = false
+showRestaurants47 = false
+showChoice47 = false
+
+showImage51 = false
+showAppartments51 = false
+showHospitals51 = false
+showSchools51 = false
+showMarkets51 = false
+showPlaygrounds51 = false
+showRestaurants51 = false
+showChoice51 = false
+
+showImage52 = false
+showAppartments52 = false
+showHospitals52 = false
+showSchools52 = false
+showMarkets52 = false
+showPlaygrounds52 = false
+showRestaurants52 = false
+showChoice52 = false
+
+showImage53 = false
+showAppartments53 = false
+showHospitals53 = false
+showSchools53 = false
+showMarkets53 = false
+showPlaygrounds53 = false
+showRestaurants53 = false
+showChoice53 = false
+
+showImage54 = false
+showAppartments54 = false
+showHospitals54 = false
+showSchools54 = false
+showMarkets54 = false
+showPlaygrounds54 = false
+showRestaurants54 = false
+showChoice54 = false
+
+showImage55 = false
+showAppartments55 = false
+showHospitals55 = false
+showSchools55 = false
+showMarkets55 = false
+showPlaygrounds55 = false
+showRestaurants55 = false
+showChoice55 = false
+
+showImage56 = false
+showAppartments56 = false
+showHospitals56 = false
+showSchools56 = false
+showMarkets56 = false
+showPlaygrounds56 = false
+showRestaurants56 = false
+showChoice56 = false
+
+showImage57 = false
+showAppartments57 = false
+showHospitals57 = false
+showSchools57 = false
+showMarkets57 = false
+showPlaygrounds57 = false
+showRestaurants57 = false
+showChoice57 = false
+
+showImage61 = false
+showAppartments61 = false
+showHospitals61 = false
+showSchools61 = false
+showMarkets61 = false
+showPlaygrounds61 = false
+showRestaurants61 = false
+showChoice61 = false
+
+showImage62 = false
+showAppartments62 = false
+showHospitals62 = false
+showSchools62 = false
+showMarkets62 = false
+showPlaygrounds62 = false
+showRestaurants62 = false
+showChoice62 = false
+
+showImage63 = false
+showAppartments63 = false
+showHospitals63 = false
+showSchools63 = false
+showMarkets63 = false
+showPlaygrounds63 = false
+showRestaurants63 = false
+showChoice63 = false
+
+showImage64 = false
+showAppartments64 = false
+showHospitals64 = false
+showSchools64 = false
+showMarkets64 = false
+showPlaygrounds64 = false
+showRestaurants64 = false
+showChoice64 = false
+
+showImage65 = false
+showAppartments65 = false
+showHospitals65 = false
+showSchools65 = false
+showMarkets65 = false
+showPlaygrounds65 = false
+showRestaurants65 = false
+showChoice65 = false
+
+showImage66 = false
+showAppartments66 = false
+showHospitals66 = false
+showSchools66 = false
+showMarkets66 = false
+showPlaygrounds66 = false
+showRestaurants66 = false
+showChoice66 = false
+
+showImage67 = false
+showAppartments67 = false
+showHospitals67 = false
+showSchools67 = false
+showMarkets67 = false
+showPlaygrounds67 = false
+showRestaurants67 = false
+showChoice67 = false
+
+showImage71 = false
+showAppartments71 = false
+showHospitals71 = false
+showSchools71 = false
+showMarkets71 = false
+showPlaygrounds71 = false
+showRestaurants71 = false
+showChoice71 = false
+
+showImage72 = false
+showAppartments72 = false
+showHospitals72 = false
+showSchools72 = false
+showMarkets72 = false
+showPlaygrounds72 = false
+showRestaurants72 = false
+showChoice72 = false
+
+showImage73 = false
+showAppartments73 = false
+showHospitals73 = false
+showSchools73 = false
+showMarkets73 = false
+showPlaygrounds73 = false
+showRestaurants73 = false
+showChoice73 = false
+
+showImage74 = false
+showAppartments74 = false
+showHospitals74 = false
+showSchools74 = false
+showMarkets74 = false
+showPlaygrounds74 = false
+showRestaurants74 = false
+showChoice74 = false
+
+showImage75 = false
+showAppartments75 = false
+showHospitals75 = false
+showSchools75 = false
+showMarkets75 = false
+showPlaygrounds75 = false
+showRestaurants75 = false
+showChoice75 = false
+
+showImage76 = false
+showAppartments76 = false
+showHospitals76 = false
+showSchools76 = false
+showMarkets76 = false
+showPlaygrounds76 = false
+showRestaurants76 = false
+showChoice76 = false
+
+showImage77 = false
+showAppartments77 = false
+showHospitals77 = false
+showSchools77 = false
+showMarkets77 = false
+showPlaygrounds77 = false
+showRestaurants77 = false
+showChoice77 = false
+
+#-----------SetPic Names
+picMalls
+picFireStation
+picPoliceStation
+picThemePark
+picAppartments
+picHospitals
+picSchools
+picMarkets
+picPlaygrounds
+picRestaurants
+picChoice
+
+#-----------slectMall
+SetValue[selectMalls, true]
+SetValue[selectFireStation, false]
+SetValue[selectPoliceStation, false]
+SetValue[selectThemePark, false]
+
+#-----------selectFireStaion
+SetValue[selectMalls, false]
+SetValue[selectFireStation, true]
+SetValue[selectPoliceStation, false]
+SetValue[selectThemePark, false]
+
+#-----------selectPoliceStation
+SetValue[selectMalls, false]
+SetValue[selectFireStation, false]
+SetValue[selectPoliceStation, true]
+SetValue[selectThemePark, false]
+
+#-----------selectThemePark
+SetValue[selectMalls, false]
+SetValue[selectFireStation, false]
+SetValue[selectPoliceStation, false]
+SetValue[selectThemePark, true]
+
+
+
+#-----------Next
+SetValue[q,q+1]
+
+#-----------Continue
+SetValue[q,q+1]
+
+#-----------Next on q == 5
+If( selectMalls == true || selectFireStation == true || selectPoliceStation == true || selectThemePark == true, SetValue[q,q+1])
+If( selectMalls == true, Rename[picMalls, picChoice])
+If( selectFireStation == true, Rename[picFireStation, picChoice])
+If( selectPoliceStation == true, Rename[picPoliceStation, picChoice])
+If( selectThemePark == true, Rename[picThemePark, picChoice])
+
+#-----------Check
+If( sumAppartments == 15 && sumHospitals == 5 && sumSchools == 3 && sumMarkets == 6 && sumPlaygrounds == 6  && sumRestaurants == 10, SetValue[q,q+1])
+
+#-----------add Appartments
+If(addAppartments = false, SetValue[addAppartments, true], SetValue[addAppartments, false])
+
+#-----------add Hospitals
+If(addHospitals = false, SetValue[addHospitals, true], SetValue[addHospitals, false])
+
+#-----------add Schools
+If(addSchools = false, SetValue[addSchools, true], SetValue[addSchools, false])
+
+#-----------add Markets
+If(addMarkets = false, SetValue[addMarkets, true], SetValue[addMarkets, false])
+
+#-----------add Playgrounds
+If(addPlaygrounds = false, SetValue[addPlaygrounds, true], SetValue[addPlaygrounds, false])
+
+#-----------add Restaurants
+If(addRestaurants = false, SetValue[addRestaurants, true], SetValue[addRestaurants, false])
+
+#-----------add Choice
+If(addChoice = false, SetValue[addChoice, true], SetValue[addChoice, false])
+
+
+#-----------create points for grid
+xDist = 3
+yDist = 3
+
+P00 = (2, 15)
+P01 = (x(P00) +(xDist*1), y(P00) - (yDist*0))
+P02 = (x(P00) +(xDist*2), y(P00) - (yDist*0))
+P03 = (x(P00) +(xDist*3), y(P00) - (yDist*0))
+P04 = (x(P00) +(xDist*4), y(P00) - (yDist*0))
+P05 = (x(P00) +(xDist*5), y(P00) - (yDist*0))
+P06 = (x(P00) +(xDist*6), y(P00) - (yDist*0))
+P07 = (x(P00) +(xDist*7), y(P00) - (yDist*0))
+
+
+P10 = (x(P00) +(xDist*0), y(P00) - (yDist*1))
+P11 = (x(P00) +(xDist*1), y(P00) - (yDist*1))
+P12 = (x(P00) +(xDist*2), y(P00) - (yDist*1))
+P13 = (x(P00) +(xDist*3), y(P00) - (yDist*1))
+P14 = (x(P00) +(xDist*4), y(P00) - (yDist*1))
+P15 = (x(P00) +(xDist*5), y(P00) - (yDist*1))
+P16 = (x(P00) +(xDist*6), y(P00) - (yDist*1))
+P17 = (x(P00) +(xDist*7), y(P00) - (yDist*1))
+
+
+P20 = (x(P00) +(xDist*0), y(P00) - (yDist*2))
+P21 = (x(P00) +(xDist*1), y(P00) - (yDist*2))
+P22 = (x(P00) +(xDist*2), y(P00) - (yDist*2))
+P23 = (x(P00) +(xDist*3), y(P00) - (yDist*2))
+P24 = (x(P00) +(xDist*4), y(P00) - (yDist*2))
+P25 = (x(P00) +(xDist*5), y(P00) - (yDist*2))
+P26 = (x(P00) +(xDist*6), y(P00) - (yDist*2))
+P27 = (x(P00) +(xDist*7), y(P00) - (yDist*2))
+
+
+P30 = (x(P00) +(xDist*0), y(P00) - (yDist*3))
+P31 = (x(P00) +(xDist*1), y(P00) - (yDist*3))
+P32 = (x(P00) +(xDist*2), y(P00) - (yDist*3))
+P33 = (x(P00) +(xDist*3), y(P00) - (yDist*3))
+P34 = (x(P00) +(xDist*4), y(P00) - (yDist*3))
+P35 = (x(P00) +(xDist*5), y(P00) - (yDist*3))
+P36 = (x(P00) +(xDist*6), y(P00) - (yDist*3))
+P37 = (x(P00) +(xDist*7), y(P00) - (yDist*3))
+
+
+P40 = (x(P00) +(xDist*0), y(P00) - (yDist*4))
+P41 = (x(P00) +(xDist*1), y(P00) - (yDist*4))
+P42 = (x(P00) +(xDist*2), y(P00) - (yDist*4))
+P43 = (x(P00) +(xDist*3), y(P00) - (yDist*4))
+P44 = (x(P00) +(xDist*4), y(P00) - (yDist*4))
+P45 = (x(P00) +(xDist*5), y(P00) - (yDist*4))
+P46 = (x(P00) +(xDist*6), y(P00) - (yDist*4))
+P47 = (x(P00) +(xDist*7), y(P00) - (yDist*4))
+
+
+P50 = (x(P00) +(xDist*0), y(P00) - (yDist*5))
+P51 = (x(P00) +(xDist*1), y(P00) - (yDist*5))
+P52 = (x(P00) +(xDist*2), y(P00) - (yDist*5))
+P53 = (x(P00) +(xDist*3), y(P00) - (yDist*5))
+P54 = (x(P00) +(xDist*4), y(P00) - (yDist*5))
+P55 = (x(P00) +(xDist*5), y(P00) - (yDist*5))
+P56 = (x(P00) +(xDist*6), y(P00) - (yDist*5))
+P57 = (x(P00) +(xDist*7), y(P00) - (yDist*5))
+
+
+P60 = (x(P00) +(xDist*0), y(P00) - (yDist*6))
+P61 = (x(P00) +(xDist*1), y(P00) - (yDist*6))
+P62 = (x(P00) +(xDist*2), y(P00) - (yDist*6))
+P63 = (x(P00) +(xDist*3), y(P00) - (yDist*6))
+P64 = (x(P00) +(xDist*4), y(P00) - (yDist*6))
+P65 = (x(P00) +(xDist*5), y(P00) - (yDist*6))
+P66 = (x(P00) +(xDist*6), y(P00) - (yDist*6))
+P67 = (x(P00) +(xDist*7), y(P00) - (yDist*6))
+
+
+P70 = (x(P00) +(xDist*0), y(P00) - (yDist*7))
+P71 = (x(P00) +(xDist*1), y(P00) - (yDist*7))
+P72 = (x(P00) +(xDist*2), y(P00) - (yDist*7))
+P73 = (x(P00) +(xDist*3), y(P00) - (yDist*7))
+P74 = (x(P00) +(xDist*4), y(P00) - (yDist*7))
+P75 = (x(P00) +(xDist*5), y(P00) - (yDist*7))
+P76 = (x(P00) +(xDist*6), y(P00) - (yDist*7))
+P77 = (x(P00) +(xDist*7), y(P00) - (yDist*7))
+
+
+#-----------create polygon grid
+clickOn11 = Polygon( P00, P01, P11, P10)
+SetConditionToShowObject( clickOn11, q == 3 )
+SetLayer(  clickOn11, 2 )
+
+clickOn12 = Polygon( P01, P02, P12, P11)
+SetConditionToShowObject( clickOn12, q == 3 )
+SetLayer(  clickOn12, 2 )
+
+clickOn13 = Polygon( P02, P03, P13, P12)
+SetConditionToShowObject( clickOn13, q == 3 )
+SetLayer(  clickOn13, 2 )
+
+clickOn14 = Polygon( P03, P04, P14, P13)
+SetConditionToShowObject( clickOn14, q == 3 )
+SetLayer(  clickOn14, 2 )
+
+clickOn15 = Polygon( P04, P05, P15, P14)
+SetConditionToShowObject( clickOn15, q == 3 )
+SetLayer(  clickOn15, 2 )
+
+clickOn16 = Polygon( P05, P06, P16, P15)
+SetConditionToShowObject( clickOn16, q == 3 )
+SetLayer(  clickOn16, 2 )
+
+clickOn17 = Polygon( P06, P07, P17, P16)
+SetConditionToShowObject( clickOn17, q == 3 )
+SetLayer(  clickOn17, 2 )
+
+clickOn21 = Polygon( P10, P11, P21, P20)
+SetConditionToShowObject( clickOn21, q == 3 )
+SetLayer(  clickOn21, 2 )
+
+clickOn22 = Polygon( P11, P12, P22, P21)
+SetConditionToShowObject( clickOn22, q == 3 )
+SetLayer(  clickOn22, 2 )
+
+clickOn23 = Polygon( P12, P13, P23, P22)
+SetConditionToShowObject( clickOn23, q == 3 )
+SetLayer(  clickOn23, 2 )
+
+clickOn24 = Polygon( P13, P14, P24, P23)
+SetConditionToShowObject( clickOn24, q == 3 )
+SetLayer(  clickOn24, 2 )
+
+clickOn25 = Polygon( P14, P15, P25, P24)
+SetConditionToShowObject( clickOn25, q == 3 )
+SetLayer(  clickOn25, 2 )
+
+clickOn26 = Polygon( P15, P16, P26, P25)
+SetConditionToShowObject( clickOn26, q == 3 )
+SetLayer(  clickOn26, 2 )
+
+clickOn27 = Polygon( P16, P17, P27, P26)
+SetConditionToShowObject( clickOn27, q == 3 )
+SetLayer(  clickOn27, 2 )
+
+clickOn31 = Polygon( P20, P21, P31, P30)
+SetConditionToShowObject( clickOn31, q == 3 )
+SetLayer(  clickOn31, 2 )
+
+clickOn32 = Polygon( P21, P22, P32, P31)
+SetConditionToShowObject( clickOn32, q == 3 )
+SetLayer(  clickOn32, 2 )
+
+clickOn33 = Polygon( P22, P23, P33, P32)
+SetConditionToShowObject( clickOn33, q == 3 )
+SetLayer(  clickOn33, 2 )
+
+clickOn34 = Polygon( P23, P24, P34, P33)
+SetConditionToShowObject( clickOn34, q == 3 )
+SetLayer(  clickOn34, 2 )
+
+clickOn35 = Polygon( P24, P25, P35, P34)
+SetConditionToShowObject( clickOn35, q == 3 )
+SetLayer(  clickOn35, 2 )
+
+clickOn36 = Polygon( P25, P26, P36, P35)
+SetConditionToShowObject( clickOn36, q == 3 )
+SetLayer(  clickOn36, 2 )
+
+clickOn37 = Polygon( P26, P27, P37, P36)
+SetConditionToShowObject( clickOn37, q == 3 )
+SetLayer(  clickOn37, 2 )
+
+clickOn41 = Polygon( P30, P31, P41, P40)
+SetConditionToShowObject( clickOn41, q == 3 )
+SetLayer(  clickOn41, 2 )
+
+clickOn42 = Polygon( P31, P32, P42, P41)
+SetConditionToShowObject( clickOn42, q == 3 )
+SetLayer(  clickOn42, 2 )
+
+clickOn43 = Polygon( P32, P33, P43, P42)
+SetConditionToShowObject( clickOn43, q == 3 )
+SetLayer(  clickOn43, 2 )
+
+clickOn44 = Polygon( P33, P34, P44, P43)
+SetConditionToShowObject( clickOn44, q == 3 )
+SetLayer(  clickOn44, 2 )
+
+clickOn45 = Polygon( P34, P35, P45, P44)
+SetConditionToShowObject( clickOn45, q == 3 )
+SetLayer(  clickOn45, 2 )
+
+clickOn46 = Polygon( P35, P36, P46, P45)
+SetConditionToShowObject( clickOn46, q == 3 )
+SetLayer(  clickOn46, 2 )
+
+clickOn47 = Polygon( P36, P37, P47, P46)
+SetConditionToShowObject( clickOn47, q == 3 )
+SetLayer(  clickOn47, 2 )
+
+clickOn51 = Polygon( P40, P41, P51, P50)
+SetConditionToShowObject( clickOn51, q == 3 )
+SetLayer(  clickOn51, 2 )
+
+clickOn52 = Polygon( P41, P42, P52, P51)
+SetConditionToShowObject( clickOn52, q == 3 )
+SetLayer(  clickOn52, 2 )
+
+clickOn53 = Polygon( P42, P43, P53, P52)
+SetConditionToShowObject( clickOn53, q == 3 )
+SetLayer(  clickOn53, 2 )
+
+clickOn54 = Polygon( P43, P44, P54, P53)
+SetConditionToShowObject( clickOn54, q == 3 )
+SetLayer(  clickOn54, 2 )
+
+clickOn55 = Polygon( P44, P45, P55, P54)
+SetConditionToShowObject( clickOn55, q == 3 )
+SetLayer(  clickOn55, 2 )
+
+clickOn56 = Polygon( P45, P46, P56, P55)
+SetConditionToShowObject( clickOn56, q == 3 )
+SetLayer(  clickOn56, 2 )
+
+clickOn57 = Polygon( P46, P47, P57, P56)
+SetConditionToShowObject( clickOn57, q == 3 )
+SetLayer(  clickOn57, 2 )
+
+clickOn61 = Polygon( P50, P51, P61, P60)
+SetConditionToShowObject( clickOn61, q == 3 )
+SetLayer(  clickOn61, 2 )
+
+clickOn62 = Polygon( P51, P52, P62, P61)
+SetConditionToShowObject( clickOn62, q == 3 )
+SetLayer(  clickOn62, 2 )
+
+clickOn63 = Polygon( P52, P53, P63, P62)
+SetConditionToShowObject( clickOn63, q == 3 )
+SetLayer(  clickOn63, 2 )
+
+clickOn64 = Polygon( P53, P54, P64, P63)
+SetConditionToShowObject( clickOn64, q == 3 )
+SetLayer(  clickOn64, 2 )
+
+clickOn65 = Polygon( P54, P55, P65, P64)
+SetConditionToShowObject( clickOn65, q == 3 )
+SetLayer(  clickOn65, 2 )
+
+clickOn66 = Polygon( P55, P56, P66, P65)
+SetConditionToShowObject( clickOn66, q == 3 )
+SetLayer(  clickOn66, 2 )
+
+clickOn67 = Polygon( P56, P57, P67, P66)
+SetConditionToShowObject( clickOn67, q == 3 )
+SetLayer(  clickOn67, 2 )
+
+clickOn71 = Polygon( P60, P61, P71, P70)
+SetConditionToShowObject( clickOn71, q == 3 )
+SetLayer(  clickOn71, 2 )
+
+clickOn72 = Polygon( P61, P62, P72, P71)
+SetConditionToShowObject( clickOn72, q == 3 )
+SetLayer(  clickOn72, 2 )
+
+clickOn73 = Polygon( P62, P63, P73, P72)
+SetConditionToShowObject( clickOn73, q == 3 )
+SetLayer(  clickOn73, 2 )
+
+clickOn74 = Polygon( P63, P64, P74, P73)
+SetConditionToShowObject( clickOn74, q == 3 )
+SetLayer(  clickOn74, 2 )
+
+clickOn75 = Polygon( P64, P65, P75, P74)
+SetConditionToShowObject( clickOn75, q == 3 )
+SetLayer(  clickOn75, 2 )
+
+clickOn76 = Polygon( P65, P66, P76, P75)
+SetConditionToShowObject( clickOn76, q == 3 )
+SetLayer(  clickOn76, 2 )
+
+clickOn77 = Polygon( P66, P67, P77, P76)
+SetConditionToShowObject( clickOn77, q == 3 )
+SetLayer(  clickOn77, 2 )
+
+
+#-----------this is the script for the polygons
+If(addAppartments == true, SetValue[showAppartments11, true], SetValue[showAppartments11, false])
+If(showAppartments11 == true, SetValue[A1, 1], SetValue[A1, 0]
+If(addHospitals == true, SetValue[showHospitals11, true], SetValue[showHospitals11, false])
+If(showHospitals11 == true, SetValue[H1, 1], SetValue[H1, 0]
+If(addSchools == true, SetValue[showSchools11, true], SetValue[showSchools11, false])
+If(showSchools11 == true, SetValue[S1, 1], SetValue[S1, 0]
+If(addMarkets == true, SetValue[showMarkets11, true], SetValue[showMarkets11, false])
+If(showMarkets11 == true, SetValue[M1, 1], SetValue[M1, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds11, true], SetValue[showPlaygrounds11, false])
+If(showPlaygrounds11 == true, SetValue[P1, 1], SetValue[P1, 0]
+If(addRestaurants == true, SetValue[showRestaurants11, true], SetValue[showRestaurants11, false])
+If(showRestaurants11 == true, SetValue[R1, 1], SetValue[R1, 0]
+If(addChoice == true, SetValue[showChoice11, true], SetValue[showChoice11, false])
+If(showChoice11 == true, SetValue[C1, 1], SetValue[C1, 0]
+
+If(addAppartments == true, SetValue[showAppartments12, true], SetValue[showAppartments12, false])
+If(showAppartments12 == true, SetValue[A1, 1], SetValue[A2, 0]
+If(addHospitals == true, SetValue[showHospitals12, true], SetValue[showHospitals12, false])
+If(showHospitals12 == true, SetValue[H1, 1], SetValue[H2, 0]
+If(addSchools == true, SetValue[showSchools12, true], SetValue[showSchools12, false])
+If(showSchools12 == true, SetValue[S1, 1], SetValue[S2, 0]
+If(addMarkets == true, SetValue[showMarkets12, true], SetValue[showMarkets12, false])
+If(showMarkets12 == true, SetValue[M1, 1], SetValue[M2, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds12, true], SetValue[showPlaygrounds12, false])
+If(showPlaygrounds12 == true, SetValue[P1, 1], SetValue[P2, 0]
+If(addRestaurants == true, SetValue[showRestaurants12, true], SetValue[showRestaurants12, false])
+If(showRestaurants12 == true, SetValue[R1, 1], SetValue[R2, 0]
+If(addChoice == true, SetValue[showChoice12, true], SetValue[showChoice12, false])
+If(showChoice12 == true, SetValue[C1, 1], SetValue[C2, 0]
+
+If(addAppartments == true, SetValue[showAppartments13, true], SetValue[showAppartments13, false])
+If(showAppartments13 == true, SetValue[A1, 1], SetValue[A3, 0]
+If(addHospitals == true, SetValue[showHospitals13, true], SetValue[showHospitals13, false])
+If(showHospitals13 == true, SetValue[H1, 1], SetValue[H3, 0]
+If(addSchools == true, SetValue[showSchools13, true], SetValue[showSchools13, false])
+If(showSchools13 == true, SetValue[S1, 1], SetValue[S3, 0]
+If(addMarkets == true, SetValue[showMarkets13, true], SetValue[showMarkets13, false])
+If(showMarkets13 == true, SetValue[M1, 1], SetValue[M3, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds13, true], SetValue[showPlaygrounds13, false])
+If(showPlaygrounds13 == true, SetValue[P1, 1], SetValue[P3, 0]
+If(addRestaurants == true, SetValue[showRestaurants13, true], SetValue[showRestaurants13, false])
+If(showRestaurants13 == true, SetValue[R1, 1], SetValue[R3, 0]
+If(addChoice == true, SetValue[showChoice13, true], SetValue[showChoice13, false])
+If(showChoice13 == true, SetValue[C1, 1], SetValue[C3, 0]
+
+If(addAppartments == true, SetValue[showAppartments14, true], SetValue[showAppartments14, false])
+If(showAppartments14 == true, SetValue[A1, 1], SetValue[A4, 0]
+If(addHospitals == true, SetValue[showHospitals14, true], SetValue[showHospitals14, false])
+If(showHospitals14 == true, SetValue[H1, 1], SetValue[H4, 0]
+If(addSchools == true, SetValue[showSchools14, true], SetValue[showSchools14, false])
+If(showSchools14 == true, SetValue[S1, 1], SetValue[S4, 0]
+If(addMarkets == true, SetValue[showMarkets14, true], SetValue[showMarkets14, false])
+If(showMarkets14 == true, SetValue[M1, 1], SetValue[M4, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds14, true], SetValue[showPlaygrounds14, false])
+If(showPlaygrounds14 == true, SetValue[P1, 1], SetValue[P4, 0]
+If(addRestaurants == true, SetValue[showRestaurants14, true], SetValue[showRestaurants14, false])
+If(showRestaurants14 == true, SetValue[R1, 1], SetValue[R4, 0]
+If(addChoice == true, SetValue[showChoice14, true], SetValue[showChoice14, false])
+If(showChoice14 == true, SetValue[C1, 1], SetValue[C4, 0]
+
+If(addAppartments == true, SetValue[showAppartments15, true], SetValue[showAppartments15, false])
+If(showAppartments15 == true, SetValue[A1, 1], SetValue[A5, 0]
+If(addHospitals == true, SetValue[showHospitals15, true], SetValue[showHospitals15, false])
+If(showHospitals15 == true, SetValue[H1, 1], SetValue[H5, 0]
+If(addSchools == true, SetValue[showSchools15, true], SetValue[showSchools15, false])
+If(showSchools15 == true, SetValue[S1, 1], SetValue[S5, 0]
+If(addMarkets == true, SetValue[showMarkets15, true], SetValue[showMarkets15, false])
+If(showMarkets15 == true, SetValue[M1, 1], SetValue[M5, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds15, true], SetValue[showPlaygrounds15, false])
+If(showPlaygrounds15 == true, SetValue[P1, 1], SetValue[P5, 0]
+If(addRestaurants == true, SetValue[showRestaurants15, true], SetValue[showRestaurants15, false])
+If(showRestaurants15 == true, SetValue[R1, 1], SetValue[R5, 0]
+If(addChoice == true, SetValue[showChoice15, true], SetValue[showChoice15, false])
+If(showChoice15 == true, SetValue[C1, 1], SetValue[C5, 0]
+
+If(addAppartments == true, SetValue[showAppartments16, true], SetValue[showAppartments16, false])
+If(showAppartments16 == true, SetValue[A1, 1], SetValue[A6, 0]
+If(addHospitals == true, SetValue[showHospitals16, true], SetValue[showHospitals16, false])
+If(showHospitals16 == true, SetValue[H1, 1], SetValue[H6, 0]
+If(addSchools == true, SetValue[showSchools16, true], SetValue[showSchools16, false])
+If(showSchools16 == true, SetValue[S1, 1], SetValue[S6, 0]
+If(addMarkets == true, SetValue[showMarkets16, true], SetValue[showMarkets16, false])
+If(showMarkets16 == true, SetValue[M1, 1], SetValue[M6, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds16, true], SetValue[showPlaygrounds16, false])
+If(showPlaygrounds16 == true, SetValue[P1, 1], SetValue[P6, 0]
+If(addRestaurants == true, SetValue[showRestaurants16, true], SetValue[showRestaurants16, false])
+If(showRestaurants16 == true, SetValue[R1, 1], SetValue[R6, 0]
+If(addChoice == true, SetValue[showChoice16, true], SetValue[showChoice16, false])
+If(showChoice16 == true, SetValue[C1, 1], SetValue[C6, 0]
+
+If(addAppartments == true, SetValue[showAppartments17, true], SetValue[showAppartments17, false])
+If(showAppartments17 == true, SetValue[A1, 1], SetValue[A7, 0]
+If(addHospitals == true, SetValue[showHospitals17, true], SetValue[showHospitals17, false])
+If(showHospitals17 == true, SetValue[H1, 1], SetValue[H7, 0]
+If(addSchools == true, SetValue[showSchools17, true], SetValue[showSchools17, false])
+If(showSchools17 == true, SetValue[S1, 1], SetValue[S7, 0]
+If(addMarkets == true, SetValue[showMarkets17, true], SetValue[showMarkets17, false])
+If(showMarkets17 == true, SetValue[M1, 1], SetValue[M7, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds17, true], SetValue[showPlaygrounds17, false])
+If(showPlaygrounds17 == true, SetValue[P1, 1], SetValue[P7, 0]
+If(addRestaurants == true, SetValue[showRestaurants17, true], SetValue[showRestaurants17, false])
+If(showRestaurants17 == true, SetValue[R1, 1], SetValue[R7, 0]
+If(addChoice == true, SetValue[showChoice17, true], SetValue[showChoice17, false])
+If(showChoice17 == true, SetValue[C1, 1], SetValue[C7, 0]
+
+If(addAppartments == true, SetValue[showAppartments21, true], SetValue[showAppartments21, false])
+If(showAppartments21 == true, SetValue[A2, 1], SetValue[A1, 0]
+If(addHospitals == true, SetValue[showHospitals21, true], SetValue[showHospitals21, false])
+If(showHospitals21 == true, SetValue[H2, 1], SetValue[H1, 0]
+If(addSchools == true, SetValue[showSchools21, true], SetValue[showSchools21, false])
+If(showSchools21 == true, SetValue[S2, 1], SetValue[S1, 0]
+If(addMarkets == true, SetValue[showMarkets21, true], SetValue[showMarkets21, false])
+If(showMarkets21 == true, SetValue[M2, 1], SetValue[M1, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds21, true], SetValue[showPlaygrounds21, false])
+If(showPlaygrounds21 == true, SetValue[P2, 1], SetValue[P1, 0]
+If(addRestaurants == true, SetValue[showRestaurants21, true], SetValue[showRestaurants21, false])
+If(showRestaurants21 == true, SetValue[R2, 1], SetValue[R1, 0]
+If(addChoice == true, SetValue[showChoice21, true], SetValue[showChoice21, false])
+If(showChoice21 == true, SetValue[C2, 1], SetValue[C1, 0]
+
+If(addAppartments == true, SetValue[showAppartments22, true], SetValue[showAppartments22, false])
+If(showAppartments22 == true, SetValue[A2, 1], SetValue[A2, 0]
+If(addHospitals == true, SetValue[showHospitals22, true], SetValue[showHospitals22, false])
+If(showHospitals22 == true, SetValue[H2, 1], SetValue[H2, 0]
+If(addSchools == true, SetValue[showSchools22, true], SetValue[showSchools22, false])
+If(showSchools22 == true, SetValue[S2, 1], SetValue[S2, 0]
+If(addMarkets == true, SetValue[showMarkets22, true], SetValue[showMarkets22, false])
+If(showMarkets22 == true, SetValue[M2, 1], SetValue[M2, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds22, true], SetValue[showPlaygrounds22, false])
+If(showPlaygrounds22 == true, SetValue[P2, 1], SetValue[P2, 0]
+If(addRestaurants == true, SetValue[showRestaurants22, true], SetValue[showRestaurants22, false])
+If(showRestaurants22 == true, SetValue[R2, 1], SetValue[R2, 0]
+If(addChoice == true, SetValue[showChoice22, true], SetValue[showChoice22, false])
+If(showChoice22 == true, SetValue[C2, 1], SetValue[C2, 0]
+
+If(addAppartments == true, SetValue[showAppartments23, true], SetValue[showAppartments23, false])
+If(showAppartments23 == true, SetValue[A2, 1], SetValue[A3, 0]
+If(addHospitals == true, SetValue[showHospitals23, true], SetValue[showHospitals23, false])
+If(showHospitals23 == true, SetValue[H2, 1], SetValue[H3, 0]
+If(addSchools == true, SetValue[showSchools23, true], SetValue[showSchools23, false])
+If(showSchools23 == true, SetValue[S2, 1], SetValue[S3, 0]
+If(addMarkets == true, SetValue[showMarkets23, true], SetValue[showMarkets23, false])
+If(showMarkets23 == true, SetValue[M2, 1], SetValue[M3, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds23, true], SetValue[showPlaygrounds23, false])
+If(showPlaygrounds23 == true, SetValue[P2, 1], SetValue[P3, 0]
+If(addRestaurants == true, SetValue[showRestaurants23, true], SetValue[showRestaurants23, false])
+If(showRestaurants23 == true, SetValue[R2, 1], SetValue[R3, 0]
+If(addChoice == true, SetValue[showChoice23, true], SetValue[showChoice23, false])
+If(showChoice23 == true, SetValue[C2, 1], SetValue[C3, 0]
+
+If(addAppartments == true, SetValue[showAppartments24, true], SetValue[showAppartments24, false])
+If(showAppartments24 == true, SetValue[A2, 1], SetValue[A4, 0]
+If(addHospitals == true, SetValue[showHospitals24, true], SetValue[showHospitals24, false])
+If(showHospitals24 == true, SetValue[H2, 1], SetValue[H4, 0]
+If(addSchools == true, SetValue[showSchools24, true], SetValue[showSchools24, false])
+If(showSchools24 == true, SetValue[S2, 1], SetValue[S4, 0]
+If(addMarkets == true, SetValue[showMarkets24, true], SetValue[showMarkets24, false])
+If(showMarkets24 == true, SetValue[M2, 1], SetValue[M4, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds24, true], SetValue[showPlaygrounds24, false])
+If(showPlaygrounds24 == true, SetValue[P2, 1], SetValue[P4, 0]
+If(addRestaurants == true, SetValue[showRestaurants24, true], SetValue[showRestaurants24, false])
+If(showRestaurants24 == true, SetValue[R2, 1], SetValue[R4, 0]
+If(addChoice == true, SetValue[showChoice24, true], SetValue[showChoice24, false])
+If(showChoice24 == true, SetValue[C2, 1], SetValue[C4, 0]
+
+If(addAppartments == true, SetValue[showAppartments25, true], SetValue[showAppartments25, false])
+If(showAppartments25 == true, SetValue[A2, 1], SetValue[A5, 0]
+If(addHospitals == true, SetValue[showHospitals25, true], SetValue[showHospitals25, false])
+If(showHospitals25 == true, SetValue[H2, 1], SetValue[H5, 0]
+If(addSchools == true, SetValue[showSchools25, true], SetValue[showSchools25, false])
+If(showSchools25 == true, SetValue[S2, 1], SetValue[S5, 0]
+If(addMarkets == true, SetValue[showMarkets25, true], SetValue[showMarkets25, false])
+If(showMarkets25 == true, SetValue[M2, 1], SetValue[M5, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds25, true], SetValue[showPlaygrounds25, false])
+If(showPlaygrounds25 == true, SetValue[P2, 1], SetValue[P5, 0]
+If(addRestaurants == true, SetValue[showRestaurants25, true], SetValue[showRestaurants25, false])
+If(showRestaurants25 == true, SetValue[R2, 1], SetValue[R5, 0]
+If(addChoice == true, SetValue[showChoice25, true], SetValue[showChoice25, false])
+If(showChoice25 == true, SetValue[C2, 1], SetValue[C5, 0]
+
+If(addAppartments == true, SetValue[showAppartments26, true], SetValue[showAppartments26, false])
+If(showAppartments26 == true, SetValue[A2, 1], SetValue[A6, 0]
+If(addHospitals == true, SetValue[showHospitals26, true], SetValue[showHospitals26, false])
+If(showHospitals26 == true, SetValue[H2, 1], SetValue[H6, 0]
+If(addSchools == true, SetValue[showSchools26, true], SetValue[showSchools26, false])
+If(showSchools26 == true, SetValue[S2, 1], SetValue[S6, 0]
+If(addMarkets == true, SetValue[showMarkets26, true], SetValue[showMarkets26, false])
+If(showMarkets26 == true, SetValue[M2, 1], SetValue[M6, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds26, true], SetValue[showPlaygrounds26, false])
+If(showPlaygrounds26 == true, SetValue[P2, 1], SetValue[P6, 0]
+If(addRestaurants == true, SetValue[showRestaurants26, true], SetValue[showRestaurants26, false])
+If(showRestaurants26 == true, SetValue[R2, 1], SetValue[R6, 0]
+If(addChoice == true, SetValue[showChoice26, true], SetValue[showChoice26, false])
+If(showChoice26 == true, SetValue[C2, 1], SetValue[C6, 0]
+
+If(addAppartments == true, SetValue[showAppartments27, true], SetValue[showAppartments27, false])
+If(showAppartments27 == true, SetValue[A2, 1], SetValue[A7, 0]
+If(addHospitals == true, SetValue[showHospitals27, true], SetValue[showHospitals27, false])
+If(showHospitals27 == true, SetValue[H2, 1], SetValue[H7, 0]
+If(addSchools == true, SetValue[showSchools27, true], SetValue[showSchools27, false])
+If(showSchools27 == true, SetValue[S2, 1], SetValue[S7, 0]
+If(addMarkets == true, SetValue[showMarkets27, true], SetValue[showMarkets27, false])
+If(showMarkets27 == true, SetValue[M2, 1], SetValue[M7, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds27, true], SetValue[showPlaygrounds27, false])
+If(showPlaygrounds27 == true, SetValue[P2, 1], SetValue[P7, 0]
+If(addRestaurants == true, SetValue[showRestaurants27, true], SetValue[showRestaurants27, false])
+If(showRestaurants27 == true, SetValue[R2, 1], SetValue[R7, 0]
+If(addChoice == true, SetValue[showChoice27, true], SetValue[showChoice27, false])
+If(showChoice27 == true, SetValue[C2, 1], SetValue[C7, 0]
+
+If(addAppartments == true, SetValue[showAppartments31, true], SetValue[showAppartments31, false])
+If(showAppartments31 == true, SetValue[A3, 1], SetValue[A1, 0]
+If(addHospitals == true, SetValue[showHospitals31, true], SetValue[showHospitals31, false])
+If(showHospitals31 == true, SetValue[H3, 1], SetValue[H1, 0]
+If(addSchools == true, SetValue[showSchools31, true], SetValue[showSchools31, false])
+If(showSchools31 == true, SetValue[S3, 1], SetValue[S1, 0]
+If(addMarkets == true, SetValue[showMarkets31, true], SetValue[showMarkets31, false])
+If(showMarkets31 == true, SetValue[M3, 1], SetValue[M1, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds31, true], SetValue[showPlaygrounds31, false])
+If(showPlaygrounds31 == true, SetValue[P3, 1], SetValue[P1, 0]
+If(addRestaurants == true, SetValue[showRestaurants31, true], SetValue[showRestaurants31, false])
+If(showRestaurants31 == true, SetValue[R3, 1], SetValue[R1, 0]
+If(addChoice == true, SetValue[showChoice31, true], SetValue[showChoice31, false])
+If(showChoice31 == true, SetValue[C3, 1], SetValue[C1, 0]
+
+If(addAppartments == true, SetValue[showAppartments32, true], SetValue[showAppartments32, false])
+If(showAppartments32 == true, SetValue[A3, 1], SetValue[A2, 0]
+If(addHospitals == true, SetValue[showHospitals32, true], SetValue[showHospitals32, false])
+If(showHospitals32 == true, SetValue[H3, 1], SetValue[H2, 0]
+If(addSchools == true, SetValue[showSchools32, true], SetValue[showSchools32, false])
+If(showSchools32 == true, SetValue[S3, 1], SetValue[S2, 0]
+If(addMarkets == true, SetValue[showMarkets32, true], SetValue[showMarkets32, false])
+If(showMarkets32 == true, SetValue[M3, 1], SetValue[M2, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds32, true], SetValue[showPlaygrounds32, false])
+If(showPlaygrounds32 == true, SetValue[P3, 1], SetValue[P2, 0]
+If(addRestaurants == true, SetValue[showRestaurants32, true], SetValue[showRestaurants32, false])
+If(showRestaurants32 == true, SetValue[R3, 1], SetValue[R2, 0]
+If(addChoice == true, SetValue[showChoice32, true], SetValue[showChoice32, false])
+If(showChoice32 == true, SetValue[C3, 1], SetValue[C2, 0]
+
+If(addAppartments == true, SetValue[showAppartments33, true], SetValue[showAppartments33, false])
+If(showAppartments33 == true, SetValue[A3, 1], SetValue[A3, 0]
+If(addHospitals == true, SetValue[showHospitals33, true], SetValue[showHospitals33, false])
+If(showHospitals33 == true, SetValue[H3, 1], SetValue[H3, 0]
+If(addSchools == true, SetValue[showSchools33, true], SetValue[showSchools33, false])
+If(showSchools33 == true, SetValue[S3, 1], SetValue[S3, 0]
+If(addMarkets == true, SetValue[showMarkets33, true], SetValue[showMarkets33, false])
+If(showMarkets33 == true, SetValue[M3, 1], SetValue[M3, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds33, true], SetValue[showPlaygrounds33, false])
+If(showPlaygrounds33 == true, SetValue[P3, 1], SetValue[P3, 0]
+If(addRestaurants == true, SetValue[showRestaurants33, true], SetValue[showRestaurants33, false])
+If(showRestaurants33 == true, SetValue[R3, 1], SetValue[R3, 0]
+If(addChoice == true, SetValue[showChoice33, true], SetValue[showChoice33, false])
+If(showChoice33 == true, SetValue[C3, 1], SetValue[C3, 0]
+
+If(addAppartments == true, SetValue[showAppartments34, true], SetValue[showAppartments34, false])
+If(showAppartments34 == true, SetValue[A3, 1], SetValue[A4, 0]
+If(addHospitals == true, SetValue[showHospitals34, true], SetValue[showHospitals34, false])
+If(showHospitals34 == true, SetValue[H3, 1], SetValue[H4, 0]
+If(addSchools == true, SetValue[showSchools34, true], SetValue[showSchools34, false])
+If(showSchools34 == true, SetValue[S3, 1], SetValue[S4, 0]
+If(addMarkets == true, SetValue[showMarkets34, true], SetValue[showMarkets34, false])
+If(showMarkets34 == true, SetValue[M3, 1], SetValue[M4, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds34, true], SetValue[showPlaygrounds34, false])
+If(showPlaygrounds34 == true, SetValue[P3, 1], SetValue[P4, 0]
+If(addRestaurants == true, SetValue[showRestaurants34, true], SetValue[showRestaurants34, false])
+If(showRestaurants34 == true, SetValue[R3, 1], SetValue[R4, 0]
+If(addChoice == true, SetValue[showChoice34, true], SetValue[showChoice34, false])
+If(showChoice34 == true, SetValue[C3, 1], SetValue[C4, 0]
+
+If(addAppartments == true, SetValue[showAppartments35, true], SetValue[showAppartments35, false])
+If(showAppartments35 == true, SetValue[A3, 1], SetValue[A5, 0]
+If(addHospitals == true, SetValue[showHospitals35, true], SetValue[showHospitals35, false])
+If(showHospitals35 == true, SetValue[H3, 1], SetValue[H5, 0]
+If(addSchools == true, SetValue[showSchools35, true], SetValue[showSchools35, false])
+If(showSchools35 == true, SetValue[S3, 1], SetValue[S5, 0]
+If(addMarkets == true, SetValue[showMarkets35, true], SetValue[showMarkets35, false])
+If(showMarkets35 == true, SetValue[M3, 1], SetValue[M5, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds35, true], SetValue[showPlaygrounds35, false])
+If(showPlaygrounds35 == true, SetValue[P3, 1], SetValue[P5, 0]
+If(addRestaurants == true, SetValue[showRestaurants35, true], SetValue[showRestaurants35, false])
+If(showRestaurants35 == true, SetValue[R3, 1], SetValue[R5, 0]
+If(addChoice == true, SetValue[showChoice35, true], SetValue[showChoice35, false])
+If(showChoice35 == true, SetValue[C3, 1], SetValue[C5, 0]
+
+If(addAppartments == true, SetValue[showAppartments36, true], SetValue[showAppartments36, false])
+If(showAppartments36 == true, SetValue[A3, 1], SetValue[A6, 0]
+If(addHospitals == true, SetValue[showHospitals36, true], SetValue[showHospitals36, false])
+If(showHospitals36 == true, SetValue[H3, 1], SetValue[H6, 0]
+If(addSchools == true, SetValue[showSchools36, true], SetValue[showSchools36, false])
+If(showSchools36 == true, SetValue[S3, 1], SetValue[S6, 0]
+If(addMarkets == true, SetValue[showMarkets36, true], SetValue[showMarkets36, false])
+If(showMarkets36 == true, SetValue[M3, 1], SetValue[M6, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds36, true], SetValue[showPlaygrounds36, false])
+If(showPlaygrounds36 == true, SetValue[P3, 1], SetValue[P6, 0]
+If(addRestaurants == true, SetValue[showRestaurants36, true], SetValue[showRestaurants36, false])
+If(showRestaurants36 == true, SetValue[R3, 1], SetValue[R6, 0]
+If(addChoice == true, SetValue[showChoice36, true], SetValue[showChoice36, false])
+If(showChoice36 == true, SetValue[C3, 1], SetValue[C6, 0]
+
+If(addAppartments == true, SetValue[showAppartments37, true], SetValue[showAppartments37, false])
+If(showAppartments37 == true, SetValue[A3, 1], SetValue[A7, 0]
+If(addHospitals == true, SetValue[showHospitals37, true], SetValue[showHospitals37, false])
+If(showHospitals37 == true, SetValue[H3, 1], SetValue[H7, 0]
+If(addSchools == true, SetValue[showSchools37, true], SetValue[showSchools37, false])
+If(showSchools37 == true, SetValue[S3, 1], SetValue[S7, 0]
+If(addMarkets == true, SetValue[showMarkets37, true], SetValue[showMarkets37, false])
+If(showMarkets37 == true, SetValue[M3, 1], SetValue[M7, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds37, true], SetValue[showPlaygrounds37, false])
+If(showPlaygrounds37 == true, SetValue[P3, 1], SetValue[P7, 0]
+If(addRestaurants == true, SetValue[showRestaurants37, true], SetValue[showRestaurants37, false])
+If(showRestaurants37 == true, SetValue[R3, 1], SetValue[R7, 0]
+If(addChoice == true, SetValue[showChoice37, true], SetValue[showChoice37, false])
+If(showChoice37 == true, SetValue[C3, 1], SetValue[C7, 0]
+
+If(addAppartments == true, SetValue[showAppartments41, true], SetValue[showAppartments41, false])
+If(showAppartments41 == true, SetValue[A4, 1], SetValue[A1, 0]
+If(addHospitals == true, SetValue[showHospitals41, true], SetValue[showHospitals41, false])
+If(showHospitals41 == true, SetValue[H4, 1], SetValue[H1, 0]
+If(addSchools == true, SetValue[showSchools41, true], SetValue[showSchools41, false])
+If(showSchools41 == true, SetValue[S4, 1], SetValue[S1, 0]
+If(addMarkets == true, SetValue[showMarkets41, true], SetValue[showMarkets41, false])
+If(showMarkets41 == true, SetValue[M4, 1], SetValue[M1, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds41, true], SetValue[showPlaygrounds41, false])
+If(showPlaygrounds41 == true, SetValue[P4, 1], SetValue[P1, 0]
+If(addRestaurants == true, SetValue[showRestaurants41, true], SetValue[showRestaurants41, false])
+If(showRestaurants41 == true, SetValue[R4, 1], SetValue[R1, 0]
+If(addChoice == true, SetValue[showChoice41, true], SetValue[showChoice41, false])
+If(showChoice41 == true, SetValue[C4, 1], SetValue[C1, 0]
+
+If(addAppartments == true, SetValue[showAppartments42, true], SetValue[showAppartments42, false])
+If(showAppartments42 == true, SetValue[A4, 1], SetValue[A2, 0]
+If(addHospitals == true, SetValue[showHospitals42, true], SetValue[showHospitals42, false])
+If(showHospitals42 == true, SetValue[H4, 1], SetValue[H2, 0]
+If(addSchools == true, SetValue[showSchools42, true], SetValue[showSchools42, false])
+If(showSchools42 == true, SetValue[S4, 1], SetValue[S2, 0]
+If(addMarkets == true, SetValue[showMarkets42, true], SetValue[showMarkets42, false])
+If(showMarkets42 == true, SetValue[M4, 1], SetValue[M2, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds42, true], SetValue[showPlaygrounds42, false])
+If(showPlaygrounds42 == true, SetValue[P4, 1], SetValue[P2, 0]
+If(addRestaurants == true, SetValue[showRestaurants42, true], SetValue[showRestaurants42, false])
+If(showRestaurants42 == true, SetValue[R4, 1], SetValue[R2, 0]
+If(addChoice == true, SetValue[showChoice42, true], SetValue[showChoice42, false])
+If(showChoice42 == true, SetValue[C4, 1], SetValue[C2, 0]
+
+If(addAppartments == true, SetValue[showAppartments43, true], SetValue[showAppartments43, false])
+If(showAppartments43 == true, SetValue[A4, 1], SetValue[A3, 0]
+If(addHospitals == true, SetValue[showHospitals43, true], SetValue[showHospitals43, false])
+If(showHospitals43 == true, SetValue[H4, 1], SetValue[H3, 0]
+If(addSchools == true, SetValue[showSchools43, true], SetValue[showSchools43, false])
+If(showSchools43 == true, SetValue[S4, 1], SetValue[S3, 0]
+If(addMarkets == true, SetValue[showMarkets43, true], SetValue[showMarkets43, false])
+If(showMarkets43 == true, SetValue[M4, 1], SetValue[M3, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds43, true], SetValue[showPlaygrounds43, false])
+If(showPlaygrounds43 == true, SetValue[P4, 1], SetValue[P3, 0]
+If(addRestaurants == true, SetValue[showRestaurants43, true], SetValue[showRestaurants43, false])
+If(showRestaurants43 == true, SetValue[R4, 1], SetValue[R3, 0]
+If(addChoice == true, SetValue[showChoice43, true], SetValue[showChoice43, false])
+If(showChoice43 == true, SetValue[C4, 1], SetValue[C3, 0]
+
+If(addAppartments == true, SetValue[showAppartments44, true], SetValue[showAppartments44, false])
+If(showAppartments44 == true, SetValue[A4, 1], SetValue[A4, 0]
+If(addHospitals == true, SetValue[showHospitals44, true], SetValue[showHospitals44, false])
+If(showHospitals44 == true, SetValue[H4, 1], SetValue[H4, 0]
+If(addSchools == true, SetValue[showSchools44, true], SetValue[showSchools44, false])
+If(showSchools44 == true, SetValue[S4, 1], SetValue[S4, 0]
+If(addMarkets == true, SetValue[showMarkets44, true], SetValue[showMarkets44, false])
+If(showMarkets44 == true, SetValue[M4, 1], SetValue[M4, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds44, true], SetValue[showPlaygrounds44, false])
+If(showPlaygrounds44 == true, SetValue[P4, 1], SetValue[P4, 0]
+If(addRestaurants == true, SetValue[showRestaurants44, true], SetValue[showRestaurants44, false])
+If(showRestaurants44 == true, SetValue[R4, 1], SetValue[R4, 0]
+If(addChoice == true, SetValue[showChoice44, true], SetValue[showChoice44, false])
+If(showChoice44 == true, SetValue[C4, 1], SetValue[C4, 0]
+
+If(addAppartments == true, SetValue[showAppartments45, true], SetValue[showAppartments45, false])
+If(showAppartments45 == true, SetValue[A4, 1], SetValue[A5, 0]
+If(addHospitals == true, SetValue[showHospitals45, true], SetValue[showHospitals45, false])
+If(showHospitals45 == true, SetValue[H4, 1], SetValue[H5, 0]
+If(addSchools == true, SetValue[showSchools45, true], SetValue[showSchools45, false])
+If(showSchools45 == true, SetValue[S4, 1], SetValue[S5, 0]
+If(addMarkets == true, SetValue[showMarkets45, true], SetValue[showMarkets45, false])
+If(showMarkets45 == true, SetValue[M4, 1], SetValue[M5, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds45, true], SetValue[showPlaygrounds45, false])
+If(showPlaygrounds45 == true, SetValue[P4, 1], SetValue[P5, 0]
+If(addRestaurants == true, SetValue[showRestaurants45, true], SetValue[showRestaurants45, false])
+If(showRestaurants45 == true, SetValue[R4, 1], SetValue[R5, 0]
+If(addChoice == true, SetValue[showChoice45, true], SetValue[showChoice45, false])
+If(showChoice45 == true, SetValue[C4, 1], SetValue[C5, 0]
+
+If(addAppartments == true, SetValue[showAppartments46, true], SetValue[showAppartments46, false])
+If(showAppartments46 == true, SetValue[A4, 1], SetValue[A6, 0]
+If(addHospitals == true, SetValue[showHospitals46, true], SetValue[showHospitals46, false])
+If(showHospitals46 == true, SetValue[H4, 1], SetValue[H6, 0]
+If(addSchools == true, SetValue[showSchools46, true], SetValue[showSchools46, false])
+If(showSchools46 == true, SetValue[S4, 1], SetValue[S6, 0]
+If(addMarkets == true, SetValue[showMarkets46, true], SetValue[showMarkets46, false])
+If(showMarkets46 == true, SetValue[M4, 1], SetValue[M6, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds46, true], SetValue[showPlaygrounds46, false])
+If(showPlaygrounds46 == true, SetValue[P4, 1], SetValue[P6, 0]
+If(addRestaurants == true, SetValue[showRestaurants46, true], SetValue[showRestaurants46, false])
+If(showRestaurants46 == true, SetValue[R4, 1], SetValue[R6, 0]
+If(addChoice == true, SetValue[showChoice46, true], SetValue[showChoice46, false])
+If(showChoice46 == true, SetValue[C4, 1], SetValue[C6, 0]
+
+If(addAppartments == true, SetValue[showAppartments47, true], SetValue[showAppartments47, false])
+If(showAppartments47 == true, SetValue[A4, 1], SetValue[A7, 0]
+If(addHospitals == true, SetValue[showHospitals47, true], SetValue[showHospitals47, false])
+If(showHospitals47 == true, SetValue[H4, 1], SetValue[H7, 0]
+If(addSchools == true, SetValue[showSchools47, true], SetValue[showSchools47, false])
+If(showSchools47 == true, SetValue[S4, 1], SetValue[S7, 0]
+If(addMarkets == true, SetValue[showMarkets47, true], SetValue[showMarkets47, false])
+If(showMarkets47 == true, SetValue[M4, 1], SetValue[M7, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds47, true], SetValue[showPlaygrounds47, false])
+If(showPlaygrounds47 == true, SetValue[P4, 1], SetValue[P7, 0]
+If(addRestaurants == true, SetValue[showRestaurants47, true], SetValue[showRestaurants47, false])
+If(showRestaurants47 == true, SetValue[R4, 1], SetValue[R7, 0]
+If(addChoice == true, SetValue[showChoice47, true], SetValue[showChoice47, false])
+If(showChoice47 == true, SetValue[C4, 1], SetValue[C7, 0]
+
+If(addAppartments == true, SetValue[showAppartments51, true], SetValue[showAppartments51, false])
+If(showAppartments51 == true, SetValue[A5, 1], SetValue[A1, 0]
+If(addHospitals == true, SetValue[showHospitals51, true], SetValue[showHospitals51, false])
+If(showHospitals51 == true, SetValue[H5, 1], SetValue[H1, 0]
+If(addSchools == true, SetValue[showSchools51, true], SetValue[showSchools51, false])
+If(showSchools51 == true, SetValue[S5, 1], SetValue[S1, 0]
+If(addMarkets == true, SetValue[showMarkets51, true], SetValue[showMarkets51, false])
+If(showMarkets51 == true, SetValue[M5, 1], SetValue[M1, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds51, true], SetValue[showPlaygrounds51, false])
+If(showPlaygrounds51 == true, SetValue[P5, 1], SetValue[P1, 0]
+If(addRestaurants == true, SetValue[showRestaurants51, true], SetValue[showRestaurants51, false])
+If(showRestaurants51 == true, SetValue[R5, 1], SetValue[R1, 0]
+If(addChoice == true, SetValue[showChoice51, true], SetValue[showChoice51, false])
+If(showChoice51 == true, SetValue[C5, 1], SetValue[C1, 0]
+
+If(addAppartments == true, SetValue[showAppartments52, true], SetValue[showAppartments52, false])
+If(showAppartments52 == true, SetValue[A5, 1], SetValue[A2, 0]
+If(addHospitals == true, SetValue[showHospitals52, true], SetValue[showHospitals52, false])
+If(showHospitals52 == true, SetValue[H5, 1], SetValue[H2, 0]
+If(addSchools == true, SetValue[showSchools52, true], SetValue[showSchools52, false])
+If(showSchools52 == true, SetValue[S5, 1], SetValue[S2, 0]
+If(addMarkets == true, SetValue[showMarkets52, true], SetValue[showMarkets52, false])
+If(showMarkets52 == true, SetValue[M5, 1], SetValue[M2, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds52, true], SetValue[showPlaygrounds52, false])
+If(showPlaygrounds52 == true, SetValue[P5, 1], SetValue[P2, 0]
+If(addRestaurants == true, SetValue[showRestaurants52, true], SetValue[showRestaurants52, false])
+If(showRestaurants52 == true, SetValue[R5, 1], SetValue[R2, 0]
+If(addChoice == true, SetValue[showChoice52, true], SetValue[showChoice52, false])
+If(showChoice52 == true, SetValue[C5, 1], SetValue[C2, 0]
+
+If(addAppartments == true, SetValue[showAppartments53, true], SetValue[showAppartments53, false])
+If(showAppartments53 == true, SetValue[A5, 1], SetValue[A3, 0]
+If(addHospitals == true, SetValue[showHospitals53, true], SetValue[showHospitals53, false])
+If(showHospitals53 == true, SetValue[H5, 1], SetValue[H3, 0]
+If(addSchools == true, SetValue[showSchools53, true], SetValue[showSchools53, false])
+If(showSchools53 == true, SetValue[S5, 1], SetValue[S3, 0]
+If(addMarkets == true, SetValue[showMarkets53, true], SetValue[showMarkets53, false])
+If(showMarkets53 == true, SetValue[M5, 1], SetValue[M3, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds53, true], SetValue[showPlaygrounds53, false])
+If(showPlaygrounds53 == true, SetValue[P5, 1], SetValue[P3, 0]
+If(addRestaurants == true, SetValue[showRestaurants53, true], SetValue[showRestaurants53, false])
+If(showRestaurants53 == true, SetValue[R5, 1], SetValue[R3, 0]
+If(addChoice == true, SetValue[showChoice53, true], SetValue[showChoice53, false])
+If(showChoice53 == true, SetValue[C5, 1], SetValue[C3, 0]
+
+If(addAppartments == true, SetValue[showAppartments54, true], SetValue[showAppartments54, false])
+If(showAppartments54 == true, SetValue[A5, 1], SetValue[A4, 0]
+If(addHospitals == true, SetValue[showHospitals54, true], SetValue[showHospitals54, false])
+If(showHospitals54 == true, SetValue[H5, 1], SetValue[H4, 0]
+If(addSchools == true, SetValue[showSchools54, true], SetValue[showSchools54, false])
+If(showSchools54 == true, SetValue[S5, 1], SetValue[S4, 0]
+If(addMarkets == true, SetValue[showMarkets54, true], SetValue[showMarkets54, false])
+If(showMarkets54 == true, SetValue[M5, 1], SetValue[M4, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds54, true], SetValue[showPlaygrounds54, false])
+If(showPlaygrounds54 == true, SetValue[P5, 1], SetValue[P4, 0]
+If(addRestaurants == true, SetValue[showRestaurants54, true], SetValue[showRestaurants54, false])
+If(showRestaurants54 == true, SetValue[R5, 1], SetValue[R4, 0]
+If(addChoice == true, SetValue[showChoice54, true], SetValue[showChoice54, false])
+If(showChoice54 == true, SetValue[C5, 1], SetValue[C4, 0]
+
+If(addAppartments == true, SetValue[showAppartments55, true], SetValue[showAppartments55, false])
+If(showAppartments55 == true, SetValue[A5, 1], SetValue[A5, 0]
+If(addHospitals == true, SetValue[showHospitals55, true], SetValue[showHospitals55, false])
+If(showHospitals55 == true, SetValue[H5, 1], SetValue[H5, 0]
+If(addSchools == true, SetValue[showSchools55, true], SetValue[showSchools55, false])
+If(showSchools55 == true, SetValue[S5, 1], SetValue[S5, 0]
+If(addMarkets == true, SetValue[showMarkets55, true], SetValue[showMarkets55, false])
+If(showMarkets55 == true, SetValue[M5, 1], SetValue[M5, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds55, true], SetValue[showPlaygrounds55, false])
+If(showPlaygrounds55 == true, SetValue[P5, 1], SetValue[P5, 0]
+If(addRestaurants == true, SetValue[showRestaurants55, true], SetValue[showRestaurants55, false])
+If(showRestaurants55 == true, SetValue[R5, 1], SetValue[R5, 0]
+If(addChoice == true, SetValue[showChoice55, true], SetValue[showChoice55, false])
+If(showChoice55 == true, SetValue[C5, 1], SetValue[C5, 0]
+
+If(addAppartments == true, SetValue[showAppartments56, true], SetValue[showAppartments56, false])
+If(showAppartments56 == true, SetValue[A5, 1], SetValue[A6, 0]
+If(addHospitals == true, SetValue[showHospitals56, true], SetValue[showHospitals56, false])
+If(showHospitals56 == true, SetValue[H5, 1], SetValue[H6, 0]
+If(addSchools == true, SetValue[showSchools56, true], SetValue[showSchools56, false])
+If(showSchools56 == true, SetValue[S5, 1], SetValue[S6, 0]
+If(addMarkets == true, SetValue[showMarkets56, true], SetValue[showMarkets56, false])
+If(showMarkets56 == true, SetValue[M5, 1], SetValue[M6, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds56, true], SetValue[showPlaygrounds56, false])
+If(showPlaygrounds56 == true, SetValue[P5, 1], SetValue[P6, 0]
+If(addRestaurants == true, SetValue[showRestaurants56, true], SetValue[showRestaurants56, false])
+If(showRestaurants56 == true, SetValue[R5, 1], SetValue[R6, 0]
+If(addChoice == true, SetValue[showChoice56, true], SetValue[showChoice56, false])
+If(showChoice56 == true, SetValue[C5, 1], SetValue[C6, 0]
+
+If(addAppartments == true, SetValue[showAppartments57, true], SetValue[showAppartments57, false])
+If(showAppartments57 == true, SetValue[A5, 1], SetValue[A7, 0]
+If(addHospitals == true, SetValue[showHospitals57, true], SetValue[showHospitals57, false])
+If(showHospitals57 == true, SetValue[H5, 1], SetValue[H7, 0]
+If(addSchools == true, SetValue[showSchools57, true], SetValue[showSchools57, false])
+If(showSchools57 == true, SetValue[S5, 1], SetValue[S7, 0]
+If(addMarkets == true, SetValue[showMarkets57, true], SetValue[showMarkets57, false])
+If(showMarkets57 == true, SetValue[M5, 1], SetValue[M7, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds57, true], SetValue[showPlaygrounds57, false])
+If(showPlaygrounds57 == true, SetValue[P5, 1], SetValue[P7, 0]
+If(addRestaurants == true, SetValue[showRestaurants57, true], SetValue[showRestaurants57, false])
+If(showRestaurants57 == true, SetValue[R5, 1], SetValue[R7, 0]
+If(addChoice == true, SetValue[showChoice57, true], SetValue[showChoice57, false])
+If(showChoice57 == true, SetValue[C5, 1], SetValue[C7, 0]
+
+If(addAppartments == true, SetValue[showAppartments61, true], SetValue[showAppartments61, false])
+If(showAppartments61 == true, SetValue[A6, 1], SetValue[A1, 0]
+If(addHospitals == true, SetValue[showHospitals61, true], SetValue[showHospitals61, false])
+If(showHospitals61 == true, SetValue[H6, 1], SetValue[H1, 0]
+If(addSchools == true, SetValue[showSchools61, true], SetValue[showSchools61, false])
+If(showSchools61 == true, SetValue[S6, 1], SetValue[S1, 0]
+If(addMarkets == true, SetValue[showMarkets61, true], SetValue[showMarkets61, false])
+If(showMarkets61 == true, SetValue[M6, 1], SetValue[M1, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds61, true], SetValue[showPlaygrounds61, false])
+If(showPlaygrounds61 == true, SetValue[P6, 1], SetValue[P1, 0]
+If(addRestaurants == true, SetValue[showRestaurants61, true], SetValue[showRestaurants61, false])
+If(showRestaurants61 == true, SetValue[R6, 1], SetValue[R1, 0]
+If(addChoice == true, SetValue[showChoice61, true], SetValue[showChoice61, false])
+If(showChoice61 == true, SetValue[C6, 1], SetValue[C1, 0]
+
+If(addAppartments == true, SetValue[showAppartments62, true], SetValue[showAppartments62, false])
+If(showAppartments62 == true, SetValue[A6, 1], SetValue[A2, 0]
+If(addHospitals == true, SetValue[showHospitals62, true], SetValue[showHospitals62, false])
+If(showHospitals62 == true, SetValue[H6, 1], SetValue[H2, 0]
+If(addSchools == true, SetValue[showSchools62, true], SetValue[showSchools62, false])
+If(showSchools62 == true, SetValue[S6, 1], SetValue[S2, 0]
+If(addMarkets == true, SetValue[showMarkets62, true], SetValue[showMarkets62, false])
+If(showMarkets62 == true, SetValue[M6, 1], SetValue[M2, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds62, true], SetValue[showPlaygrounds62, false])
+If(showPlaygrounds62 == true, SetValue[P6, 1], SetValue[P2, 0]
+If(addRestaurants == true, SetValue[showRestaurants62, true], SetValue[showRestaurants62, false])
+If(showRestaurants62 == true, SetValue[R6, 1], SetValue[R2, 0]
+If(addChoice == true, SetValue[showChoice62, true], SetValue[showChoice62, false])
+If(showChoice62 == true, SetValue[C6, 1], SetValue[C2, 0]
+
+If(addAppartments == true, SetValue[showAppartments63, true], SetValue[showAppartments63, false])
+If(showAppartments63 == true, SetValue[A6, 1], SetValue[A3, 0]
+If(addHospitals == true, SetValue[showHospitals63, true], SetValue[showHospitals63, false])
+If(showHospitals63 == true, SetValue[H6, 1], SetValue[H3, 0]
+If(addSchools == true, SetValue[showSchools63, true], SetValue[showSchools63, false])
+If(showSchools63 == true, SetValue[S6, 1], SetValue[S3, 0]
+If(addMarkets == true, SetValue[showMarkets63, true], SetValue[showMarkets63, false])
+If(showMarkets63 == true, SetValue[M6, 1], SetValue[M3, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds63, true], SetValue[showPlaygrounds63, false])
+If(showPlaygrounds63 == true, SetValue[P6, 1], SetValue[P3, 0]
+If(addRestaurants == true, SetValue[showRestaurants63, true], SetValue[showRestaurants63, false])
+If(showRestaurants63 == true, SetValue[R6, 1], SetValue[R3, 0]
+If(addChoice == true, SetValue[showChoice63, true], SetValue[showChoice63, false])
+If(showChoice63 == true, SetValue[C6, 1], SetValue[C3, 0]
+
+If(addAppartments == true, SetValue[showAppartments64, true], SetValue[showAppartments64, false])
+If(showAppartments64 == true, SetValue[A6, 1], SetValue[A4, 0]
+If(addHospitals == true, SetValue[showHospitals64, true], SetValue[showHospitals64, false])
+If(showHospitals64 == true, SetValue[H6, 1], SetValue[H4, 0]
+If(addSchools == true, SetValue[showSchools64, true], SetValue[showSchools64, false])
+If(showSchools64 == true, SetValue[S6, 1], SetValue[S4, 0]
+If(addMarkets == true, SetValue[showMarkets64, true], SetValue[showMarkets64, false])
+If(showMarkets64 == true, SetValue[M6, 1], SetValue[M4, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds64, true], SetValue[showPlaygrounds64, false])
+If(showPlaygrounds64 == true, SetValue[P6, 1], SetValue[P4, 0]
+If(addRestaurants == true, SetValue[showRestaurants64, true], SetValue[showRestaurants64, false])
+If(showRestaurants64 == true, SetValue[R6, 1], SetValue[R4, 0]
+If(addChoice == true, SetValue[showChoice64, true], SetValue[showChoice64, false])
+If(showChoice64 == true, SetValue[C6, 1], SetValue[C4, 0]
+
+If(addAppartments == true, SetValue[showAppartments65, true], SetValue[showAppartments65, false])
+If(showAppartments65 == true, SetValue[A6, 1], SetValue[A5, 0]
+If(addHospitals == true, SetValue[showHospitals65, true], SetValue[showHospitals65, false])
+If(showHospitals65 == true, SetValue[H6, 1], SetValue[H5, 0]
+If(addSchools == true, SetValue[showSchools65, true], SetValue[showSchools65, false])
+If(showSchools65 == true, SetValue[S6, 1], SetValue[S5, 0]
+If(addMarkets == true, SetValue[showMarkets65, true], SetValue[showMarkets65, false])
+If(showMarkets65 == true, SetValue[M6, 1], SetValue[M5, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds65, true], SetValue[showPlaygrounds65, false])
+If(showPlaygrounds65 == true, SetValue[P6, 1], SetValue[P5, 0]
+If(addRestaurants == true, SetValue[showRestaurants65, true], SetValue[showRestaurants65, false])
+If(showRestaurants65 == true, SetValue[R6, 1], SetValue[R5, 0]
+If(addChoice == true, SetValue[showChoice65, true], SetValue[showChoice65, false])
+If(showChoice65 == true, SetValue[C6, 1], SetValue[C5, 0]
+
+If(addAppartments == true, SetValue[showAppartments66, true], SetValue[showAppartments66, false])
+If(showAppartments66 == true, SetValue[A6, 1], SetValue[A6, 0]
+If(addHospitals == true, SetValue[showHospitals66, true], SetValue[showHospitals66, false])
+If(showHospitals66 == true, SetValue[H6, 1], SetValue[H6, 0]
+If(addSchools == true, SetValue[showSchools66, true], SetValue[showSchools66, false])
+If(showSchools66 == true, SetValue[S6, 1], SetValue[S6, 0]
+If(addMarkets == true, SetValue[showMarkets66, true], SetValue[showMarkets66, false])
+If(showMarkets66 == true, SetValue[M6, 1], SetValue[M6, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds66, true], SetValue[showPlaygrounds66, false])
+If(showPlaygrounds66 == true, SetValue[P6, 1], SetValue[P6, 0]
+If(addRestaurants == true, SetValue[showRestaurants66, true], SetValue[showRestaurants66, false])
+If(showRestaurants66 == true, SetValue[R6, 1], SetValue[R6, 0]
+If(addChoice == true, SetValue[showChoice66, true], SetValue[showChoice66, false])
+If(showChoice66 == true, SetValue[C6, 1], SetValue[C6, 0]
+
+If(addAppartments == true, SetValue[showAppartments67, true], SetValue[showAppartments67, false])
+If(showAppartments67 == true, SetValue[A6, 1], SetValue[A7, 0]
+If(addHospitals == true, SetValue[showHospitals67, true], SetValue[showHospitals67, false])
+If(showHospitals67 == true, SetValue[H6, 1], SetValue[H7, 0]
+If(addSchools == true, SetValue[showSchools67, true], SetValue[showSchools67, false])
+If(showSchools67 == true, SetValue[S6, 1], SetValue[S7, 0]
+If(addMarkets == true, SetValue[showMarkets67, true], SetValue[showMarkets67, false])
+If(showMarkets67 == true, SetValue[M6, 1], SetValue[M7, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds67, true], SetValue[showPlaygrounds67, false])
+If(showPlaygrounds67 == true, SetValue[P6, 1], SetValue[P7, 0]
+If(addRestaurants == true, SetValue[showRestaurants67, true], SetValue[showRestaurants67, false])
+If(showRestaurants67 == true, SetValue[R6, 1], SetValue[R7, 0]
+If(addChoice == true, SetValue[showChoice67, true], SetValue[showChoice67, false])
+If(showChoice67 == true, SetValue[C6, 1], SetValue[C7, 0]
+
+If(addAppartments == true, SetValue[showAppartments71, true], SetValue[showAppartments71, false])
+If(showAppartments71 == true, SetValue[A7, 1], SetValue[A1, 0]
+If(addHospitals == true, SetValue[showHospitals71, true], SetValue[showHospitals71, false])
+If(showHospitals71 == true, SetValue[H7, 1], SetValue[H1, 0]
+If(addSchools == true, SetValue[showSchools71, true], SetValue[showSchools71, false])
+If(showSchools71 == true, SetValue[S7, 1], SetValue[S1, 0]
+If(addMarkets == true, SetValue[showMarkets71, true], SetValue[showMarkets71, false])
+If(showMarkets71 == true, SetValue[M7, 1], SetValue[M1, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds71, true], SetValue[showPlaygrounds71, false])
+If(showPlaygrounds71 == true, SetValue[P7, 1], SetValue[P1, 0]
+If(addRestaurants == true, SetValue[showRestaurants71, true], SetValue[showRestaurants71, false])
+If(showRestaurants71 == true, SetValue[R7, 1], SetValue[R1, 0]
+If(addChoice == true, SetValue[showChoice71, true], SetValue[showChoice71, false])
+If(showChoice71 == true, SetValue[C7, 1], SetValue[C1, 0]
+
+If(addAppartments == true, SetValue[showAppartments72, true], SetValue[showAppartments72, false])
+If(showAppartments72 == true, SetValue[A7, 1], SetValue[A2, 0]
+If(addHospitals == true, SetValue[showHospitals72, true], SetValue[showHospitals72, false])
+If(showHospitals72 == true, SetValue[H7, 1], SetValue[H2, 0]
+If(addSchools == true, SetValue[showSchools72, true], SetValue[showSchools72, false])
+If(showSchools72 == true, SetValue[S7, 1], SetValue[S2, 0]
+If(addMarkets == true, SetValue[showMarkets72, true], SetValue[showMarkets72, false])
+If(showMarkets72 == true, SetValue[M7, 1], SetValue[M2, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds72, true], SetValue[showPlaygrounds72, false])
+If(showPlaygrounds72 == true, SetValue[P7, 1], SetValue[P2, 0]
+If(addRestaurants == true, SetValue[showRestaurants72, true], SetValue[showRestaurants72, false])
+If(showRestaurants72 == true, SetValue[R7, 1], SetValue[R2, 0]
+If(addChoice == true, SetValue[showChoice72, true], SetValue[showChoice72, false])
+If(showChoice72 == true, SetValue[C7, 1], SetValue[C2, 0]
+
+If(addAppartments == true, SetValue[showAppartments73, true], SetValue[showAppartments73, false])
+If(showAppartments73 == true, SetValue[A7, 1], SetValue[A3, 0]
+If(addHospitals == true, SetValue[showHospitals73, true], SetValue[showHospitals73, false])
+If(showHospitals73 == true, SetValue[H7, 1], SetValue[H3, 0]
+If(addSchools == true, SetValue[showSchools73, true], SetValue[showSchools73, false])
+If(showSchools73 == true, SetValue[S7, 1], SetValue[S3, 0]
+If(addMarkets == true, SetValue[showMarkets73, true], SetValue[showMarkets73, false])
+If(showMarkets73 == true, SetValue[M7, 1], SetValue[M3, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds73, true], SetValue[showPlaygrounds73, false])
+If(showPlaygrounds73 == true, SetValue[P7, 1], SetValue[P3, 0]
+If(addRestaurants == true, SetValue[showRestaurants73, true], SetValue[showRestaurants73, false])
+If(showRestaurants73 == true, SetValue[R7, 1], SetValue[R3, 0]
+If(addChoice == true, SetValue[showChoice73, true], SetValue[showChoice73, false])
+If(showChoice73 == true, SetValue[C7, 1], SetValue[C3, 0]
+
+If(addAppartments == true, SetValue[showAppartments74, true], SetValue[showAppartments74, false])
+If(showAppartments74 == true, SetValue[A7, 1], SetValue[A4, 0]
+If(addHospitals == true, SetValue[showHospitals74, true], SetValue[showHospitals74, false])
+If(showHospitals74 == true, SetValue[H7, 1], SetValue[H4, 0]
+If(addSchools == true, SetValue[showSchools74, true], SetValue[showSchools74, false])
+If(showSchools74 == true, SetValue[S7, 1], SetValue[S4, 0]
+If(addMarkets == true, SetValue[showMarkets74, true], SetValue[showMarkets74, false])
+If(showMarkets74 == true, SetValue[M7, 1], SetValue[M4, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds74, true], SetValue[showPlaygrounds74, false])
+If(showPlaygrounds74 == true, SetValue[P7, 1], SetValue[P4, 0]
+If(addRestaurants == true, SetValue[showRestaurants74, true], SetValue[showRestaurants74, false])
+If(showRestaurants74 == true, SetValue[R7, 1], SetValue[R4, 0]
+If(addChoice == true, SetValue[showChoice74, true], SetValue[showChoice74, false])
+If(showChoice74 == true, SetValue[C7, 1], SetValue[C4, 0]
+
+If(addAppartments == true, SetValue[showAppartments75, true], SetValue[showAppartments75, false])
+If(showAppartments75 == true, SetValue[A7, 1], SetValue[A5, 0]
+If(addHospitals == true, SetValue[showHospitals75, true], SetValue[showHospitals75, false])
+If(showHospitals75 == true, SetValue[H7, 1], SetValue[H5, 0]
+If(addSchools == true, SetValue[showSchools75, true], SetValue[showSchools75, false])
+If(showSchools75 == true, SetValue[S7, 1], SetValue[S5, 0]
+If(addMarkets == true, SetValue[showMarkets75, true], SetValue[showMarkets75, false])
+If(showMarkets75 == true, SetValue[M7, 1], SetValue[M5, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds75, true], SetValue[showPlaygrounds75, false])
+If(showPlaygrounds75 == true, SetValue[P7, 1], SetValue[P5, 0]
+If(addRestaurants == true, SetValue[showRestaurants75, true], SetValue[showRestaurants75, false])
+If(showRestaurants75 == true, SetValue[R7, 1], SetValue[R5, 0]
+If(addChoice == true, SetValue[showChoice75, true], SetValue[showChoice75, false])
+If(showChoice75 == true, SetValue[C7, 1], SetValue[C5, 0]
+
+If(addAppartments == true, SetValue[showAppartments76, true], SetValue[showAppartments76, false])
+If(showAppartments76 == true, SetValue[A7, 1], SetValue[A6, 0]
+If(addHospitals == true, SetValue[showHospitals76, true], SetValue[showHospitals76, false])
+If(showHospitals76 == true, SetValue[H7, 1], SetValue[H6, 0]
+If(addSchools == true, SetValue[showSchools76, true], SetValue[showSchools76, false])
+If(showSchools76 == true, SetValue[S7, 1], SetValue[S6, 0]
+If(addMarkets == true, SetValue[showMarkets76, true], SetValue[showMarkets76, false])
+If(showMarkets76 == true, SetValue[M7, 1], SetValue[M6, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds76, true], SetValue[showPlaygrounds76, false])
+If(showPlaygrounds76 == true, SetValue[P7, 1], SetValue[P6, 0]
+If(addRestaurants == true, SetValue[showRestaurants76, true], SetValue[showRestaurants76, false])
+If(showRestaurants76 == true, SetValue[R7, 1], SetValue[R6, 0]
+If(addChoice == true, SetValue[showChoice76, true], SetValue[showChoice76, false])
+If(showChoice76 == true, SetValue[C7, 1], SetValue[C6, 0]
+
+If(addAppartments == true, SetValue[showAppartments77, true], SetValue[showAppartments77, false])
+If(showAppartments77 == true, SetValue[A7, 1], SetValue[A7, 0]
+If(addHospitals == true, SetValue[showHospitals77, true], SetValue[showHospitals77, false])
+If(showHospitals77 == true, SetValue[H7, 1], SetValue[H7, 0]
+If(addSchools == true, SetValue[showSchools77, true], SetValue[showSchools77, false])
+If(showSchools77 == true, SetValue[S7, 1], SetValue[S7, 0]
+If(addMarkets == true, SetValue[showMarkets77, true], SetValue[showMarkets77, false])
+If(showMarkets77 == true, SetValue[M7, 1], SetValue[M7, 0]
+If(addPlaygrounds == true, SetValue[showPlaygrounds77, true], SetValue[showPlaygrounds77, false])
+If(showPlaygrounds77 == true, SetValue[P7, 1], SetValue[P7, 0]
+If(addRestaurants == true, SetValue[showRestaurants77, true], SetValue[showRestaurants77, false])
+If(showRestaurants77 == true, SetValue[R7, 1], SetValue[R7, 0]
+If(addChoice == true, SetValue[showChoice77, true], SetValue[showChoice77, false])
+If(showChoice77 == true, SetValue[C7, 1], SetValue[C7, 0]
+
+

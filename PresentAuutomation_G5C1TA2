@@ -1,0 +1,60 @@
+ans = {0, 4, 4, 0, 2}
+
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+enterName = ""
+IBName = InputBox( enterName)
+SetConditionToShowObject( IBName, q == 0)
+ShowLabel( IBName, false )
+
+showName = Text = (IBName)
+
+
+
+a = false
+b = false
+c = false
+d = false
+checkA = If(a ≟ true, 1, ?)
+checkB = If(b ≟ true, 2, ?)
+checkC = If(c ≟ true, 3, ?)
+checkD = If(d ≟ true, 4, ?)
+checkAns = {checkA, checkB, checkC, checkD}
+checkAns1 = RemoveUndefined(checkAns)
+rightAns = {Element(ans, q)}
+eval = checkAns1 == rightAns
+
+
+#Check
+SetValue[check,-1]
+If(eval == true, SetValue[check,1])
+
+#Next
+If(check ==1, SetValue[q,q+1])
+SetValue[a, false]
+SetValue[b, false]
+SetValue[c, false]
+SetValue[d, false]
+SetValue[check,0]
+
+#Back
+SetValue[q,q-1]
+SetValue[a, false]
+SetValue[b, false]
+SetValue[c, false]
+SetValue[d, false]
+SetValue[check,0]
+
+#checkBoxes position
+If(q == 2, Pa1, Pa2)
+If(q == 2, Pb1, Pb2)
+If(q == 2, Pc1, Pc2)
+If(q == 2, Pd1, Pd2)
+
+#checkBoxes
+If(a== true, SetValue[a, false], Setvalue[a, true])
+If(b== true, SetValue[b, false], Setvalue[b, true])
+If(c== true, SetValue[c, false], Setvalue[c, true])
+If(d== true, SetValue[d, false], Setvalue[d, true])
