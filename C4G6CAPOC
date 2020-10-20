@@ -2,7 +2,6 @@
 tempo = Slider( 0, 20, 1, 1, 200, false, true, false, false )
 play_{ignore} = Slider( 0, 16, 1, tempo, 200, false, true, false, false )
 
-
 soundOne1 = false
 soundTwo1 = false
 soundThree1 = false

@@ -1,8 +1,8 @@
-for i in range(5,14):
+for i in range(0,50):
 
-    print("SetCoords(pic{}, x(AAA), y(AAA))".format(i))
-    print("SetConditionToShowObject( pic{}, q = {} && selected = 4)".format(i,i-1))
-    print("SetLayer( pic{}, 0 )".format(i))
-    print("SetFixed( pic{}, true )".format(i))
-    print("Rename( pic{}, \"BgChoiceFour{}\" )\n".format(i, i-1))
+    # print("SetCoords(pic{}, x(AAA), y(AAA))".format(i))
+    print("SetConditionToShowObject( Bg{}, q == {})".format(i,i))
+    # print("SetLayer( pic{}, 0 )".format(i))
+    # print("SetFixed( pic{}, true )".format(i))
+    # print("Rename( pic{}, \"Bg{}\" )\n".format(i, i-1))
 

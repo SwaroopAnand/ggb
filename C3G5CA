@@ -1,247 +1,371 @@
-#code for setting pics for choice one
+q = Slider( 0, 50, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 50, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
 
-SetCoords(pic5, x(AAA), y(AAA))
-SetConditionToShowObject( pic5, q = 4 && selected = 1)
-SetLayer( pic5, 0 )
-SetFixed( pic5, true )
-Rename( pic5, "BgChoiceOne4" )
+ans = {0, 0, 0, 0, 4, 0, 1, 6, 3, 0, 0, 0, 0, 0, 0, 0, 8, 8, 2, 12, 2, 0, 0, 0, 0, 0, 0, 0, 6, 1, 10, 1, 0, 0, 0, 0, 0, 0, 10, 2, 18, 0}
 
-SetCoords(pic6, x(AAA), y(AAA))
-SetConditionToShowObject( pic6, q = 5 && selected = 1)
-SetLayer( pic6, 0 )
-SetFixed( pic6, true )
-Rename( pic6, "BgChoiceOne5" )
+numb = {"  ", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+oper = {"  ", "+", "-", "x", "÷"}
+brac = {"  ","(", ")"}
 
-SetCoords(pic7, x(AAA), y(AAA))
-SetConditionToShowObject( pic7, q = 6 && selected = 1)
-SetLayer( pic7, 0 )
-SetFixed( pic7, true )
-Rename( pic7, "BgChoiceOne6" )
+enterName = """
+IBenterName = InputBox( enterName )
+SetConditionToShowObject( IBenterName, q == 1)
+ShowLabel( IBenterName, false )
 
-SetCoords(pic8, x(AAA), y(AAA))
-SetConditionToShowObject( pic8, q = 7 && selected = 1)
-SetLayer( pic8, 0 )
-SetFixed( pic8, true )
-Rename( pic8, "BgChoiceOne7" )
+DropListq3 = {"  ", 3, 6, 12}
+ShowLabel( DropListq3, false )
+SetConditionToShowObject( DropListq3, q == 3)
 
-SetCoords(pic9, x(AAA), y(AAA))
-SetConditionToShowObject( pic9, q = 8 && selected = 1)
-SetLayer( pic9, 0 )
-SetFixed( pic9, true )
-Rename( pic9, "BgChoiceOne8" )
+enterAns = ?
+IBenterAns = InputBox( enterAns )
+SetConditionToShowObject( IBenterAns, q == 1)
+ShowLabel( IBenterAns, false )
+checkAns = enterAns == Element(ans, q)
 
-SetCoords(pic10, x(AAA), y(AAA))
-SetConditionToShowObject( pic10, q = 9 && selected = 1)
-SetLayer( pic10, 0 )
-SetFixed( pic10, true )
-Rename( pic10, "BgChoiceOne9" )
+DropList1q5 = numb
+DropList2q5 = oper
+DropList3q5 = numb
 
-SetCoords(pic11, x(AAA), y(AAA))
-SetConditionToShowObject( pic11, q = 10 && selected = 1)
-SetLayer( pic11, 0 )
-SetFixed( pic11, true )
-Rename( pic11, "BgChoiceOne10" )
+ShowLabel( DropList1q5, false )
+SetConditionToShowObject( DropList1q5, q == 5)
+ShowLabel( DropList2q5, false )
+SetConditionToShowObject( DropList2q5, q == 5)
+ShowLabel( DropList3q5, false )
+SetConditionToShowObject( DropList3q5, q == 5)
 
-SetCoords(pic12, x(AAA), y(AAA))
-SetConditionToShowObject( pic12, q = 11 && selected = 1)
-SetLayer( pic12, 0 )
-SetFixed( pic12, true )
-Rename( pic12, "BgChoiceOne11" )
+DropList1q7 = numb
+DropList2q7 = oper
+DropList3q7 = numb
 
-SetCoords(pic13, x(AAA), y(AAA))
-SetConditionToShowObject( pic13, q = 12 && selected = 1)
-SetLayer( pic13, 0 )
-SetFixed( pic13, true )
-Rename( pic13, "BgChoiceOne12" )
+ShowLabel( DropList1q7, false )
+SetConditionToShowObject( DropList1q7, q == 7)
+ShowLabel( DropList2q7, false )
+SetConditionToShowObject( DropList2q7, q == 7)
+ShowLabel( DropList3q7, false )
+SetConditionToShowObject( DropList3q7, q == 7)
 
-SetCoords(pic14, x(AAA), y(AAA))
-SetConditionToShowObject( pic14, q = 13 && selected = 1)
-SetLayer( pic14, 0 )
-SetFixed( pic14, true )
-Rename( pic14, "BgChoiceOne13" )
+DropList1q8 = numb
+DropList2q8 = oper
+DropList3q8 = numb
+DropList4q8 = oper
+DropList5q8 = numb
 
-SetCoords(pic15, x(AAA), y(AAA))
-SetConditionToShowObject( pic15, q = 14 && selected = 1)
-SetLayer( pic15, 0 )
-SetFixed( pic15, true )
-Rename( pic15, "BgChoiceOne14" )
+ShowLabel( DropList1q8, false )
+SetConditionToShowObject( DropList1q8, q == 8)
+ShowLabel( DropList2q8, false )
+SetConditionToShowObject( DropList2q8, q == 8)
+ShowLabel( DropList3q8, false )
+SetConditionToShowObject( DropList3q8, q == 8)
+ShowLabel( DropList4q8, false )
+SetConditionToShowObject( DropList4q8, q == 8)
+ShowLabel( DropList5q8, false )
+SetConditionToShowObject( DropList5q8, q == 8)
 
+DropList1q9 = brac
+DropList2q9 = numb
+DropList3q9 = oper
+DropList4q9 = numb
+DropList5q9 = brac
+DropList6q9 = oper
+DropList7q9 = numb
 
-## code for setting pics for choice two
-SetCoords(pic5, x(AAA), y(AAA))
-SetConditionToShowObject( pic5, q = 4 && selected = 2)
-SetLayer( pic5, 0 )
-SetFixed( pic5, true )
-Rename( pic5, "BgChoiceTwo4" )
-
-SetCoords(pic6, x(AAA), y(AAA))
-SetConditionToShowObject( pic6, q = 5 && selected = 2)
-SetLayer( pic6, 0 )
-SetFixed( pic6, true )
-Rename( pic6, "BgChoiceTwo5" )
-
-SetCoords(pic7, x(AAA), y(AAA))
-SetConditionToShowObject( pic7, q = 6 && selected = 2)
-SetLayer( pic7, 0 )
-SetFixed( pic7, true )
-Rename( pic7, "BgChoiceTwo6" )
-
-SetCoords(pic8, x(AAA), y(AAA))
-SetConditionToShowObject( pic8, q = 7 && selected = 2)
-SetLayer( pic8, 0 )
-SetFixed( pic8, true )
-Rename( pic8, "BgChoiceTwo7" )
-
-SetCoords(pic9, x(AAA), y(AAA))
-SetConditionToShowObject( pic9, q = 8 && selected = 2)
-SetLayer( pic9, 0 )
-SetFixed( pic9, true )
-Rename( pic9, "BgChoiceTwo8" )
-
-SetCoords(pic10, x(AAA), y(AAA))
-SetConditionToShowObject( pic10, q = 9 && selected = 2)
-SetLayer( pic10, 0 )
-SetFixed( pic10, true )
-Rename( pic10, "BgChoiceTwo9" )
-
-SetCoords(pic11, x(AAA), y(AAA))
-SetConditionToShowObject( pic11, q = 10 && selected = 2)
-SetLayer( pic11, 0 )
-SetFixed( pic11, true )
-Rename( pic11, "BgChoiceTwo10" )
-
-SetCoords(pic12, x(AAA), y(AAA))
-SetConditionToShowObject( pic12, q = 11 && selected = 2)
-SetLayer( pic12, 0 )
-SetFixed( pic12, true )
-Rename( pic12, "BgChoiceTwo11" )
-
-SetCoords(pic13, x(AAA), y(AAA))
-SetConditionToShowObject( pic13, q = 12 && selected = 2)
-SetLayer( pic13, 0 )
-SetFixed( pic13, true )
-Rename( pic13, "BgChoiceTwo12" )
-
-SetCoords(pic14, x(AAA), y(AAA))
-SetConditionToShowObject( pic14, q = 13 && selected = 2)
-SetLayer( pic14, 0 )
-SetFixed( pic14, true )
-Rename( pic14, "BgChoiceTwo13" )
-
-SetCoords(pic15, x(AAA), y(AAA))
-SetConditionToShowObject( pic15, q = 14 && selected = 2)
-SetLayer( pic15, 0 )
-SetFixed( pic15, true )
-Rename( pic15, "BgChoiceTwo14" )
+ShowLabel( DropList1q9, false )
+SetConditionToShowObject( DropList1q9, q == 9)
+ShowLabel( DropList2q9, false )
+SetConditionToShowObject( DropList2q9, q == 9)
+ShowLabel( DropList3q9, false )
+SetConditionToShowObject( DropList3q9, q == 9)
+ShowLabel( DropList4q9, false )
+SetConditionToShowObject( DropList4q9, q == 9)
+ShowLabel( DropList5q9, false )
+SetConditionToShowObject( DropList5q9, q == 9)
+ShowLabel( DropList6q9, false )
+SetConditionToShowObject( DropList6q9, q == 9)
+ShowLabel( DropList7q9, false )
+SetConditionToShowObject( DropList7q9, q == 9)
 
 
-## this code will set pics for choice three
-SetCoords(pic5, x(AAA), y(AAA))
-SetConditionToShowObject( pic5, q = 4 && selected = 3)
-SetLayer( pic5, 0 )
-SetFixed( pic5, true )
-Rename( pic5, "BgChoiceThree4" )
+--------------- case 2, 6
+DropList1q17 = numb
+DropList2q17 = oper
+DropList3q17 = numb
 
-SetCoords(pic6, x(AAA), y(AAA))
-SetConditionToShowObject( pic6, q = 5 && selected = 3)
-SetLayer( pic6, 0 )
-SetFixed( pic6, true )
-Rename( pic6, "BgChoiceThree5" )
+ShowLabel( DropList1q17, false )
+SetConditionToShowObject( DropList1q17, q == 17 && q == 18)
+ShowLabel( DropList2q17, false )
+SetConditionToShowObject( DropList2q17, q == 17 && q == 18)
+ShowLabel( DropList3q17, false )
+SetConditionToShowObject( DropList3q17, q == 17 && q == 18)
 
-SetCoords(pic7, x(AAA), y(AAA))
-SetConditionToShowObject( pic7, q = 6 && selected = 3)
-SetLayer( pic7, 0 )
-SetFixed( pic7, true )
-Rename( pic7, "BgChoiceThree6" )
+DropList1q19 = numb
+DropList2q19 = oper
+DropList3q19 = numb
 
-SetCoords(pic8, x(AAA), y(AAA))
-SetConditionToShowObject( pic8, q = 7 && selected = 3)
-SetLayer( pic8, 0 )
-SetFixed( pic8, true )
-Rename( pic8, "BgChoiceThree7" )
+ShowLabel( DropList1q19, false )
+SetConditionToShowObject( DropList1q19, q == 19)
+ShowLabel( DropList2q19, false )
+SetConditionToShowObject( DropList2q19, q == 19)
+ShowLabel( DropList3q19, false )
+SetConditionToShowObject( DropList3q19, q == 19)
 
-SetCoords(pic9, x(AAA), y(AAA))
-SetConditionToShowObject( pic9, q = 8 && selected = 3)
-SetLayer( pic9, 0 )
-SetFixed( pic9, true )
-Rename( pic9, "BgChoiceThree8" )
+DropList1q20 = brac
+DropList2q20 = numb
+DropList3q20 = oper
+DropList4q20 = numb
+DropList5q20 = brac
+DropList6q20 = oper
+DropList7q20 = numb
+DropList8q20 = oper
+DropList9q20 = numb
 
-SetCoords(pic10, x(AAA), y(AAA))
-SetConditionToShowObject( pic10, q = 9 && selected = 3)
-SetLayer( pic10, 0 )
-SetFixed( pic10, true )
-Rename( pic10, "BgChoiceThree9" )
-
-SetCoords(pic11, x(AAA), y(AAA))
-SetConditionToShowObject( pic11, q = 10 && selected = 3)
-SetLayer( pic11, 0 )
-SetFixed( pic11, true )
-Rename( pic11, "BgChoiceThree10" )
-
-SetCoords(pic12, x(AAA), y(AAA))
-SetConditionToShowObject( pic12, q = 11 && selected = 3)
-SetLayer( pic12, 0 )
-SetFixed( pic12, true )
-Rename( pic12, "BgChoiceThree11" )
-
-SetCoords(pic13, x(AAA), y(AAA))
-SetConditionToShowObject( pic13, q = 12 && selected = 3)
-SetLayer( pic13, 0 )
-SetFixed( pic13, true )
-Rename( pic13, "BgChoiceThree12" )
+ShowLabel( DropList1q20, false )
+SetConditionToShowObject( DropList1q20, q == 20)
+ShowLabel( DropList2q20, false )
+SetConditionToShowObject( DropList2q20, q == 20)
+ShowLabel( DropList3q20, false )
+SetConditionToShowObject( DropList3q20, q == 20)
+ShowLabel( DropList4q20, false )
+SetConditionToShowObject( DropList4q20, q == 20)
+ShowLabel( DropList5q20, false )
+SetConditionToShowObject( DropList5q20, q == 20)
+ShowLabel( DropList6q20, false )
+SetConditionToShowObject( DropList6q20, q == 20)
+ShowLabel( DropList7q20, false )
+SetConditionToShowObject( DropList7q20, q == 20)
+ShowLabel( DropList8q20, false )
+SetConditionToShowObject( DropList8q20, q == 20)
+ShowLabel( DropList9q20, false )
+SetConditionToShowObject( DropList9q20, q == 20)
 
 
-## this code will set pics for choice 4
-SetCoords(pic5, x(AAA), y(AAA))
-SetConditionToShowObject( pic5, q = 4 && selected = 4)
-SetLayer( pic5, 0 )
-SetFixed( pic5, true )
-Rename( pic5, "BgChoiceFour4" )
+DropList1q21 = brac
+DropList2q21 = numb
+DropList3q21 = oper
+DropList4q21 = numb
+DropList5q21 = brac
+DropList6q21 = oper
+DropList7q21 = numb
 
-SetCoords(pic6, x(AAA), y(AAA))
-SetConditionToShowObject( pic6, q = 5 && selected = 4)
-SetLayer( pic6, 0 )
-SetFixed( pic6, true )
-Rename( pic6, "BgChoiceFour5" )
+ShowLabel( DropList1q21, false )
+SetConditionToShowObject( DropList1q21, q == 21)
+ShowLabel( DropList2q21, false )
+SetConditionToShowObject( DropList2q21, q == 21)
+ShowLabel( DropList3q21, false )
+SetConditionToShowObject( DropList3q21, q == 21)
+ShowLabel( DropList4q21, false )
+SetConditionToShowObject( DropList4q21, q == 21)
+ShowLabel( DropList5q21, false )
+SetConditionToShowObject( DropList5q21, q == 21)
+ShowLabel( DropList6q21, false )
+SetConditionToShowObject( DropList6q21, q == 21)
+ShowLabel( DropList7q21, false )
 
-SetCoords(pic7, x(AAA), y(AAA))
-SetConditionToShowObject( pic7, q = 6 && selected = 4)
-SetLayer( pic7, 0 )
-SetFixed( pic7, true )
-Rename( pic7, "BgChoiceFour6" )
 
-SetCoords(pic8, x(AAA), y(AAA))
-SetConditionToShowObject( pic8, q = 7 && selected = 4)
-SetLayer( pic8, 0 )
-SetFixed( pic8, true )
-Rename( pic8, "BgChoiceFour7" )
 
-SetCoords(pic9, x(AAA), y(AAA))
-SetConditionToShowObject( pic9, q = 8 && selected = 4)
-SetLayer( pic9, 0 )
-SetFixed( pic9, true )
-Rename( pic9, "BgChoiceFour8" )
+--------------- case 3, 9
 
-SetCoords(pic10, x(AAA), y(AAA))
-SetConditionToShowObject( pic10, q = 9 && selected = 4)
-SetLayer( pic10, 0 )
-SetFixed( pic10, true )
-Rename( pic10, "BgChoiceFour9" )
+DropList1q29 = brac
+DropList2q29 = numb
+DropList3q29 = oper
+DropList4q29 = numb
+DropList5q29 = brac
+DropList6q29 = oper
+DropList7q29 = numb
 
-SetCoords(pic11, x(AAA), y(AAA))
-SetConditionToShowObject( pic11, q = 10 && selected = 4)
-SetLayer( pic11, 0 )
-SetFixed( pic11, true )
-Rename( pic11, "BgChoiceFour10" )
+ShowLabel( DropList1q29, false )
+SetConditionToShowObject( DropList1q29, q == 29)
+ShowLabel( DropList2q29, false )
+SetConditionToShowObject( DropList2q29, q == 29)
+ShowLabel( DropList3q29, false )
+SetConditionToShowObject( DropList3q29, q == 29)
+ShowLabel( DropList4q29, false )
+SetConditionToShowObject( DropList4q29, q == 29)
+ShowLabel( DropList5q29, false )
+SetConditionToShowObject( DropList5q29, q == 29)
+ShowLabel( DropList6q29, false )
+SetConditionToShowObject( DropList6q29, q == 29)
+ShowLabel( DropList7q29, false )
 
-SetCoords(pic12, x(AAA), y(AAA))
-SetConditionToShowObject( pic12, q = 11 && selected = 4)
-SetLayer( pic12, 0 )
-SetFixed( pic12, true )
-Rename( pic12, "BgChoiceFour11" )
 
-SetCoords(pic13, x(AAA), y(AAA))
-SetConditionToShowObject( pic13, q = 12 && selected = 4)
-SetLayer( pic13, 0 )
-SetFixed( pic13, true )
-Rename( pic13, "BgChoiceFour12" )
+DropList1q30 = numb
+DropList2q30 = oper
+DropList3q30 = numb
+
+ShowLabel( DropList1q30, false )
+SetConditionToShowObject( DropList1q30, q == 30)
+ShowLabel( DropList2q30, false )
+SetConditionToShowObject( DropList2q30, q == 30)
+ShowLabel( DropList3q30, false )
+SetConditionToShowObject( DropList3q30, q == 30)
+
+
+DropList1q31 = numb
+DropList2q31 = oper
+DropList3q31 = numb
+DropList4q31 = oper
+DropList5q31 = numb
+DropList6q31 = oper
+DropList7q31 = numb
+DropList8q31 = oper
+DropList9q31 = numb
+
+ShowLabel( DropList1q31, false )
+SetConditionToShowObject( DropList1q31, q == 31)
+ShowLabel( DropList2q31, false )
+SetConditionToShowObject( DropList2q31, q == 31)
+ShowLabel( DropList3q31, false )
+SetConditionToShowObject( DropList3q31, q == 31)
+ShowLabel( DropList4q31, false )
+SetConditionToShowObject( DropList4q31, q == 31)
+ShowLabel( DropList5q31, false )
+SetConditionToShowObject( DropList5q31, q == 31)
+ShowLabel( DropList6q31, false )
+SetConditionToShowObject( DropList6q31, q == 31)
+ShowLabel( DropList7q31, false )
+SetConditionToShowObject( DropList7q31, q == 31)
+ShowLabel( DropList8q31, false )
+SetConditionToShowObject( DropList8q31, q == 31)
+ShowLabel( DropList9q31, false )
+SetConditionToShowObject( DropList9q31, q == 31)
+
+
+DropList1q32 = brac
+DropList2q32 = numb
+DropList3q32 = oper
+DropList4q32 = numb
+DropList5q32 = brac
+DropList6q32 = oper
+DropList7q32 = numb
+
+ShowLabel( DropList1q32, false )
+SetConditionToShowObject( DropList1q32, q == 32)
+ShowLabel( DropList2q32, false )
+SetConditionToShowObject( DropList2q32, q == 32)
+ShowLabel( DropList3q32, false )
+SetConditionToShowObject( DropList3q32, q == 32)
+ShowLabel( DropList4q32, false )
+SetConditionToShowObject( DropList4q32, q == 32)
+ShowLabel( DropList5q32, false )
+SetConditionToShowObject( DropList5q32, q == 32)
+ShowLabel( DropList6q32, false )
+SetConditionToShowObject( DropList6q32, q == 32)
+ShowLabel( DropList7q32, false )
+
+
+--------------- case 4, 12
+
+DropList1q39 = brac
+DropList2q39 = numb
+DropList3q39 = oper
+DropList4q39 = numb
+DropList5q39 = brac
+DropList6q39 = oper
+DropList7q39 = numb
+
+ShowLabel( DropList1q39, false )
+SetConditionToShowObject( DropList1q39, q == 39)
+ShowLabel( DropList2q39, false )
+SetConditionToShowObject( DropList2q39, q == 39)
+ShowLabel( DropList3q39, false )
+SetConditionToShowObject( DropList3q39, q == 39)
+ShowLabel( DropList4q39, false )
+SetConditionToShowObject( DropList4q39, q == 39)
+ShowLabel( DropList5q39, false )
+SetConditionToShowObject( DropList5q39, q == 39)
+ShowLabel( DropList6q39, false )
+SetConditionToShowObject( DropList6q39, q == 39)
+ShowLabel( DropList7q39, false )
+
+
+DropList1q40 = numb
+DropList2q40 = oper
+DropList3q40 = numb
+
+ShowLabel( DropList1q40, false )
+SetConditionToShowObject( DropList1q40, q == 40)
+ShowLabel( DropList2q40, false )
+SetConditionToShowObject( DropList2q40, q == 40)
+ShowLabel( DropList3q40, false )
+SetConditionToShowObject( DropList3q40, q == 40)
+
+
+DropList1q41 = numb
+DropList2q41 = oper
+DropList3q41 = numb
+DropList4q41 = oper
+DropList5q41 = numb
+DropList6q41 = oper
+DropList7q41 = numb
+DropList8q41 = oper
+DropList9q41 = numb
+
+ShowLabel( DropList1q41, false )
+SetConditionToShowObject( DropList1q41, q == 41)
+ShowLabel( DropList2q41, false )
+SetConditionToShowObject( DropList2q41, q == 41)
+ShowLabel( DropList3q41, false )
+SetConditionToShowObject( DropList3q41, q == 41)
+ShowLabel( DropList4q41, false )
+SetConditionToShowObject( DropList4q41, q == 41)
+ShowLabel( DropList5q41, false )
+SetConditionToShowObject( DropList5q41, q == 41)
+ShowLabel( DropList6q41, false )
+SetConditionToShowObject( DropList6q41, q == 41)
+ShowLabel( DropList7q41, false )
+SetConditionToShowObject( DropList7q41, q == 41)
+ShowLabel( DropList8q41, false )
+SetConditionToShowObject( DropList8q41, q == 41)
+ShowLabel( DropList9q41, false )
+SetConditionToShowObject( DropList9q41, q == 41)
+
+
+DropList1q42 = {"  ", "b", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+DropList2q42 = oper
+DropList3q42 = {"  ", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, "b"}
+
+ShowLabel( DropList1q42, false )
+SetConditionToShowObject( DropList1q42, q == 42)
+ShowLabel( DropList2q42, false )
+SetConditionToShowObject( DropList2q42, q == 42)
+ShowLabel( DropList3q42, false )
+SetConditionToShowObject( DropList3q42, q == 42)
+
+____________##Next Button q == 3
+If(SelectedIndex( DropListq3 ) == 2, SetValue[q,4])
+If(SelectedIndex( DropListq3 ) == 3, SetValue[q,16])
+If(SelectedIndex( DropListq3 ) == 4, SetValue[q,28])
+If(SelectedIndex( DropListq3 ) == 5, SetValue[q,38])
+
+
+____________##Check case 1
+SetValue[check, -1]
+if(q==5 && (SelectedIndex( DropList1q5 ) == 6 && SelectedIndex( DropList2q5 ) == 4 && SelectedIndex( DropList3q5 ) == 3 && checkAns == true), SetValue[check, 1])
+if(q==7 && (SelectedIndex( DropList1q7 ) == 6 && SelectedIndex( DropList2q7 ) == 5 && SelectedIndex( DropList3q7 ) == 6 && checkAns == true), SetValue[check, 1])
+If(q==8 && (SelectedIndex( DropList1q8 ) == 3 && SelectedIndex( DropList2q8 ) == 2 && SelectedIndex( DropList3q8 ) == 6 && SelectedIndex( DropList4q8 ) == 2 && SelectedIndex( DropList5q8 ) == 3 && checkAns == true), SetValue[check, 1])
+If(q==9 && (SelectedIndex( DropList1q9 ) == 2 && SelectedIndex( DropList2q9 ) == 14 && SelectedIndex( DropList3q9 ) == 3 && SelectedIndex( DropList4q9 ) == 5 && SelectedIndex( DropList5q9 ) == 3 && SelectedIndex( DropList6q9 ) == 5 && SelectedIndex( DropList7q9 ) == 5 && checkAns == true), SetValue[check, 1])
+
+____________##Check case 2
+SetValue[check, -1]
+if(q==17 && (SelectedIndex( DropList1q17 ) == 6 && SelectedIndex( DropList2q17 ) == 4 && SelectedIndex( DropList3q17 ) == 4 && checkAns == true), SetValue[check, 1])
+if(q==19 && (SelectedIndex( DropList1q19 ) == 10 && SelectedIndex( DropList2q19 ) == 5 && SelectedIndex( DropList3q19 ) == 6 && checkAns == true), SetValue[check, 1])
+If(q==20 && (SelectedIndex( DropList1q20 ) == 2 && SelectedIndex( DropList2q20 ) == 4 && SelectedIndex( DropList3q20 ) == 4 && SelectedIndex( DropList4q20 ) == 6 && SelectedIndex( DropList5q20 ) == 3 && SelectedIndex( DropList6q20 ) == 2 && SelectedIndex( DropList7q20 ) == 4 && SelectedIndex( DropList8q20 ) == 2 && SelectedIndex( DropList9q20 ) == 4 && checkAns == true), SetValue[check, 1])
+If(q==21 && (SelectedIndex( DropList1q21 ) == 2 && SelectedIndex( DropList2q21 ) == 14 && SelectedIndex( DropList3q21 ) == 3 && SelectedIndex( DropList4q21 ) == 8 && SelectedIndex( DropList5q21 ) == 3 && SelectedIndex( DropList6q21 ) == 5 && SelectedIndex( DropList7q21 ) == 6 && checkAns == true), SetValue[check, 1])
+
+____________##Check case 3
+SetValue[check, -1]
+if(q==29 && (SelectedIndex( DropList1q29 ) == 2 && SelectedIndex( DropList2q29 ) == 6 && SelectedIndex( DropList3q29 ) == 4 && SelectedIndex( DropList4q29 ) == 3 && SelectedIndex( DropList5q29 ) == 3 && SelectedIndex( DropList6q29 ) == 2 && SelectedIndex( DropList7q29 ) == 4 && checkAns == true), SetValue[check, 1])
+if(q==30 && (SelectedIndex( DropList1q30 ) == 8 && SelectedIndex( DropList2q30 ) == 5 && SelectedIndex( DropList3q30 ) == 8 && checkAns == true), SetValue[check, 1])
+If(q==31 && (SelectedIndex( DropList1q31 ) == 3 && SelectedIndex( DropList2q31 ) == 2 && SelectedIndex( DropList3q31 ) == 8 && SelectedIndex( DropList4q31 ) == 2 && SelectedIndex( DropList5q31 ) == 3 && SelectedIndex( DropList6q31 ) == 2 && SelectedIndex( DropList7q31 ) == 3 && SelectedIndex( DropList8q31 ) == 2 && SelectedIndex( DropList9q31 ) == 3 && checkAns == true), SetValue[check, 1])
+If(q==32 && (SelectedIndex( DropList1q32 ) == 2 && SelectedIndex( DropList2q32 ) == 14 && SelectedIndex( DropList3q32 ) == 3 && SelectedIndex( DropList4q32 ) == 11 && SelectedIndex( DropList5q32 ) == 3 && SelectedIndex( DropList6q32 ) == 5 && SelectedIndex( DropList7q32 ) == 5 && checkAns == true), SetValue[check, 1])
+
+____________##Check case 4
+SetValue[check, -1]
+if(q==39 && (SelectedIndex( DropList1q39 ) == 2 && SelectedIndex( DropList2q39 ) == 6 && SelectedIndex( DropList3q39 ) == 4 && SelectedIndex( DropList4q39 ) == 4 && SelectedIndex( DropList5q39 ) == 3 && SelectedIndex( DropList6q39 ) == 2 && SelectedIndex( DropList7q39 ) == 4 && checkAns == true), SetValue[check, 1])
+if(q==40 && (SelectedIndex( DropList1q40 ) == 12 && SelectedIndex( DropList2q40 ) == 5 && SelectedIndex( DropList3q40 ) == 7 && checkAns == true), SetValue[check, 1])
+If(q==41 && (SelectedIndex( DropList1q41 ) == 4 && SelectedIndex( DropList2q41 ) == 2 && SelectedIndex( DropList3q41 ) == 12 && SelectedIndex( DropList4q41 ) == 2 && SelectedIndex( DropList5q41 ) == 4 && SelectedIndex( DropList6q41 ) == 2 && SelectedIndex( DropList7q41 ) == 4 && SelectedIndex( DropList8q41 ) == 2 && SelectedIndex( DropList9q41 ) == 4 && checkAns == true), SetValue[check, 1])
+if(q==42 && (SelectedIndex( DropList1q42 ) == 2 && SelectedIndex( DropList2q42 ) == 5 && SelectedIndex( DropList3q42 ) == 11), SetValue[check, 1])
+
+numb = {"  ", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+oper = {"  ", "+", "-", "x", "÷"}
+brac = {"  ","(", ")"}
