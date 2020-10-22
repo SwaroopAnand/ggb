@@ -1,0 +1,5 @@
+
+
+
+
+If( 5<q<qtotal && ( numSn1 == playSSn   || numSn2 == playSSn   || numSn3 == playSSn   || numSn4 == playSSn   || numSn5 == playSSn   || numSn6 == playSSn   || numSn7 == playSSn   || numSn8 == playSSn   || numSn9 == playSSn   || numSn10 == playSSn   || numSn11 == playSSn   || numSn12 == playSSn   || numSn13 == playSSn   || numSn14 == playSSn   || numSn15 == playSSn   || numSn16 == playSSn   || numSn17 == playSSn   || numSn18 == playSSn   || numSn19 == playSSn   || numSn20 == playSSn   || numSn21 == playSSn   || numSn22 == playSSn   || numSn23 == playSSn   || numSn24 == playSSn   || numSn25 == playSSn), RunClickScript(soundSn))
