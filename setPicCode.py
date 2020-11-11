@@ -1,4 +1,4 @@
-for i in range(1,11):
+for i in range(1,9):
 
     print("SetCoords(pic{}, x(AAA), y(AAA))".format(i))
     print("SetConditionToShowObject( pic{}, q=={})".format(i,i-1))

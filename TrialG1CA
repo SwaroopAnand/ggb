@@ -1,0 +1,116 @@
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+
+download = false
+showDate = GetTime( "\m/\d/\y" )
+SetConditionToShowObject( showDate, q == qtotal)
+
+enterName = ""
+IBenterName = InputBox( enterName )
+SetConditionToShowObject( IBenterName, q==qtotal - 1)
+ShowLabel( IBenterName, false )
+
+showName = Text(enterName)
+SetConditionToShowObject( showName, q==qtotal)
+
+enter1K = ""
+IBenter1K = InputBox( enter1K )
+SetConditionToShowObject( IBenter1K, q == 1)
+ShowLabel( IBenter1K, false )
+
+enter2I = ""
+IBenter2I = InputBox( enter2I )
+SetConditionToShowObject( IBenter2I, q == 1)
+ShowLabel( IBenter2I, false )
+
+enter3T1 = ""
+IBenter3T1 = InputBox( enter3T1 )
+SetConditionToShowObject( IBenter3T1, q == 1)
+ShowLabel( IBenter3T1, false )
+
+enter4T2 = ""
+IBenter4T2 = InputBox( enter4T2 )
+SetConditionToShowObject( IBenter4T2, q == 1)
+ShowLabel( IBenter4T2, false )
+
+enter5Y = ""
+IBenter5Y = InputBox( enter5Y )
+SetConditionToShowObject( IBenter5Y, q == 1)
+ShowLabel( IBenter5Y, false )
+
+enter6C = ""
+IBenter6C = InputBox( enter6C )
+SetConditionToShowObject( IBenter6C, q == 1)
+ShowLabel( IBenter6C, false )
+
+enter7A = ""
+IBenter7A = InputBox( enter7A )
+SetConditionToShowObject( IBenter7A, q == 1)
+ShowLabel( IBenter7A, false )
+
+enter8T3 = ""
+IBenter8T3 = InputBox( enter8T3 )
+SetConditionToShowObject( IBenter8T3, q == 1)
+ShowLabel( IBenter8T3, false )
+
+check1 = If(enter1K == "K" && enter2I == "I" && enter3T1 == "T" && enter4T2 == "T" && enter5Y == "Y" && enter6C == "C" && enter7A == "A" && enter8T3 == "T", true, false)
+
+
+#Creating the drag and drop functionality
+#le = left ear, re = right ear, f = face, n = neck, b = body, l = leg, t = tail
+
+Dle_{debounce} = (5.0, 5.0)
+Ple1 = (2.0, 2.0)
+Ple2 = (3.0, 2.0)
+Ple3 = (3.0, 3.0)
+dragLE = Polygon( Ple1, Ple2, Ple3 )
+SetConditionToShowObject( dragLE, q == 3)
+
+Dre_{debounce}= (5.0, 5.0)
+Pre1 = (2.0, 2.0)
+Pre2 = (3.0, 2.0)
+Pre3 = (3.0, 3.0)
+dragRE = Polygon( Pre1, Pre2, Pre3 )
+SetConditionToShowObject( dragRE, q == 3)
+
+Df_{debounce} = (5.0, 5.0)
+Pf1 = (2.0, 2.0)
+Pf2 = (3.0, 2.0)
+Pf3 = (3.0, 3.0)
+Pf4 = (2.0, 3.0)
+dragF = Polygon( Pf1, Pf2, Pf3, Pf4 )
+SetConditionToShowObject( dragF, q == 3)
+
+Dn_{debounce}= (5.0, 5.0)
+Pn1 = (2.0, 2.0)
+Pn2 = (3.0, 2.0)
+Pn3 = (3.0, 3.0)
+dragN = Polygon( Pn1, Pn2, Pn3 )
+SetConditionToShowObject( dragN, q == 3)
+
+Db_{debounce}= (5.0, 5.0)
+Pb1 = (2.0, 2.0)
+Pb2 = (3.0, 2.0)
+Pb3 = (3.0, 3.0)
+Pb4 = (2.0, 3.0)
+dragB = Polygon( Pb1, Pb2, Pb3, Pb4 )
+SetConditionToShowObject( dragB, q == 3)
+
+Dl_{debounce}= (5.0, 5.0)
+Pl1 = (2.0, 2.0)
+Pl2 = (3.0, 2.0)
+Pl3 = (3.0, 3.0)
+dragL = Polygon( Pl1, Pl2, Pl3 )
+SetConditionToShowObject( dragL, q == 3)
+
+Dt_{debounce}= (5.0, 5.0)
+Pt1 = (2.0, 2.0)
+Pt2 = (3.0, 2.0)
+Pt3 = (3.0, 3.0)
+Pt4 = (2.0, 3.0)
+dragT = Polygon( Pt1, Pt2, Pt3, Pt4 )
+SetConditionToShowObject( dragT, q == 3)
+
+check2 = If(IsInRegion(Dle_{debounce} , dragLE) == true && IsInRegion(Dre_{debounce} , dragRE) == true &&  IsInRegion(Df_{debounce} , dragF) == true &&  IsInRegion(Dn_{debounce} , dragN) == true &&  IsInRegion(Db_{debounce} , dragB) == true &&  IsInRegion(Dl_{debounce} , dragL) == true &&  IsInRegion(Dt_{debounce} , dragT) == true , true, false)

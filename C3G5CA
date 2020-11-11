@@ -340,8 +340,8 @@ If(SelectedIndex( DropListq3 ) == 5, SetValue[q,38])
 
 ____________##Check case 1
 SetValue[check, -1]
-if(q==5 && (SelectedIndex( DropList1q5 ) == 6 && SelectedIndex( DropList2q5 ) == 4 && SelectedIndex( DropList3q5 ) == 3 && checkAns == true), SetValue[check, 1])
-if(q==7 && (SelectedIndex( DropList1q7 ) == 6 && SelectedIndex( DropList2q7 ) == 5 && SelectedIndex( DropList3q7 ) == 6 && checkAns == true), SetValue[check, 1])
+If(q==5 && (SelectedIndex( DropList1q5 ) == 6 && SelectedIndex( DropList2q5 ) == 4 && SelectedIndex( DropList3q5 ) == 3 && checkAns == true), SetValue[check, 1])
+If(q==7 && (SelectedIndex( DropList1q7 ) == 6 && SelectedIndex( DropList2q7 ) == 5 && SelectedIndex( DropList3q7 ) == 6 && checkAns == true), SetValue[check, 1])
 If(q==8 && (SelectedIndex( DropList1q8 ) == 3 && SelectedIndex( DropList2q8 ) == 2 && SelectedIndex( DropList3q8 ) == 6 && SelectedIndex( DropList4q8 ) == 2 && SelectedIndex( DropList5q8 ) == 3 && checkAns == true), SetValue[check, 1])
 If(q==9 && (SelectedIndex( DropList1q9 ) == 2 && SelectedIndex( DropList2q9 ) == 14 && SelectedIndex( DropList3q9 ) == 3 && SelectedIndex( DropList4q9 ) == 5 && SelectedIndex( DropList5q9 ) == 3 && SelectedIndex( DropList6q9 ) == 5 && SelectedIndex( DropList7q9 ) == 5 && checkAns == true), SetValue[check, 1])
 
@@ -369,3 +369,44 @@ if(q==42 && (SelectedIndex( DropList1q42 ) == 2 && SelectedIndex( DropList2q42 )
 numb = {"  ", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
 oper = {"  ", "+", "-", "x", "÷"}
 brac = {"  ","(", ")"}
+
+
+
+
+
+############### New chenged CA to validate all possible answers
+____________##Check case 1
+SetValue[check, -1]
+If(q==5 && ((SelectedIndex( DropList1q5 ) == 6 && SelectedIndex( DropList2q5 ) == 4 && SelectedIndex( DropList3q5 ) == 3 && checkAns == true) || (SelectedIndex( DropList1q5 ) == 3 && SelectedIndex( DropList2q5 ) == 4 && SelectedIndex( DropList3q5 ) == 6 && checkAns == true)), SetValue[check, 1])
+If(q==7 && (SelectedIndex( DropList1q7 ) == 6 && SelectedIndex( DropList2q7 ) == 5 && SelectedIndex( DropList3q7 ) == 6 && checkAns == true), SetValue[check, 1])
+If(q==8 && ((SelectedIndex( DropList1q8 ) == 3 && SelectedIndex( DropList2q8 ) == 2 && SelectedIndex( DropList3q8 ) == 6 && SelectedIndex( DropList4q8 ) == 2 && SelectedIndex( DropList5q8 ) == 3 && checkAns == true) || (SelectedIndex( DropList1q8 ) == 6 && SelectedIndex( DropList2q8 ) == 2 && SelectedIndex( DropList3q8 ) == 3 && SelectedIndex( DropList4q8 ) == 2 && SelectedIndex( DropList5q8 ) == 3 && checkAns == true) || (SelectedIndex( DropList1q8 ) == 3 && SelectedIndex( DropList2q8 ) == 2 && SelectedIndex( DropList3q8 ) == 3 && SelectedIndex( DropList4q8 ) == 2 && SelectedIndex( DropList5q8 ) == 6 && checkAns == true)), SetValue[check, 1])
+If(q==9 && (SelectedIndex( DropList1q9 ) == 2 && SelectedIndex( DropList2q9 ) == 14 && SelectedIndex( DropList3q9 ) == 3 && SelectedIndex( DropList4q9 ) == 5 && SelectedIndex( DropList5q9 ) == 3 && SelectedIndex( DropList6q9 ) == 5 && SelectedIndex( DropList7q9 ) == 5 && checkAns == true), SetValue[check, 1])
+
+
+____________##Check case 2
+SetValue[check, -1]
+If(q==17 && ((SelectedIndex( DropList1q17 ) == 6 && SelectedIndex( DropList2q17 ) == 4 && SelectedIndex( DropList3q17 ) == 4 && checkAns == true) || (SelectedIndex( DropList1q17 ) == 4 && SelectedIndex( DropList2q17 ) == 4 && SelectedIndex( DropList3q17 ) == 6 && checkAns == true)), SetValue[check, 1])
+If(q==19 && (SelectedIndex( DropList1q19 ) == 10 && SelectedIndex( DropList2q19 ) == 5 && SelectedIndex( DropList3q19 ) == 6 && checkAns == true), SetValue[check, 1])
+If(q==20 && ((SelectedIndex( DropList1q20 ) == 2 && SelectedIndex( DropList2q20 ) == 4 && SelectedIndex( DropList3q20 ) == 4 && SelectedIndex( DropList4q20 ) == 6 && SelectedIndex( DropList5q20 ) == 3 && SelectedIndex( DropList6q20 ) == 2 && SelectedIndex( DropList7q20 ) == 4 && SelectedIndex( DropList8q20 ) == 2 && SelectedIndex( DropList9q20 ) == 4 && checkAns == true) || (SelectedIndex( DropList1q20 ) == 2 && SelectedIndex( DropList2q20 ) == 6 && SelectedIndex( DropList3q20 ) == 4 && SelectedIndex( DropList4q20 ) == 4 && SelectedIndex( DropList5q20 ) == 3 && SelectedIndex( DropList6q20 ) == 2 && SelectedIndex( DropList7q20 ) == 4 && SelectedIndex( DropList8q20 ) == 2 && SelectedIndex( DropList9q20 ) == 4 && checkAns == true)), SetValue[check, 1])
+If(q==21 && (SelectedIndex( DropList1q21 ) == 2 && SelectedIndex( DropList2q21 ) == 14 && SelectedIndex( DropList3q21 ) == 3 && SelectedIndex( DropList4q21 ) == 8 && SelectedIndex( DropList5q21 ) == 3 && SelectedIndex( DropList6q21 ) == 5 && SelectedIndex( DropList7q21 ) == 5 && checkAns == true), SetValue[check, 1])
+
+
+____________##Check case 3
+SetValue[check, -1]
+If(q==29 && ((SelectedIndex( DropList1q29 ) == 2 && SelectedIndex( DropList2q29 ) == 6 && SelectedIndex( DropList3q29 ) == 4 && SelectedIndex( DropList4q29 ) == 3 && SelectedIndex( DropList5q29 ) == 3 && SelectedIndex( DropList6q29 ) == 2 && SelectedIndex( DropList7q29 ) == 4 && checkAns == true) || (SelectedIndex( DropList1q29 ) == 2 && SelectedIndex( DropList2q29 ) == 3 && SelectedIndex( DropList3q29 ) == 4 && SelectedIndex( DropList4q29 ) == 6 && SelectedIndex( DropList5q29 ) == 3 && SelectedIndex( DropList6q29 ) == 2 && SelectedIndex( DropList7q29 ) == 4 && checkAns == true)), SetValue[check, 1])
+If(q==30 && (SelectedIndex( DropList1q30 ) == 8 && SelectedIndex( DropList2q30 ) == 5 && SelectedIndex( DropList3q30 ) == 8 && checkAns == true), SetValue[check, 1])
+If(q==31 && ((SelectedIndex( DropList1q31 ) == 8 && SelectedIndex( DropList2q31 ) == 2 && SelectedIndex( DropList3q31 ) == 3 && SelectedIndex( DropList4q31 ) == 2 && SelectedIndex( DropList5q31 ) == 3 && SelectedIndex( DropList6q31 ) == 2 && SelectedIndex( DropList7q31 ) == 3 && SelectedIndex( DropList8q31 ) == 2 && SelectedIndex( DropList9q31 ) == 3 && checkAns == true) || (SelectedIndex( DropList1q31 ) == 3 && SelectedIndex( DropList2q31 ) == 2 && SelectedIndex( DropList3q31 ) == 8 && SelectedIndex( DropList4q31 ) == 2 && SelectedIndex( DropList5q31 ) == 3 && SelectedIndex( DropList6q31 ) == 2 && SelectedIndex( DropList7q31 ) == 3 && SelectedIndex( DropList8q31 ) == 2 && SelectedIndex( DropList9q31 ) == 3 && checkAns == true) || (SelectedIndex( DropList1q31 ) == 3 && SelectedIndex( DropList2q31 ) == 2 && SelectedIndex( DropList3q31 ) == 3 && SelectedIndex( DropList4q31 ) == 2 && SelectedIndex( DropList5q31 ) == 8 && SelectedIndex( DropList6q31 ) == 2 && SelectedIndex( DropList7q31 ) == 3 && SelectedIndex( DropList8q31 ) == 2 && SelectedIndex( DropList9q31 ) == 3 && checkAns == true) || (SelectedIndex( DropList1q31 ) == 3 && SelectedIndex( DropList2q31 ) == 2 && SelectedIndex( DropList3q31 ) == 3 && SelectedIndex( DropList4q31 ) == 2 && SelectedIndex( DropList5q31 ) == 3 && SelectedIndex( DropList6q31 ) == 2 && SelectedIndex( DropList7q31 ) == 8 && SelectedIndex( DropList8q31 ) == 2 && SelectedIndex( DropList9q31 ) == 3 && checkAns == true) || (SelectedIndex( DropList1q31 ) == 3 && SelectedIndex( DropList2q31 ) == 2 && SelectedIndex( DropList3q31 ) == 3 && SelectedIndex( DropList4q31 ) == 2 && SelectedIndex( DropList5q31 ) == 3 && SelectedIndex( DropList6q31 ) == 2 && SelectedIndex( DropList7q31 ) == 3 && SelectedIndex( DropList8q31 ) == 2 && SelectedIndex( DropList9q31 ) == 8 && checkAns == true)), SetValue[check, 1])
+If(q==32 && (SelectedIndex( DropList1q32 ) == 2 && SelectedIndex( DropList2q32 ) == 14 && SelectedIndex( DropList3q32 ) == 3 && SelectedIndex( DropList4q32 ) == 11 && SelectedIndex( DropList5q32 ) == 3 && SelectedIndex( DropList6q32 ) == 5 && SelectedIndex( DropList7q32 ) == 5 && checkAns == true), SetValue[check, 1])
+
+
+____________##Check case 4
+SetValue[check, -1]
+If(q==39 && ((SelectedIndex( DropList1q39 ) == 2 && SelectedIndex( DropList2q39 ) == 6 && SelectedIndex( DropList3q39 ) == 4 && SelectedIndex( DropList4q39 ) == 4 && SelectedIndex( DropList5q39 ) == 3 && SelectedIndex( DropList6q39 ) == 2 && SelectedIndex( DropList7q39 ) == 4 && checkAns == true) || (SelectedIndex( DropList1q39 ) == 2 && SelectedIndex( DropList2q39 ) == 4 && SelectedIndex( DropList3q39 ) == 4 && SelectedIndex( DropList4q39 ) == 6 && SelectedIndex( DropList5q39 ) == 3 && SelectedIndex( DropList6q39 ) == 2 && SelectedIndex( DropList7q39 ) == 4 && checkAns == true)), SetValue[check, 1])
+If(q==40 && (SelectedIndex( DropList1q40 ) == 12 && SelectedIndex( DropList2q40 ) == 5 && SelectedIndex( DropList3q40 ) == 7 && checkAns == true), SetValue[check, 1])
+If(q==41 && ((SelectedIndex( DropList1q41 ) == 12 && SelectedIndex( DropList2q41 ) == 2 && SelectedIndex( DropList3q41 ) == 4 && SelectedIndex( DropList4q41 ) == 2 && SelectedIndex( DropList5q41 ) == 4 && SelectedIndex( DropList6q41 ) == 2 && SelectedIndex( DropList7q41 ) == 4 && SelectedIndex( DropList8q41 ) == 2 && SelectedIndex( DropList9q41 ) == 4 && checkAns == true) || (SelectedIndex( DropList1q41 ) == 4 && SelectedIndex( DropList2q41 ) == 2 && SelectedIndex( DropList3q41 ) == 12 && SelectedIndex( DropList4q41 ) == 2 && SelectedIndex( DropList5q41 ) == 4 && SelectedIndex( DropList6q41 ) == 2 && SelectedIndex( DropList7q41 ) == 4 && SelectedIndex( DropList8q41 ) == 2 && SelectedIndex( DropList9q41 ) == 4 && checkAns == true) || (SelectedIndex( DropList1q41 ) == 4 && SelectedIndex( DropList2q41 ) == 2 && SelectedIndex( DropList3q41 ) == 4 && SelectedIndex( DropList4q41 ) == 2 && SelectedIndex( DropList5q41 ) == 12 && SelectedIndex( DropList6q41 ) == 2 && SelectedIndex( DropList7q41 ) == 4 && SelectedIndex( DropList8q41 ) == 2 && SelectedIndex( DropList9q41 ) == 4 && checkAns == true) || (SelectedIndex( DropList1q41 ) == 4 && SelectedIndex( DropList2q41 ) == 2 && SelectedIndex( DropList3q41 ) == 4 && SelectedIndex( DropList4q41 ) == 2 && SelectedIndex( DropList5q41 ) == 4 && SelectedIndex( DropList6q41 ) == 2 && SelectedIndex( DropList7q41 ) == 12 && SelectedIndex( DropList8q41 ) == 2 && SelectedIndex( DropList9q41 ) == 4 && checkAns == true) || (SelectedIndex( DropList1q41 ) == 4 && SelectedIndex( DropList2q41 ) == 2 && SelectedIndex( DropList3q41 ) == 4 && SelectedIndex( DropList4q41 ) == 2 && SelectedIndex( DropList5q41 ) == 4 && SelectedIndex( DropList6q41 ) == 2 && SelectedIndex( DropList7q41 ) == 4 && SelectedIndex( DropList8q41 ) == 2 && SelectedIndex( DropList9q41 ) == 12 && checkAns == true)), SetValue[check, 1])
+If(q==42 && (SelectedIndex( DropList1q42 ) == 2 && SelectedIndex( DropList2q42 ) == 5 && SelectedIndex( DropList3q42 ) == 12), SetValue[check, 1])
+
+
+
+
+

@@ -1,0 +1,114 @@
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+enterName = ""
+IBenterName = InputBox( enterName )
+SetConditionToShowObject( IBenterName, q==1)
+ShowLabel( IBenterName, false )
+
+showName = Text( enterName )
+SetConditionToShowObject( showName, q==qtotal)
+
+IBenterName2 = InputBox( enterName )
+SetConditionToShowObject( IBenterName2, q==qtotal)
+ShowLabel( IBenterName2, false )
+
+enterSName = ""
+IBenterSName = InputBox( enterSName )
+SetConditionToShowObject( IBenterSName, q==qtotal)
+ShowLabel( IBenterSName, false )
+
+
+enterq2No1 = ?
+IBenterq2No1 = InputBox( enterq2No1 )
+SetConditionToShowObject( IBenterq2No1, q == 2)
+ShowLabel( IBenterq2No1, false )
+
+enterq2No2 = ?
+IBenterq2No2 = InputBox( enterq2No2 )
+SetConditionToShowObject( IBenterq2No2, q == 2)
+ShowLabel( IBenterq2No2, false )
+
+enterq3No1 = ?
+IBenterq3No1 = InputBox( enterq3No1 )
+SetConditionToShowObject( IBenterq3No1, q == 3)
+ShowLabel( IBenterq3No1, false )
+
+enterq4No1 = ?
+IBenterq4No1 = InputBox( enterq4No1 )
+SetConditionToShowObject( IBenterq4No1, q == 4)
+ShowLabel( IBenterq4No1, false )
+
+enterq5No1 = ?
+IBenterq5No1 = InputBox( enterq5No1 )
+SetConditionToShowObject( IBenterq5No1, q == 5)
+ShowLabel( IBenterq5No1, false )
+
+enterq6No1 = ?
+IBenterq6No1 = InputBox( enterq6No1 )
+SetConditionToShowObject( IBenterq6No1, q == 6)
+ShowLabel( IBenterq6No1, false )
+
+enterq7No1 = ?
+IBenterq7No1 = InputBox( enterq7No1 )
+SetConditionToShowObject( IBenterq7No1, q == 7)
+ShowLabel( IBenterq7No1, false )
+
+enterTitleName = ""
+IBenterTitleName = InputBox( enterTitleName )
+SetConditionToShowObject( IBenterTitleName, q==8)
+ShowLabel( IBenterTitleName, false )
+
+showTitleName = Text( enterTitleName )
+SetConditionToShowObject( showTitleName, q==qtotal)
+
+
+### Next button Script
+If(q==1, If(Length(enterName)>0, SetValue[q,q+1]))
+If(q==2, If(enterq2No1 ==  4 && enterq2No2 == 6, SetValue[q,q+1]))
+If(q==3, If(enterq3No1 == 15, SetValue[q,q+1]))
+If(q==4, If(enterq4No1 == 16, SetValue[q,q+1]))
+If(q==5, If(enterq5No1 == 30, SetValue[q,q+1]))
+If(q==6, If(enterq6No1 == 25, SetValue[q,q+1]))
+If(q==7, If(enterq7No1 == 25, SetValue[q,q+1]))
+If(q==8, If(Length(enterTitleName)>0, SetValue[q,q+1]))
+If(9<=q==10,If(IsInRegion( P1, Drag ) == IsInRegion( P2, Drag ) == IsInRegion( P3, Drag ) ==  IsInRegion( P4, Drag ) ==  IsInRegion( P5, Drag ) == true, SetValue[q,q+1]))
+If(q==10, SetLayer( Drag, 2 ))
+If(q==11, {SetCoords(P1, x(P1+4), y(P1)), SetCoords(P2, x(P2+4), y(P2)), SetCoords(P3, x(P3+4), y(P3)), SetCoords(P4, x(P4+4), y(P4)), SetCoords(P5, x(P5+4), y(P5))}, SetCoords(P6, x(P6+4), y(P6)))
+SetValue[check,0]
+
+#Back
+SetValue[q,q-1]
+If(q==10, {SetCoords(P1, x(P1-4), y(P1)), SetCoords(P2, x(P2-4), y(P2)), SetCoords(P3, x(P3-4), y(P3)), SetCoords(P4, x(P4-4), y(P4)), SetCoords(P5, x(P5-4), y(P5))}, SetCoords(P6, x(P6-4), y(P6)))
+
+
+## check button
+SetValue[check, -1]
+If(q==2, If(enterq2No1 ==  4 && enterq2No2 == 6, SetValue[check, 1]))
+If(q==3, If(enterq3No1 == 15, SetValue[check, 1]))
+If(q==4, If(enterq4No1 == 16, SetValue[check, 1]))
+If(q==5, If(enterq5No1 == 30, SetValue[check, 1]))
+If(q==6, If(enterq6No1 == 25, SetValue[check, 1]))
+If(q==7, If(enterq7No1 == 25, SetValue[check, 1]))
+
+
+If(sInRegion( P1, Drag ) == true, IsInRegion( P2, Drag ) == true, IsInRegion( P3, Drag ) == true, IsInRegion( P4, Drag ) == true, IsInRegion( P5, Drag ) == true,
+
+startpt = (Corner(showName, 2) - Corner(showName, 1)) / 2
+centerName = Text(showName, Center - (x(startpt), y(startpt)))
+
+
+### G6 QA
+
+ans = {2, 4, 1, 3, 4, 4, 3, 4, 4, 1, 3, 1, 3, 4, 4}
+
+
+If(ques ∈ {1,2,3,8,14,15}, Pa1, If(ques ∈ {4, 7, 11, 12, 13}, Pa4, If(ques ∈ {5, 6}, Pa5, If(ques ∈ {9, 10}, Pa9))))
+If(ques ∈ {1,2,3,8,14,15}, Pb1, If(ques ∈ {4, 7, 11, 12, 13}, Pb4, If(ques ∈ {5, 6}, Pb5, If(ques ∈ {9, 10}, Pb9))))
+If(ques ∈ {1,2,3,8,14,15}, Pc1, If(ques ∈ {4, 7, 11, 12, 13}, Pc4, If(ques ∈ {5, 6}, Pc5, If(ques ∈ {9, 10}, Pc9))))
+If(ques ∈ {1,2,3,8,14,15}, Pd1, If(ques ∈ {4, 7, 11, 12, 13}, Pd4, If(ques ∈ {5, 6}, Pd5, If(ques ∈ {9, 10}, Pd9))))
+
+
+
+

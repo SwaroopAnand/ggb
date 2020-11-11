@@ -1,0 +1,271 @@
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+check1q8 = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+check2q8 = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+enterName = ""
+IBenterName = InputBox( enterName )
+SetConditionToShowObject( IBenterName, q==0)
+ShowLabel( IBenterName, false )
+
+showName = Text( enterName )
+SetConditionToShowObject( showName, q==qtotal)
+
+# 11 boolens for social media
+pick1 = 0
+pick2 = 0
+pick3 = 0
+pick4 = 0
+pick5 = 0
+pick6 = 0
+pick7 = 0
+pick8 = 0
+pick9 = 0
+pick10 = 0
+pick11 = 0
+
+# monitor the length of each element
+
+lengthSM = Length(Remove({pick1, pick2, pick3, pick4, pick5, pick6},{0,0,0,0,0,0,0,0,0,0,0}))
+lengthPM = Length(Remove({pick7, pick8, pick9},{0,0,0,0,0,0,0,0,0,0,0}))
+lengthTV = Length(Remove({pick10, pick11},{0,0,0,0,0,0,0,0,0,0,0}))
+selected = lengthSM+lengthPM+lengthTV
+
+order = (Remove({pick1, pick2, pick3, pick4, pick5, pick6, pick7, pick8, pick9,pick10, pick11 },{0,0,0,0,0,0,0,0,0,0,0, 0}))
+
+
+# goes in next button
+If(q==3 && lengthSM <5 && lengthPM>0 && lengthTV>0 && selected < 7, SetValue[q,q+1])
+
+# goes in check boxes
+If(lengthSM < 4 && selected < 7 && pick1 == 0, SetValue[pick1, 1], SetValue[pick1,0])
+If(lengthSM < 4 && selected < 7 && pick2 == 0, SetValue[pick2, 2], SetValue[pick2,0])
+If(lengthSM < 4 && selected < 7 && pick3 == 0, SetValue[pick3, 3], SetValue[pick3,0])
+If(lengthSM < 4 && selected < 7 && pick4 == 0, SetValue[pick4, 4], SetValue[pick4,0])
+If(lengthSM < 4 && selected < 7 && pick5 == 0, SetValue[pick5, 5], SetValue[pick5,0])
+If(lengthSM < 4 && selected < 7 && pick6 == 0, SetValue[pick6, 6], SetValue[pick6,0])
+
+If(selected < 6 && pick7 == 0, SetValue[pick7, 7], SetValue[pick7, 0])
+If(selected < 6 && pick8 == 0, SetValue[pick8, 8], SetValue[pick8, 0])
+If(selected < 6 && pick9 == 0, SetValue[pick9, 9], SetValue[pick9, 0])
+
+If(selected < 6 && pick10 == 0, SetValue[pick10, 10], SetValue[pick10, 0])
+If(selected < 6 && pick11 == 0, SetValue[pick11, 11], SetValue[pick11, 0])
+
+
+# code to calculate the sum of amount and validate them
+
+enterAd1 = ?
+IBenterAd1 = InputBox( enterAd1 )
+SetConditionToShowObject( IBenterAd1, q == 4 || q == 6)
+ShowLabel( IBenterAd1, false )
+
+enterAd2 = ?
+IBenterAd2 = InputBox( enterAd2 )
+SetConditionToShowObject( IBenterAd2, q == 4 || q == 6)
+ShowLabel( IBenterAd2, false )
+
+enterAd3 = ?
+IBenterAd3 = InputBox( enterAd3 )
+SetConditionToShowObject( IBenterAd3, q == 4 || q == 6)
+ShowLabel( IBenterAd3, false )
+
+enterAd4 = ?
+IBenterAd4 = InputBox( enterAd4 )
+SetConditionToShowObject( IBenterAd4, q == 4 || q == 6)
+ShowLabel( IBenterAd4, false )
+
+enterAd5 = ?
+IBenterAd5 = InputBox( enterAd5 )
+SetConditionToShowObject( IBenterAd5, q == 4 || q == 6)
+ShowLabel( IBenterAd5, false )
+
+enterAd6 = ?
+IBenterAd6 = InputBox( enterAd6 )
+SetConditionToShowObject( IBenterAd6, q == 4 || q == 6)
+ShowLabel( IBenterAd6, false )
+
+enterCst1 = ?
+IBenterCst1 = InputBox( enterCst1 )
+SetConditionToShowObject( IBenterCst1, q == 4 || q == 6)
+ShowLabel( IBenterCst1, false )
+checkCst1 = enterCst1 == enterAd1 * Element(ListAll, Element(order, 1), 3)
+
+
+enterCst2 = ?
+IBenterCst2 = InputBox( enterCst2 )
+SetConditionToShowObject( IBenterCst2, q == 4 || q == 6)
+ShowLabel( IBenterCst2, false )
+checkCst2 = enterCst2 == enterAd2 * Element(ListAll, Element(order, 2), 3)
+
+
+enterCst3 = ?
+IBenterCst3 = InputBox( enterCst3 )
+SetConditionToShowObject( IBenterCst3, q == 4 || q == 6)
+ShowLabel( IBenterCst3, false )
+checkCst3 = enterCst3 == enterAD3 * (Element(ListAll, Element(order, 3), 3))
+
+enterCst4 = ?
+IBenterCst4 = InputBox( enterCst4 )
+SetConditionToShowObject( IBenterCst4, q == 4 || q == 6)
+ShowLabel( IBenterCst4, false )
+checkCst4 = enterCst4 == enterAd4 * Element(ListAll, Element(order, 4), 3)
+
+enterCst5 = ?
+IBenterCst5 = InputBox( enterCst5 )
+SetConditionToShowObject( IBenterCst5, q == 4 || q == 6)
+ShowLabel( IBenterCst5, false )
+checkCst5 = enterCst5 == enterAd5 * Element(ListAll, Element(order, 5), 3)
+
+enterCst6 = ?
+IBenterCst6 = InputBox( enterCst6 )
+SetConditionToShowObject( IBenterCst6, q == 4 || q == 6)
+ShowLabel( IBenterCst6, false )
+checkCst6 = enterCst6 == enterAd5 * Element(ListAll, Element(order, 6), 3)
+
+
+enterAd7 = ?
+IBenterAd7 = InputBox( enterAd7 )
+SetConditionToShowObject( IBenterAd7, q == 4 || q == 6)
+ShowLabel( IBenterAd7, false )
+
+enterAd8 = ?
+IBenterAd8 = InputBox( enterAd8 )
+SetConditionToShowObject( IBenterAd8, q == 4 || q == 6)
+ShowLabel( IBenterAd8, false )
+
+enterCst7 = ?
+IBenterCst7 = InputBox( enterCst7 )
+SetConditionToShowObject( IBenterCst7, q == 4 || q == 6)
+ShowLabel( IBenterCst7, false )
+
+
+enterCst8 = ?
+IBenterCst8 = InputBox( enterCst8 )
+SetConditionToShowObject( IBenterCst8, q == 4 || q == 6)
+ShowLabel( IBenterCst8, false )
+
+
+
+# enter other medium
+enterMedium1 = ""
+IBenterMedium1 = InputBox( enterMedium1 )
+SetConditionToShowObject( IBenterMedium1, q==4 || q==6)
+ShowLabel( IBenterMedium1, false )
+
+enterMedium2 = ""
+IBenterMedium2 = InputBox( enterMedium2 )
+SetConditionToShowObject( IBenterMedium2, q==4 || q==6)
+ShowLabel( IBenterMedium2, false )
+
+# code to show the level fo meter filled
+
+
+
+# 4 different conditions for to show validations
+
+# 11 texts to show in permutation and combinations
+
+ListAll = {{"Facebook ads", "$3 per 100 ads", 3/100, 100/100},
+{"Instagram ads", "$6.70 per 1000 ads", 6.7/1000, 200/1000 },
+{"Google ads", "$10 per 10 ads", 10/10, 100/10},
+{"Youtube ads", "$30 PER 100 ads", 30/100, 300/100},
+{"Twitter ads", "$3.30 per 1000 ads", 3.3/1000, 300/1000},
+{"online newspapers", "$15 per ad", 15, 150},
+{"Local magazines", "$40 per ad", 40, 400},
+{"National magazines", "$70 per ad", 70, 700},
+{"Printed newspapers", "$35 per ad", 35, 350},
+{"Public channels", "$180 per 3 ads", 180/3, 600/3},
+{"Private channels", "$270 per 6 ads", 270/6, 450/6}}
+
+checkCst = checkCst1 == checkCst2 == checkCst3 == checkCst4 == checkCst5 == checkCst6 == true
+totalCost = enterCst1 + enterCst2 + enterCst3 + enterCst4 + enterCst5 + enterCst6 + enterCst7 + enterCst8
+reached = enterAd1 * Element(ListAll, Element(order, 1), 4) + enterAd2 * Element(ListAll, Element(order, 2), 4) + enterAd3 * Element(ListAll, Element(order, 3), 4) + enterAd4 * Element(ListAll, Element(order, 4), 4) + enterAd5 * Element(ListAll, Element(order, 5), 4) + enterAd6 * Element(ListAll, Element(order, 6), 4) + enterAd7 * 50 + enterAd8 * 50
+
+
+# validate on screen 4
+If(q==4 && checkCst == true && reached >= 8000, SetValue[q,q+1], SetValue[check, -1])
+
+
+# create points to attach below points
+yDist = 0.6
+Pt1 = (2, 8.5)
+Pt2 = (x(Pt1), y(Pt1 - yDist))
+Pt3 = (x(Pt2), y(Pt2 - yDist))
+Pt4 = (x(Pt3), y(Pt3 - yDist))
+Pt5 = (x(Pt4), y(Pt4 - yDist))
+Pt6 = (x(Pt5), y(Pt5 - yDist))
+
+Pr1 = (7, 8.5)
+Pr2 = (x(Pr1), y(Pr1 - yDist))
+Pr3 = (x(Pr2), y(Pr2 - yDist))
+Pr4 = (x(Pr3), y(Pr3 - yDist))
+Pr5 = (x(Pr4), y(Pr4 - yDist))
+Pr6 = (x(Pr5), y(Pr5 - yDist))
+
+Pa1 = (7, 8.5)
+Pa2 = (x(Pa1), y(Pa1 - yDist))
+Pa3 = (x(Pa2), y(Pa2 - yDist))
+Pa4 = (x(Pa3), y(Pa3 - yDist))
+Pa5 = (x(Pa4), y(Pa4 - yDist))
+Pa6 = (x(Pa5), y(Pa5 - yDist))
+
+Pc1 = (7, 8.5)
+Pc2 = (x(Pc1), y(Pc1 - yDist))
+Pc3 = (x(Pc2), y(Pc2 - yDist))
+Pc4 = (x(Pc3), y(Pc3 - yDist))
+Pc5 = (x(Pc4), y(Pc4 - yDist))
+Pc6 = (x(Pc5), y(Pc5 - yDist))
+
+# code to show proper text according to selection
+
+showText1 = Text(Element(ListAll, Element(order, 1), 1))
+
+showText2 = Text(Element(ListAll, Element(order, 2), 1))
+
+showText3 = Text(Element(ListAll, Element(order, 3), 1))
+
+showText4 = Text(Element(ListAll, Element(order, 4), 1))
+
+showText5 = Text(Element(ListAll, Element(order, 5), 1))
+
+showText6 = Text(Element(ListAll, Element(order, 6), 1))
+
+SetCoords(showText1, x(Pt1), y(Pt1))
+SetCoords(showText2, x(Pt2), y(Pt2))
+SetCoords(showText3, x(Pt3), y(Pt3))
+SetCoords(showText4, x(Pt4), y(Pt4))
+SetCoords(showText5, x(Pt5), y(Pt5))
+SetCoords(showText6, x(Pt6), y(Pt6))
+
+# code to show rate to selection
+
+showRate1 = Text(Element(ListAll, Element(order, 1), 2))
+
+showRate2 = Text(Element(ListAll, Element(order, 2), 2))
+
+showRate3 = Text(Element(ListAll, Element(order, 3), 2))
+
+showRate4 = Text(Element(ListAll, Element(order, 4), 2))
+
+showRate5 = Text(Element(ListAll, Element(order, 5), 2))
+
+showRate6 = Text(Element(ListAll, Element(order, 6), 2))
+
+SetCoords(showRate1, x(Pr1), y(Pr1))
+SetCoords(showRate2, x(Pr2), y(Pr2))
+SetCoords(showRate3, x(Pr3), y(Pr3))
+SetCoords(showRate4, x(Pr4), y(Pr4))
+SetCoords(showRate5, x(Pr5), y(Pr5))
+SetCoords(showRate6, x(Pr6), y(Pr6))
+
+
+#Next button
+If(q!=3 && q!=4, SetValue[q,q+1])
+If(q==3 && lengthSM >4 && lengthPM==0 && lengthTV==0 && selected > 7, SetValue[check, -1])
+If(q==3 && lengthSM <5 && lengthPM>0 && lengthTV>0 && selected < 7, SetValue[q,q+1])
+If(q==4 && checkCst == true && reached >= 8000 && totalCost <= 500, SetValue[q,q+1])
+If(q==4 && ( checkCst != true || reached < 8000 || totalCost > 500), SetValue[check, -1])
+

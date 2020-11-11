@@ -1,0 +1,33 @@
+If(IsInRegion(E,q1),SetValue(drag,1),SetValue(drag,0))
+If(IsInRegion(E,q2),SetValue(drag2,1),SetValue(drag2,0))
+If(IsInRegion(E,q3),SetValue(drag3,1),SetValue(drag3,0))
+If(IsInRegion(E,q4),SetValue(drag4,1),SetValue(drag4,0))
+
+
+If(IsInRegion(F,q1),SetValue(drag,1),SetValue(drag,0))
+If(IsInRegion(F,q2),SetValue(drag2,1),SetValue(drag2,0))
+If(IsInRegion(F,q3),SetValue(drag3,1),SetValue(drag3,0))
+If(IsInRegion(F,q4),SetValue(drag4,1),SetValue(drag4,0))
+
+
+If(IsInRegion(G,q1),SetValue(drag1,1),SetValue(drag,0))
+If(IsInRegion(G,q2),SetValue(drag2,1),SetValue(drag2,0))
+If(IsInRegion(G,q3),SetValue(drag3,1),SetValue(drag3,0))
+If(IsInRegion(G,q4),SetValue(drag4,1),SetValue(drag4,0))
+
+If(IsInRegion(H,q1),SetValue(drag1,1),SetValue(drag,0))
+If(IsInRegion(H,q2),SetValue(drag2,1),SetValue(drag2,0))
+If(IsInRegion(H,q3),SetValue(drag3,1),SetValue(drag3,0))
+If(IsInRegion(H,q4),SetValue(drag4,1),SetValue(drag4,0))
+
+
+dragInq1 =  (If(IsInRegion(E,q1)==true || IsInRegion(F,q1) == true || IsInRegion(G,q1) == true || IsInRegion(H,q1) == true, SetValue[drag,1],SetValue[drag,0]))
+dragInq2 =  (If(IsInRegion(E,q2)==true || IsInRegion(F,q2) == true || IsInRegion(G,q2) == true || IsInRegion(H,q2) == true, SetValue(drag2,1),SetValue(drag2,0)))
+dragInq3 =  (If(IsInRegion(E,q3)==true || IsInRegion(F,q3) == true || IsInRegion(G,q3) == true || IsInRegion(H,q3) == true, SetValue(drag3,1),SetValue(drag3,0)))
+dragInq4 =  (If(IsInRegion(E,q4)==true || IsInRegion(F,q4) == true || IsInRegion(G,q4) == true || IsInRegion(H,q4) == true, SetValue(drag4,1),SetValue(drag4,0)))
+
+If(IsInRegion(E,q1)==true || IsInRegion(F,q1) == true || IsInRegion(G,q1) == true || IsInRegion(H,q1) == true, SetValue[drag,1],SetValue[drag,0])
+If(IsInRegion(E,q2)==true || IsInRegion(F,q2) == true || IsInRegion(G,q2) == true || IsInRegion(H,q2) == true, SetValue(drag2,1),SetValue(drag2,0))
+If(IsInRegion(E,q3)==true || IsInRegion(F,q3) == true || IsInRegion(G,q3) == true || IsInRegion(H,q3) == true, SetValue(drag3,1),SetValue(drag3,0))
+If(IsInRegion(E,q4)==true || IsInRegion(F,q4) == true || IsInRegion(G,q4) == true || IsInRegion(H,q4) == true, SetValue(drag4,1),SetValue(drag4,0))
+

@@ -1,0 +1,199 @@
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+enterName = ""
+IBenterName = InputBox( enterName )
+SetConditionToShowObject( IBenterName, q==2)
+ShowLabel( IBenterName, false )
+
+If(Length(enterName)>0, SetValue[q,q+1])
+
+showName = Text( enterName )
+SetConditionToShowObject( showName, q==qtotal)
+
+populationCal = {  100  ,  200  ,  300  ,  400  , 500  }
+population = {"  100  ","  200  ","  300  ","  400  "," 500  "}
+selectP = SelectedIndex( population )
+SetConditionToShowObject( population , q==0)
+
+listX = {{0, 50, 100}, {0, 10, 20}, {20, 30, 40}, {20, 30, 40}, {70, 80, 90}}
+
+listY = {{0, 10, 20}, {0,50, 100}, {40, 60, 80}, {70,80,90}, {20, 30, 40}}
+
+
+
+
+listRelation1 = {"y=x/5", "y=2x", "y=5x", "y=x+50", "y=x-50"}
+listRelation2 = {"y=x/5", "y = 2*x", "y=5*x", "y=50+x", "y=x-50"}
+listRelation3 = {"y=x/5", "y = x*2", "y=x*5", "y=50+x", "y=x-50"}
+listRelation1' = {"y = x/5", "y  =  2x", "y = 5x", "y = x+50", "y = x-50"}
+listRelation2' = {"y = x/5", "y  =  2*x", "y = 5*x", "y = 50+x", "y = x-50"}
+listRelation3' = {"y = x/5", "y  =  x*2", "y = x*5", "y = 50+x", "y = x-50"}
+
+#update the values
+
+enterqSP = Text(Element(listNumb, 2, selectP)/5 * sumSP)
+enterqPS = Text(Element(listNumb, 4, selectP)/5 * sumPS)
+enterqS = Text(Element(listNumb, 5, selectP)/5 * sumS)
+enterqF = Text(Element(listNumb, 1, selectP)/5 * sumF)
+enterqH = Text(Element(listNumb, 3, selectP)/5 * sumH)
+
+
+#check button
+SetValue[check, -1]
+If(sumSP == 5 && sumPS == 5 && sumS == 5 && sumF == 5 && sumH == 5, SetValue[check, 1])
+
+# order = {{farms}, {solar panels}, {hospitals}, {PS}, {School}}
+listNumb = {{20, 40, 60, 80, 100}, {200, 400, 600, 800, 1000}, {500, 1000, 1500, 2000, 2500}, {150, 250, 350, 450, 550}, {50, 150, 250, 350, 450}}
+
+Element(listNumb, 2, selectP)
+Element(listNumb, 4, selectP)
+Element(listNumb, 5, selectP)
+Element(listNumb, 1, selectP)
+Element(listNumb, 3, selectP)
+
+# oder this is to check  order = {{farms}, {hospitals}, {solar panels},  {PS}, {School}}
+listNumb2 = {{20, 40, 60, 80, 100}, {500, 1000, 1500, 2000, 2500}, {200, 400, 600, 800, 1000}, {150, 250, 350, 450, 550}, {50, 150, 250, 350, 450}}
+
+
+enterX1 = ?
+IBenterX1 = InputBox( enterX1 )
+SetConditionToShowObject( IBenterX1, 3<=q<=7 || q == qtotal +1)
+ShowLabel( IBenterX1, false )
+
+enterX2 = ?
+IBenterX2 = InputBox( enterX2 )
+SetConditionToShowObject( IBenterX2, 3<=q<=7 || q == qtotal +1)
+ShowLabel( IBenterX2, false )
+
+enterX3 = ?
+IBenterX3 = InputBox( enterX3 )
+SetConditionToShowObject( IBenterX3, 3<=q<=7 || q == qtotal +1)
+ShowLabel( IBenterX3, false )
+
+enterY1 = ?
+IBenterY1 = InputBox( enterY1 )
+SetConditionToShowObject( IBenterY1, 3<=q<=7 || q == qtotal +1)
+ShowLabel( IBenterY1, false )
+
+enterY2 = ?
+IBenterY2 = InputBox( enterY2 )
+SetConditionToShowObject( IBenterY2, 3<=q<=7 || q == qtotal +1)
+ShowLabel( IBenterY2, false )
+
+enterY3 = ?
+IBenterY3 = InputBox( enterY3 )
+SetConditionToShowObject( IBenterY3, 3<=q<=7 || q == qtotal +1)
+ShowLabel( IBenterY3, false )
+
+enterNumb = ?
+IBenterNumb = InputBox( enterNumb )
+SetConditionToShowObject( IBenterNumb, 3<=q<=7 || q == qtotal +1)
+ShowLabel( IBenterNumb, false )
+
+listRel = {ans0, ans2 , ans1, ans4, ans3, ans5 }
+ansRel = {0, 0, 3, 2, 5, 4, 6}
+
+
+checkSame = (If(enterX1!=enterX2 && enterX1!=enterX3 && enterY1!=enterY2 && enterY1!=enterY3, true, false))
+checkX1 = (If(enterX1==Element(listX, q-2, 1) || enterX1==Element(listX, q-2, 2) || enterX1==Element(listX, q-2, 3), true, false))
+checkX2 = (If(enterX2==Element(listX, q-2, 1) || enterX2==Element(listX, q-2, 2) || enterX2==Element(listX, q-2, 3), true, false))
+checkX3 = (If(enterX3==Element(listX, q-2, 1) || enterX3==Element(listX, q-2, 2) || enterX3==Element(listX, q-2, 3), true, false))
+checkY1 = (If(enterY1==Element(listY, q-2, 1) || enterY1==Element(listY, q-2, 2) || enterY1==Element(listY, q-2, 3), true, false))
+checkY2 = (If(enterY2==Element(listY, q-2, 1) || enterY2==Element(listY, q-2, 2) || enterY2==Element(listY, q-2, 3), true, false))
+checkY3 = (If(enterY3==Element(listY, q-2, 1) || enterY3==Element(listY, q-2, 2) || enterY3==Element(listY, q-2, 3), true, false))
+checkNumb = If(enterNumb == Element(listNumb2, q-2, selectP), true, false)
+
+checkRel = SelectedIndex(listRel) == Element(ansRel, q)
+
+#remove, this is for input box
+enterRel = ""
+IBenterRel = InputBox( enterRel )
+SetConditionToShowObject( IBenterRel, 3<=q<=7 || q == qtotal +1)
+ShowLabel( IBenterRel, false )
+checkRel =  If(enterRel == Element(listRelation1, q) || enterRel == Element(listRelation2, q) || enterRel == Element(listRelation3, q) || enterRel == Element(listRelation1', q) || enterRel == Element(listRelation2', q) || enterRel == Element(listRelation3', q), true, false)
+
+
+##check Button
+SetValue[check, -1]
+If(1<=q<=6, If(checkX1==checkX2==checkX3==checkY1==checkY2==checkY3==checkNumb==checkRel== checkSame == true, SetValue[check, 1]))
+
+
+#Home
+enterX1 =undefined
+enterX2 =undefined
+enterX3 =undefined
+enterY1 =undefined
+enterY2 =undefined
+enterY3 =undefined
+enterNumb =undefined
+SetValue[listRel, 1]
+SetValue[population, 1]
+
+
+
+## booleans for the images
+
+addFarms = false
+addHospitals = false
+addSolarPanels = false
+addPS = false
+addSchools = false
+
+addMalls = false
+addParks = false
+addBusStops = false
+
+remove = false
+
+
+
+
+
+#create points for the Grid
+
+
+
+##create polygons
+
+
+Point for
+(x(I + 0.5), y(I + 1.2))
+
+(x(P1 + 0.5), y(P1 + 1.2))
+
+xDist = 0
+yDist = 1.2
+
+
+(x(P6), y(P6 + 1.2))
+
+
+enterqSP = 00
+IBenterqSP = InputBox( enterqSP )
+SetConditionToShowObject( IBenterqSP, 9<=q<=15)
+ShowLabel( IBenterqSP, false )
+
+enterqPS = 00
+IBenterqPS = InputBox( enterqPS )
+SetConditionToShowObject( IBenterqPS, 9<=q<=15)
+ShowLabel( IBenterqPS, false )
+
+enterqS = 00
+IBenterqS = InputBox( enterqS )
+SetConditionToShowObject( IBenterqS, 9<=q<=15)
+ShowLabel( IBenterqS, false )
+
+enterqF = 00
+IBenterqF = InputBox( enterqF )
+SetConditionToShowObject( IBenterqF, 9<=q<=15)
+ShowLabel( IBenterqF, false )
+
+enterqH = 00
+IBenterqH = InputBox( enterqH )
+SetConditionToShowObject( IBenterqH, 9<=q<=15)
+ShowLabel( IBenterqH, false )
+
+
+If(q==15, {SetValue[addFarms, false], SetValue[addHospitals, false], SetValue[addPS, false], SetValue[addSchools, false], SetValue[addSolarPanels, false]})
