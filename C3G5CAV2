@@ -1,0 +1,206 @@
+checkq7 = If((IsInRegion( Pop1, C1 )==true || IsInRegion( Pop2, C1 ) == true || IsInRegion( Pop3, C1 ) == true) &&
+(IsInRegion( Pplu1, C3 )==true || IsInRegion( Pplu2, C3 ) == true || IsInRegion( Pplu3, C3 ) == true || IsInRegion( Pplu4, C3 ) == true) &&
+(IsInRegion( Pcp1, C5 )==true || IsInRegion( Pcp2, C5 ) == true || IsInRegion( Pcp3, C5 ) == true) &&
+(IsInRegion( Pplu1, C6 )==true || IsInRegion( Pplu2, C6 ) == true || IsInRegion( Pplu3, C6 ) == true || IsInRegion( Pplu4, C6 ) == true) &&
+(IsInRegion( Pmul1, C8 )==true || IsInRegion( Pmul2, C8 ) == true || IsInRegion( Pmul3, C8 ) == true), true, false)
+
+checkq8 = If((IsInRegion(Pop1, C2) ≟ true ∨ IsInRegion(Pop2, C2) ≟ true ∨ IsInRegion(Pop3, C2) ≟ true) ∧
+(IsInRegion(Psub1, C4) ≟ true ∨ IsInRegion(Psub2, C4) ≟ true ∨ IsInRegion(Psub3, C4) ≟ true) ∧
+(IsInRegion(Pcp1, C6) ≟ true ∨ IsInRegion(Pcp2, C6) ≟ true ∨ IsInRegion(Pcp3, C6) ≟ true) ∧
+(IsInRegion(Pdiv1, C7) ≟ true ∨ IsInRegion(Pdiv2, C7) ≟ true ∨ IsInRegion(Pdiv3, C7) ≟ true), true, false)
+
+checkq15 = If((IsInRegion(Pop1, C2) ≟ true ∨ IsInRegion(Pop2, C2) ≟ true ∨ IsInRegion(Pop3, C2) ≟ true) ∧
+(IsInRegion(Pmul1, C4) ≟ true ∨ IsInRegion(Pmul2, C4) ≟ true ∨ IsInRegion(Pmul3, C4) ≟ true) ∧
+(IsInRegion(Pcp1, C6) ≟ true ∨ IsInRegion(Pcp2, C6) ≟ true ∨ IsInRegion(Pcp3, C6) ≟ true) ∧
+(IsInRegion(Pplu1, C7) ≟ true ∨ IsInRegion(Pplu2, C7) ≟ true ∨ IsInRegion(Pplu3, C7) ≟ true || IsInRegion( Pplu4, C7 ) == true), true, false)
+
+checkq17 = If((IsInRegion( Pplu1, C2 )==true || IsInRegion( Pplu2, C2 ) == true || IsInRegion( Pplu3, C2 ) == true || IsInRegion( Pplu4, C2 ) == true) &&
+(IsInRegion( Pplu1, C4 )==true || IsInRegion( Pplu2, C4 ) == true || IsInRegion( Pplu3, C4 ) == true || IsInRegion( Pplu4, C4 ) == true) &&
+(IsInRegion( Pplu1, C6 )==true || IsInRegion( Pplu2, C6 ) == true || IsInRegion( Pplu3, C6 ) == true || IsInRegion( Pplu4, C6 ) == true) &&
+(IsInRegion( Pplu1, C8 )==true || IsInRegion( Pplu2, C8 ) == true || IsInRegion( Pplu3, C8 ) == true || IsInRegion( Pplu4, C8 ) == true), true, false)
+
+checkq18 = If((IsInRegion(Pop1, C2) ≟ true ∨ IsInRegion(Pop2, C2) ≟ true ∨ IsInRegion(Pop3, C2) ≟ true) ∧
+(IsInRegion(Psub1, C4) ≟ true ∨ IsInRegion(Psub2, C4) ≟ true ∨ IsInRegion(Psub3, C4) ≟ true) ∧
+(IsInRegion(Pcp1, C6) ≟ true ∨ IsInRegion(Pcp2, C6) ≟ true ∨ IsInRegion(Pcp3, C6) ≟ true) ∧
+(IsInRegion(Pdiv1, C7) ≟ true ∨ IsInRegion(Pdiv2, C7) ≟ true ∨ IsInRegion(Pdiv3, C7) ≟ true), true, false)
+
+checkq24 = If((IsInRegion(Pop1, C2) ≟ true ∨ IsInRegion(Pop2, C2) ≟ true ∨ IsInRegion(Pop3, C2) ≟ true) ∧
+(IsInRegion(Pmul1, C4) ≟ true ∨ IsInRegion(Pmul2, C4) ≟ true ∨ IsInRegion(Pmul3, C4) ≟ true) ∧
+(IsInRegion(Pcp1, C6) ≟ true ∨ IsInRegion(Pcp2, C6) ≟ true ∨ IsInRegion(Pcp3, C6) ≟ true) ∧
+(IsInRegion(Pplu1, C7) ≟ true ∨ IsInRegion(Pplu2, C7) ≟ true ∨ IsInRegion(Pplu3, C7) ≟ true || IsInRegion( Pplu4, C7 ) == true), true, false)
+
+checkq26 = If((IsInRegion( Pplu1, C2 )==true || IsInRegion( Pplu2, C2 ) == true || IsInRegion( Pplu3, C2 ) == true || IsInRegion( Pplu4, C2 ) == true) &&
+(IsInRegion( Pplu1, C4 )==true || IsInRegion( Pplu2, C4 ) == true || IsInRegion( Pplu3, C4 ) == true || IsInRegion( Pplu4, C4 ) == true) &&
+(IsInRegion( Pplu1, C6 )==true || IsInRegion( Pplu2, C6 ) == true || IsInRegion( Pplu3, C6 ) == true || IsInRegion( Pplu4, C6 ) == true) &&
+(IsInRegion( Pplu1, C8 )==true || IsInRegion( Pplu2, C8 ) == true || IsInRegion( Pplu3, C8 ) == true || IsInRegion( Pplu4, C8 ) == true), true, false)
+
+
+
+
+Rad= 0.5
+xDistC = 1.42
+Pc1 = (11,8)
+Pc2 = (x(Pc1)+ xDistC, y(Pc1))
+Pc3 = (x(Pc1)+ 2*xDistC, y(Pc1))
+Pc4 = (x(Pc1)+ 3*xDistC, y(Pc1))
+Pc5 = (x(Pc1)+ 4*xDistC, y(Pc1))
+Pc6 = (x(Pc1)+ 5*xDistC, y(Pc1))
+Pc7 = (x(Pc1)+ 6*xDistC, y(Pc1))
+Pc8 = (x(Pc1)+ 7*xDistC, y(Pc1))
+Pc9 = (x(Pc1)+ 8*xDistC, y(Pc1))
+
+C1 =Circle( Pc1, Rad)
+C1 =Circle( Pc1, Rad)
+C2 =Circle( Pc2, Rad)
+C3 =Circle( Pc3, Rad)
+C4 =Circle( Pc4, Rad)
+C5 =Circle( Pc5, Rad)
+C6 =Circle( Pc6, Rad)
+C7 =Circle( Pc7, Rad)
+C8 =Circle( Pc8, Rad)
+C9 =Circle( Pc9, Rad)
+
+
+####setting Pics:
+SetCoords(pic1, x(Pop1), y(Pop1))
+SetConditionToShowObject( pic1, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic1, 0 )
+SetFixed( pic1, true )
+Rename( pic1, "picPop1" )
+
+SetCoords(pic2, x(Pop1), y(Pop1))
+SetConditionToShowObject( pic2, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic2, 0 )
+SetFixed( pic2, true )
+Rename( pic2, "picPop2" )
+
+SetCoords(pic3, x(Pop1), y(Pop1))
+SetConditionToShowObject( pic3, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic3, 0 )
+SetFixed( pic3, true )
+Rename( pic3, "picPop3" )
+
+SetCoords(pic4, x(Pcp1), y(Pcp1))
+SetConditionToShowObject( pic4, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic4, 0 )
+SetFixed( pic4, true )
+Rename( pic4, "picPcp1" )
+
+SetCoords(pic5, x(Pcp1), y(Pcp1))
+SetConditionToShowObject( pic5, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic5, 0 )
+SetFixed( pic5, true )
+Rename( pic5, "picPcp2" )
+
+SetCoords(pic6, x(Pcp1), y(Pcp1))
+SetConditionToShowObject( pic6, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic6, 0 )
+SetFixed( pic6, true )
+Rename( pic6, "picPcp3" )
+
+SetCoords(pic7, x(Pdiv1), y(Pdiv1))
+SetConditionToShowObject( pic7, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic7, 0 )
+SetFixed( pic7, true )
+Rename( pic7, "picPdiv1" )
+
+SetCoords(pic8, x(Pdiv1), y(Pdiv1))
+SetConditionToShowObject( pic8, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic8, 0 )
+SetFixed( pic8, true )
+Rename( pic8, "picPdiv2" )
+
+SetCoords(pic9, x(Pdiv1), y(Pdiv1))
+SetConditionToShowObject( pic9, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic9, 0 )
+SetFixed( pic9, true )
+Rename( pic9, "picPdiv3" )
+
+SetCoords(pic10, x(Psub1), y(Psub1))
+SetConditionToShowObject( pic10, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic10, 0 )
+SetFixed( pic10, true )
+Rename( pic10, "picPsub1" )
+
+SetCoords(pic11, x(Psub1), y(Psub1))
+SetConditionToShowObject( pic11, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic11, 0 )
+SetFixed( pic11, true )
+Rename( pic11, "picPsub2" )
+
+SetCoords(pic12, x(Psub1), y(Psub1))
+SetConditionToShowObject( pic12, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic12, 0 )
+SetFixed( pic12, true )
+Rename( pic12, "picPsub3" )
+
+
+SetCoords(pic13, x(Pplu1), y(Pplu1))
+SetConditionToShowObject( pic13, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic13, 0 )
+SetFixed( pic13, true )
+Rename( pic13, "picPplu1" )
+
+SetCoords(pic14, x(Pplu1), y(Pplu1))
+SetConditionToShowObject( pic14, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic14, 0 )
+SetFixed( pic14, true )
+Rename( pic14, "picPplu2" )
+
+SetCoords(pic15, x(Pplu1), y(Pplu1))
+SetConditionToShowObject( pic15, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic15, 0 )
+SetFixed( pic15, true )
+Rename( pic15, "picPplu3" )
+
+SetCoords(pic16, x(Pmul1), y(Pmul1))
+SetConditionToShowObject( pic16, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic16, 0 )
+SetFixed( pic16, true )
+Rename( pic16, "picPmul1" )
+
+SetCoords(pic17, x(Pmul1), y(Pmul1))
+SetConditionToShowObject( pic17, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic17, 0 )
+SetFixed( pic17, true )
+Rename( pic17, "picPmul2" )
+
+SetCoords(pic18, x(Pmul1), y(Pmul1))
+SetConditionToShowObject( pic18, q∈ {7,8,15,17,18,24, 26})
+SetLayer( pic18, 0 )
+SetFixed( pic18, true )
+Rename( pic18, "picPmul3" )
+
+
+
+
+SetValue[check,-1]
+If(q==5, If(checkAns== 1 , SetValue[check, 1]))
+If(q==6, If(checkAns== 4, SetValue[check, 1]))
+If(q==7, If((IsInRegion( Pop1, C1 )==true || IsInRegion( Pop2, C1 ) == true || IsInRegion( Pop3, C1 ) == true) && (IsInRegion( Pop1, C1 )==true || IsInRegion( Pop2, C1 ) == true || IsInRegion( Pop3, C1 ) == true)
+If(q==16, If(checkAns== 4, SetValue[check, 1]))
+If(q==25, If(checkAns== 4, SetValue[check, 1]))
+If(q==27, If(checkAns== 4, SetValue[check, 1]))
+
+
+Pop1 = (13.38, 3.83)
+Pop2 = (13.38, 3.83)
+Pop3 = (13.38, 3.83)
+Pcp1 = (14.7, 3.83)
+Pcp2 = (14.7, 3.83)
+Pcp3 = (14.7, 3.83)
+Pdiv1 = (16.02, 3.83)
+Pdiv2 = (16.02, 3.83)
+Pdiv3 = (16.02, 3.83)
+Psub1 = (17.34, 3.83)
+Psub2 = (17.34, 3.83)
+Psub3 = (17.34, 3.83)
+Pplu1 = (18.66, 3.83)
+Pplu2 = (18.66, 3.83)
+Pplu3 = (18.66, 3.83)
+Pplu4 = (18.66, 3.83)
+Pmul1 = (19.98, 3.83)
+Pmul2 = (19.98, 3.83)
+Pmul3 = (19.98, 3.83)
+
+

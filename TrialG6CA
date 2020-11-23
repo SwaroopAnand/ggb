@@ -1,0 +1,125 @@
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+enterName = ""
+IBenterName = InputBox( enterName )
+SetConditionToShowObject( IBenterName, q == 0)
+ShowLabel( IBenterName, false )
+
+showName = Text(enterName)
+SetConditionToShowObject( showName, q == qtotal)
+
+enterNPetals = ?
+IBenterNPetals = InputBox( enterNPetals )
+SetConditionToShowObject( IBenterNPetals,  q == 1)
+ShowLabel( IBenterNPetals, false )
+#code inside above petal
+If(enterNPetals < 4, SetValue[enterNPetals, 4], If(enterNPetals>12, SetValue[enterNPetals, 12]))
+
+Pno = Slider( 0, 12, 1, 1, 200, false, true, false, false )
+color = {{?,?,?,?,?,?,?,?,?,?,?,?}, {?,?,?,?,?,?,?,?,?,?,?,?}, {?,?,?,?,?,?,?,?,?,?,?,?}}
+
+r = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+g = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+b = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+SetConditionToShowObject( r,  q == 2)
+SetConditionToShowObject( g,  q == 2)
+SetConditionToShowObject( b,  q == 2)
+#code in the script of above sliders
+
+r1 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g1 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b1 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+r2 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g2 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b2 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+r3 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g3 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b3 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+r4 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g4 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b4 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+r5 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g5 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b5 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+r6 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g6 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b6 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+r7 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g7 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b7 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+r8 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g8 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b8 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+r9 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g9 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b9 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+r10 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g10 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b10 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+r11 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g11 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b11 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+r12 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+g12 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+b12 = Slider(0, 255, 1, 1, 200, false, true, false, false)
+
+If(Pno == 1, {SetValue[r1, r], SetValue[g1, g],SetValue[b1, b]})
+If(Pno == 2, {SetValue[r2, r], SetValue[g2, g],SetValue[b2, b]})
+If(Pno == 3, {SetValue[r3, r], SetValue[g3, g],SetValue[b3, b]})
+If(Pno == 4, {SetValue[r4, r], SetValue[g4, g],SetValue[b4, b]})
+If(Pno == 5, {SetValue[r5, r], SetValue[g5, g],SetValue[b5, b]})
+If(Pno == 6, {SetValue[r6, r], SetValue[g6, g],SetValue[b6, b]})
+If(Pno == 7, {SetValue[r7, r], SetValue[g7, g],SetValue[b7, b]})
+If(Pno == 8, {SetValue[r8, r], SetValue[g8, g],SetValue[b8, b]})
+If(Pno == 9, {SetValue[r9, r], SetValue[g9, g],SetValue[b9, b]})
+If(Pno == 10, {SetValue[r10, r], SetValue[g10, g],SetValue[b10, b]})
+If(Pno == 11, {SetValue[r11, r], SetValue[g11, g],SetValue[b11, b]})
+If(Pno == 12, {SetValue[r12, r], SetValue[g12, g],SetValue[b12, b]})
+
+p1 = Element( l4, 1 )
+p1n1 = Element( l3, 1 )
+p2 = Element( l4, 2 )
+p2n2 = Element( l3, 2 )
+p3 = Element( l4, 3 )
+p3n3 = Element( l3, 3 )
+p4 = Element( l4, 4 )
+p4n4 = Element( l3, 4 )
+p5 = Element( l4, 5 )
+p5n5 = Element( l3, 5 )
+p6 = Element( l4, 6 )
+p6n6 = Element( l3, 6 )
+p7 = Element( l4, 7 )
+p7n7 = Element( l3, 7 )
+p8 = Element( l4, 8 )
+p8n8 = Element( l3, 8 )
+p9 = Element( l4, 9 )
+p9n9 = Element( l3, 9 )
+p10 = Element( l4, 10 )
+p10n10 = Element( l3, 10 )
+p11 = Element( l4, 11 )
+p11n11 = Element( l3, 11 )
+p12 = Element( l4, 12 )
+p12n12 = Element( l3, 12 )
+
+
+
+If(Pno==1, {SetValue[Element(color, 1, Pno, r], SetValue[Element(color, 2, Pno, g], SetValue[Element(color, 1, Pno, b]})
+
+
+color = {{0,0,0,0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0,0,0,0}, {0,0,0,0,0,0,0,0,0,0,0,0}}
+
+
+
+## QA
+
+{1, 3, 2, 2, 2, 2, 2, 1, 4, 2, 2, 2, 2, 1, 4}
+
+If(ques ∈ {1,3}, Pa1, If(ques==2, Pa2, If(ques==4, Pa4, If(ques ∈ {5,6,7}, Pa5, If(ques ∈ {8,9,10}, Pa8, If(ques ∈ {11,12}, Pa11, If(ques==13, Pa13, If(ques ∈ {14, 15}, Pa14))))))))
+
+If(ques ∈ {1,3}, Pb1, If(ques==2, Pb2, If(ques==4, Pb4, If(ques ∈ {5,6,7}, Pb5, If(ques ∈ {8,9,10}, Pb8, If(ques ∈ {11,12}, Pb11, If(ques==13, Pb13, If(ques ∈ {14, 15}, Pb14))))))))
+
+If(ques ∈ {1,3}, Pc1, If(ques==2, Pc2, If(ques==4, Pc4, If(ques ∈ {5,6,7}, Pc5, If(ques ∈ {8,9,10}, Pc8, If(ques ∈ {11,12}, Pc11, If(ques==13, Pc13, If(ques ∈ {14, 15}, Pc14))))))))
+
+If(ques==2, Pd2, If(ques==4, Pd4, If(ques ∈ {5,6,7}, Pd5, If(ques ∈ {8,9,10}, Pd8, If(ques ∈ {11,12}, Pd11, If(ques==13, Pd13, If(ques ∈ {14, 15}, Pd14)))))))

@@ -82,12 +82,12 @@
 # sumRestaurants = []
 # sumChoice = []
 #
-# for y in range(1,8):
-#     for x in range(1,8):
-#         # print("P{}{} = (x(P00) +(xDist*{}), y(P00) - (yDist*{}))".format(y, x, x, y))
-#         # point = "P"
-#         point = str(y)
-#         point += str(x)
+for y in range(1,8):
+    for x in range(1,8):
+        # print("P{}{} = (x(P00) +(xDist*{}), y(P00) - (yDist*{}))".format(y, x, x, y))
+        # point = "P"
+        point = str(y)
+        point += str(x)
 #
 #         sumAppartments.append("+A{}".format(point))
 #         sumHospitals.append("+H{}".format(point))
@@ -105,91 +105,91 @@
 # print(sumRestaurants)
 # print(sumChoice)
 
-        # print("A{}=0".format(point))
-        # print("H{}=0".format(point))
-        # print("S{}=0".format(point))
-        # print("M{}=0".format(point))
-        # print("P{}=0".format(point))
-        # print("R{}=0".format(point))
-        # print("C{}=0\n".format(point))
+        # print("SetValue[A{},0]".format(point))
+        # print("SetValue[H{},0]".format(point))
+        # print("SetValue[S{},0]".format(point))
+        # print("SetValue[M{},0]".format(point))
+        # print("SetValue[PS{},0]".format(point))
+        # print("SetValue[R{},0]".format(point))
+        # print("SetValue[C{},0]\n".format(point))
 
 
 
 ##Create multiple images of the text
-for y in range(1,8):
-    for x in range(1,8):
-        # print("P{}{} = (x(P00) +(xDist*{}), y(P00) - (yDist*{}))".format(y, x, x, y))
-        # point = "P"
-        point = str(y)
-        point += str(x)
-
-        setToPoint = str(y-1)
-        setToPoint += str(x-1)
-        print("picAppartments_{{ignore}}{} = FormulaText( picAppartments )".format(point, point, point))
-        print("SetCoords(picAppartments_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
-        print("SetConditionToShowObject( picAppartments_{{ignore}}{},( q == 5 || q==7 ) && A{} == 1 )".format(point, point))
-        print("SetLayer( picAppartments_{{ignore}}{}, 0 )".format(point))
-        print("SetFixed( picAppartments_{{ignore}}{}, true ) \n".format(point))
-
-        print("picHospitals_{{ignore}}{} = FormulaText( picHospitals )".format(point, point, point))
-        print("SetCoords(picHospitals_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
-        print("SetConditionToShowObject( picHospitals_{{ignore}}{},( q == 5 || q==7 ) && H{} == 1 )".format(point, point))
-        print("SetLayer( picHospitals_{{ignore}}{}, 0 )".format(point))
-        print("SetFixed( picHospitals_{{ignore}}{}, true ) \n".format(point))
-
-        print("picSchools_{{ignore}}{} = FormulaText( picSchools )".format(point, point, point))
-        print("SetCoords(picSchools_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
-        print("SetConditionToShowObject( picSchools_{{ignore}}{},( q == 5 || q==7 ) && S{} == 1 )".format(point, point))
-        print("SetLayer( picSchools_{{ignore}}{}, 0 )".format(point))
-        print("SetFixed( picSchools_{{ignore}}{}, true ) \n".format(point))
-
-        print("picMarkets_{{ignore}}{} = FormulaText( picMarkets )".format(point, point, point))
-        print("SetCoords(picMarkets_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
-        print("SetConditionToShowObject( picMarkets_{{ignore}}{},( q == 5 || q==7 ) && M{} == 1 )".format(point, point))
-        print("SetLayer( picMarkets_{{ignore}}{}, 0 )".format(point))
-        print("SetFixed( picMarkets_{{ignore}}{}, true ) \n".format(point))
-
-        print("picPlaygrounds_{{ignore}}{} = FormulaText( picPlaygrounds )".format(point, point, point))
-        print("SetCoords(picPlaygrounds_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
-        print("SetConditionToShowObject( picPlaygrounds_{{ignore}}{},( q == 5 || q==7 ) && PS{} == 1 )".format(point, point))
-        print("SetLayer( picPlaygrounds_{{ignore}}{}, 0 )".format(point))
-        print("SetFixed( picPlaygrounds_{{ignore}}{}, true ) \n".format(point))
-
-        print("picRestaurants_{{ignore}}{} = FormulaText( picRestaurants )".format(point, point, point))
-        print("SetCoords(picRestaurants_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
-        print("SetConditionToShowObject( picRestaurants_{{ignore}}{},( q == 5 || q==7 ) && R{} == 1 )".format(point, point))
-        print("SetLayer( picRestaurants_{{ignore}}{}, 0 )".format(point))
-        print("SetFixed( picRestaurants_{{ignore}}{}, true ) \n".format(point))
-
-        print("picPS_{{ignore}}{} = FormulaText( picPS )".format(point, point, point))
-        print("SetCoords(picPS_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
-        print("SetConditionToShowObject( picPS_{{ignore}}{},( q == 5 || q==7 ) && C{} == 1 && selectPoliceStation == true )".format(point, point))
-        print("SetLayer( picPS_{{ignore}}{}, 0 )".format(point))
-        print("SetFixed( picPS_{{ignore}}{}, true ) \n".format(point))
-
-        print("picMall_{{ignore}}{} = FormulaText( picMall )".format(point, point, point))
-        print("SetCoords(picMall_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
-        print("SetConditionToShowObject( picMall_{{ignore}}{},( q == 5 || q==7 ) && C{} == 1 && selectMalls == true )".format(point, point))
-        print("SetLayer( picMall_{{ignore}}{}, 0 )".format(point))
-        print("SetFixed( picMall_{{ignore}}{}, true ) \n".format(point))
-
-        print("picFS_{{ignore}}{} = FormulaText( picFS )".format(point, point, point))
-        print("SetCoords(picFS_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
-        print("SetConditionToShowObject( picFS_{{ignore}}{},( q == 5 || q==7 ) && C{} == 1 && selectFireStation == true )".format(point, point))
-        print("SetLayer( picFS_{{ignore}}{}, 0 )".format(point))
-        print("SetFixed( picFS_{{ignore}}{}, true ) \n".format(point))
-
-        print("picTP_{{ignore}}{} = FormulaText( picTP )".format(point, point, point))
-        print("SetCoords(picTP_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
-        print("SetConditionToShowObject( picTP_{{ignore}}{},( q == 5 || q==7 ) && C{} == 1 && selectThemePark == true )".format(point, point))
-        print("SetLayer( picTP_{{ignore}}{}, 0 )".format(point))
-        print("SetFixed( picTP_{{ignore}}{}, true ) \n".format(point))
+# for y in range(1,8):
+#     for x in range(1,8):
+#         # print("P{}{} = (x(P00) +(xDist*{}), y(P00) - (yDist*{}))".format(y, x, x, y))
+#         # point = "P"
+#         point = str(y)
+#         point += str(x)
 #
-        print("picChoice_{{ignore}}{} = FormulaText( picChoice )".format(point, point, point))
-        print("SetCoords(picChoice_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
-        print("SetConditionToShowObject( picChoice_{{ignore}}{},( q == 5 || q==7 ) && C{} == 1 )".format(point, point))
-        print("SetLayer( picChoice_{{ignore}}{}, 0 )".format(point))
-        print("SetFixed( picChoice_{{ignore}}{}, true ) \n".format(point))
+#         setToPoint = str(y-1)
+#         setToPoint += str(x-1)
+#         print("picAppartments_{{ignore}}{} = FormulaText( picAppartments )".format(point, point, point))
+#         print("SetCoords(picAppartments_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
+#         print("SetConditionToShowObject( picAppartments_{{ignore}}{},( q == 5 || q==7 ) && A{} == 1 )".format(point, point))
+#         print("SetLayer( picAppartments_{{ignore}}{}, 0 )".format(point))
+#         print("SetFixed( picAppartments_{{ignore}}{}, true ) \n".format(point))
+#
+#         print("picHospitals_{{ignore}}{} = FormulaText( picHospitals )".format(point, point, point))
+#         print("SetCoords(picHospitals_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
+#         print("SetConditionToShowObject( picHospitals_{{ignore}}{},( q == 5 || q==7 ) && H{} == 1 )".format(point, point))
+#         print("SetLayer( picHospitals_{{ignore}}{}, 0 )".format(point))
+#         print("SetFixed( picHospitals_{{ignore}}{}, true ) \n".format(point))
+#
+#         print("picSchools_{{ignore}}{} = FormulaText( picSchools )".format(point, point, point))
+#         print("SetCoords(picSchools_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
+#         print("SetConditionToShowObject( picSchools_{{ignore}}{},( q == 5 || q==7 ) && S{} == 1 )".format(point, point))
+#         print("SetLayer( picSchools_{{ignore}}{}, 0 )".format(point))
+#         print("SetFixed( picSchools_{{ignore}}{}, true ) \n".format(point))
+#
+#         print("picMarkets_{{ignore}}{} = FormulaText( picMarkets )".format(point, point, point))
+#         print("SetCoords(picMarkets_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
+#         print("SetConditionToShowObject( picMarkets_{{ignore}}{},( q == 5 || q==7 ) && M{} == 1 )".format(point, point))
+#         print("SetLayer( picMarkets_{{ignore}}{}, 0 )".format(point))
+#         print("SetFixed( picMarkets_{{ignore}}{}, true ) \n".format(point))
+#
+#         print("picPlaygrounds_{{ignore}}{} = FormulaText( picPlaygrounds )".format(point, point, point))
+#         print("SetCoords(picPlaygrounds_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
+#         print("SetConditionToShowObject( picPlaygrounds_{{ignore}}{},( q == 5 || q==7 ) && PS{} == 1 )".format(point, point))
+#         print("SetLayer( picPlaygrounds_{{ignore}}{}, 0 )".format(point))
+#         print("SetFixed( picPlaygrounds_{{ignore}}{}, true ) \n".format(point))
+#
+#         print("picRestaurants_{{ignore}}{} = FormulaText( picRestaurants )".format(point, point, point))
+#         print("SetCoords(picRestaurants_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
+#         print("SetConditionToShowObject( picRestaurants_{{ignore}}{},( q == 5 || q==7 ) && R{} == 1 )".format(point, point))
+#         print("SetLayer( picRestaurants_{{ignore}}{}, 0 )".format(point))
+#         print("SetFixed( picRestaurants_{{ignore}}{}, true ) \n".format(point))
+#
+#         print("picPS_{{ignore}}{} = FormulaText( picPS )".format(point, point, point))
+#         print("SetCoords(picPS_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
+#         print("SetConditionToShowObject( picPS_{{ignore}}{},( q == 5 || q==7 ) && C{} == 1 && selectPoliceStation == true )".format(point, point))
+#         print("SetLayer( picPS_{{ignore}}{}, 0 )".format(point))
+#         print("SetFixed( picPS_{{ignore}}{}, true ) \n".format(point))
+#
+#         print("picMall_{{ignore}}{} = FormulaText( picMall )".format(point, point, point))
+#         print("SetCoords(picMall_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
+#         print("SetConditionToShowObject( picMall_{{ignore}}{},( q == 5 || q==7 ) && C{} == 1 && selectMalls == true )".format(point, point))
+#         print("SetLayer( picMall_{{ignore}}{}, 0 )".format(point))
+#         print("SetFixed( picMall_{{ignore}}{}, true ) \n".format(point))
+#
+#         print("picFS_{{ignore}}{} = FormulaText( picFS )".format(point, point, point))
+#         print("SetCoords(picFS_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
+#         print("SetConditionToShowObject( picFS_{{ignore}}{},( q == 5 || q==7 ) && C{} == 1 && selectFireStation == true )".format(point, point))
+#         print("SetLayer( picFS_{{ignore}}{}, 0 )".format(point))
+#         print("SetFixed( picFS_{{ignore}}{}, true ) \n".format(point))
+#
+#         print("picTP_{{ignore}}{} = FormulaText( picTP )".format(point, point, point))
+#         print("SetCoords(picTP_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
+#         print("SetConditionToShowObject( picTP_{{ignore}}{},( q == 5 || q==7 ) && C{} == 1 && selectThemePark == true )".format(point, point))
+#         print("SetLayer( picTP_{{ignore}}{}, 0 )".format(point))
+#         print("SetFixed( picTP_{{ignore}}{}, true ) \n".format(point))
+#
+        # print("picChoice_{{ignore}}{} = FormulaText( picChoice )".format(point, point, point))
+        # print("SetCoords(picChoice_{{ignore}}{}, x(P{} - 0.07), y(P{}+0.07))".format(point, setToPoint, setToPoint))
+        # print("SetConditionToShowObject( picChoice_{{ignore}}{},( q == 5 || q==7 ) && C{} == 1 )".format(point, point))
+        # print("SetLayer( picChoice_{{ignore}}{}, 0 )".format(point))
+        # print("SetFixed( picChoice_{{ignore}}{}, true ) \n".format(point))
 
 
 ##This code creates polygons

@@ -1,0 +1,126 @@
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+
+r = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+g = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+b = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+SetConditionToShowObject( r,  q == 2)
+SetConditionToShowObject( g,  q == 2)
+SetConditionToShowObject( b,  q == 2)
+
+
+r1 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+g1 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+b1 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+
+r2 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+g2 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+b2 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+
+r3 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+g3 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+b3 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+
+r4 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+g4 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+b4 = Slider( 0, 255, 1, 1, 200, false, true, false, false )
+
+
+#this goes into the script of the sliders
+If(petals == 1, {SetValue[r1, r], SetValue[g1, g], SetValue[b1, b]})
+If(petals == 2, {SetValue[r2, r], SetValue[g2, g], SetValue[b2, b]})
+If(petals == 3, {SetValue[r3, r], SetValue[g3, g], SetValue[b3, b]})
+If(petals == 4, {SetValue[r4, r], SetValue[g4, g], SetValue[b4, b]})
+
+If(petals == 1, {SetDynamicColor( ptl1, r1, g1, b1 ), SetDynamicColor( ptl11, r1, g1, b1 )})
+If(petals == 2, {SetDynamicColor( ptl2, r2, g2, b2 ), SetDynamicColor( ptl22, r2, g2, b2 )})
+If(petals == 3, {SetDynamicColor( ptl3, r3, g3, b3 ), SetDynamicColor( ptl33, r3, g3, b3 )})
+If(petals == 4, {SetDynamicColor( ptl4, r4, g4, b4 ), SetDynamicColor( ptl44, r4, g4, b4 )})
+
+If(q==2, If(petals == 1, {SetDynamicColor( ptl1, r, g, b ), SetDynamicColor( ptl11, r, g, b )}))
+If(q==2, If(petals == 2, {SetDynamicColor( ptl2, r, g, b ), SetDynamicColor( ptl22, r, g, b )}))
+If(q==2, If(petals == 3, {SetDynamicColor( ptl3, r, g, b ), SetDynamicColor( ptl33, r, g, b )}))
+If(q==2, If(petals == 4, {SetDynamicColor( ptl4, r, g, b ), SetDynamicColor( ptl44, r, g, b )}))
+
+
+SetDynamicColor( cl1, r1, g1, b1 )
+SetDynamicColor( cl11, r1, g1, b1 )
+SetDynamicColor( cl2, r2, g2, b2 )
+SetDynamicColor( cl22, r2, g2, b2 )
+SetDynamicColor( cl3, r3, g3, b3 )
+SetDynamicColor( cl33, r3, g3, b3 )
+SetDynamicColor( cl4, r4, g4, b4 )
+SetDynamicColor( cl44, r4, g4, b4 )
+
+
+SetDynamicColor( ptl1_{1}, r1, g1, b1 )
+SetDynamicColor( ptl11_{1}, r1, g1, b1 )
+SetDynamicColor( ptl2_{1}, r2, g2, b2 )
+SetDynamicColor( ptl22_{1}, r2, g2, b2 )
+SetDynamicColor( ptl3_{1}, r3, g3, b3 )
+SetDynamicColor( ptl33_{1}, r3, g3, b3 )
+SetDynamicColor( ptl4_{1}, r4, g4, b4 )
+SetDynamicColor( ptl44_{1}, r4, g4, b4 )
+
+
+enterNPetals = ?
+IBenterNPetals = InputBox( enterNPetals )
+SetConditionToShowObject( IBenterNPetals,  q == 4)
+ShowLabel( IBenterNPetals, false )
+
+#goes into the update of the input box
+If(enterNPetals < 4, SetValue[enterNPetals, 4], If(enterNPetals>16, SetValue[enterNPetals, 16]))
+
+
+IBshowDPetals1 = InputBox( enterNPetals )
+SetConditionToShowObject( IBshowDPetals1,  q == 5)
+ShowLabel( IBshowDPetals1, false )
+
+IBshowDPetals2 = InputBox( enterNPetals )
+SetConditionToShowObject( IBshowDPetals2,  q == 5)
+ShowLabel( IBshowDPetals2, false )
+
+IBshowDPetals3 = InputBox( enterNPetals )
+SetConditionToShowObject( IBshowDPetals3,  q == 5)
+ShowLabel( IBshowDPetals3, false )
+
+IBshowDPetals4 = InputBox( enterNPetals )
+SetConditionToShowObject( IBshowDPetals4,  q == 5)
+ShowLabel( IBshowDPetals4, false )
+
+enterNPetal1 = ?
+IBenterNPetal1 = InputBox( enterNPetal1 )
+SetConditionToShowObject( IBenterNPetal1,  q == 5)
+ShowLabel( IBenterNPetal1, false )
+
+enterNPetal2 = ?
+IBenterNPetal2 = InputBox( enterNPetal2 )
+SetConditionToShowObject( IBenterNPetal2,  q == 5)
+ShowLabel( IBenterNPetal2, false )
+
+enterNPetal3 = ?
+IBenterNPetal3 = InputBox( enterNPetal3 )
+SetConditionToShowObject( IBenterNPetal3,  q == 5)
+ShowLabel( IBenterNPetal3, false )
+
+enterNPetal4 = ?
+IBenterNPetal4 = InputBox( enterNPetal4 )
+SetConditionToShowObject( IBenterNPetal4,  q == 5)
+ShowLabel( IBenterNPetal4, false )
+
+
+enterAllPetals = ?
+IBenterAllPetals  = InputBox( enterAllPetals  )
+SetConditionToShowObject( IBenterAllPetals ,  q == 5)
+ShowLabel( IBenterAllPetals , false )
+
+
+
+check1 = If( enterNPetal1 + enterNPetal2 + enterNPetal3 + enterNPetal4 == enterNPetals && enterNPetals == enterAllPetals , true, false)
+
+
+###CheckButton
+SetValue[check, -1]
+If(q==5, If(check1==true, SetValue[check, 1]))

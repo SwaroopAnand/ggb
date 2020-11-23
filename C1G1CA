@@ -1,0 +1,197 @@
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+
+P11 = (2.0, 2.0)
+P12 = (3.0, 2.0)
+P13 = (3.0, 3.0)
+P14 = (2.0, 3.0)
+drag1 = Polygon( P11, P12, P13, P14 )
+SetConditionToShowObject( drag1, q==2)
+
+P21 = (2.0, 2.0)
+P22 = (3.0, 2.0)
+P23 = (3.0, 3.0)
+P24 = (2.0, 3.0)
+drag2 = Polygon( P21, P22, P23, P24 )
+SetConditionToShowObject( drag2, q==2)
+
+P31 = (2.0, 2.0)
+P32 = (3.0, 2.0)
+P33 = (3.0, 3.0)
+P34 = (2.0, 3.0)
+drag3 = Polygon( P31, P32, P33, P34 )
+SetConditionToShowObject( drag3, q==3)
+
+P41 = (2.0, 2.0)
+P42 = (3.0, 2.0)
+P43 = (3.0, 3.0)
+P44 = (2.0, 3.0)
+drag4 = Polygon( P41, P42, P43, P44 )
+SetConditionToShowObject( drag4, q==3)
+
+
+
+enter11 = ?
+IBenter11 = InputBox( enter11 )
+SetConditionToShowObject( IBenter11, q==6)
+ShowLabel( IBenter11, false )
+
+enter12 = ?
+IBenter12 = InputBox( enter12 )
+SetConditionToShowObject( IBenter12, q==6)
+ShowLabel( IBenter12, false )
+
+enter13 = ?
+IBenter13 = InputBox( enter13 )
+SetConditionToShowObject( IBenter13, q==6)
+ShowLabel( IBenter13, false )
+
+
+enter21 = ?
+IBenter21 = InputBox( enter21 )
+SetConditionToShowObject( IBenter21, q==6)
+ShowLabel( IBenter21, false )
+
+enter22 = ?
+IBenter22 = InputBox( enter22 )
+SetConditionToShowObject( IBenter22, q==6)
+ShowLabel( IBenter22, false )
+
+enter23 = ?
+IBenter23 = InputBox( enter23 )
+SetConditionToShowObject( IBenter23, q==6)
+ShowLabel( IBenter23, false )
+
+
+enter31 = ?
+IBenter31 = InputBox( enter31 )
+SetConditionToShowObject( IBenter31, q==6)
+ShowLabel( IBenter31, false )
+
+enter32 = ?
+IBenter32 = InputBox( enter32 )
+SetConditionToShowObject( IBenter32, q==6)
+ShowLabel( IBenter32, false )
+
+enter33 = ?
+IBenter33 = InputBox( enter33 )
+SetConditionToShowObject( IBenter33, q==6)
+ShowLabel( IBenter33, false )
+
+
+enter41 = ?
+IBenter41 = InputBox( enter41 )
+SetConditionToShowObject( IBenter41, q==6)
+ShowLabel( IBenter41, false )
+
+enter42 = ?
+IBenter42 = InputBox( enter42 )
+SetConditionToShowObject( IBenter42, q==6)
+ShowLabel( IBenter42, false )
+
+enter43 = ?
+IBenter43 = InputBox( enter43 )
+SetConditionToShowObject( IBenter43, q==6)
+ShowLabel( IBenter43, false )
+
+
+check1 = If(enter13 == enter11 + enter12 && 20<=enter13<=40, true, false)
+check2 = If(enter23 == enter21 + enter22 && 40<=enter23<=60, true, false)
+check3 = If(enter33 == enter31 + enter32 && 60<=enter33<=80, true, false)
+check4 = If(enter43 == enter41 + enter42 && 80<=enter43<=100, true, false)
+
+
+
+#check button
+SetValue[check,-1]
+If(check1 == check2 == check3== check4 == true, SetValue[check, 1])
+
+#script in the input box
+If(enter11<0, SetValue[enter11, 0])
+If(enter12<0, SetValue[enter12, 0])
+If(enter13<0, SetValue[enter13, 0])
+
+If(enter21<0, SetValue[enter21, 0])
+If(enter22<0, SetValue[enter22, 0])
+If(enter23<0, SetValue[enter23, 0])
+
+If(enter31<0, SetValue[enter31, 0])
+If(enter32<0, SetValue[enter32, 0])
+If(enter33<0, SetValue[enter33, 0])
+
+If(enter41<0, SetValue[enter41, 0])
+If(enter42<0, SetValue[enter42, 0])
+If(enter43<0, SetValue[enter43, 0])
+
+# code to check drag value
+
+foods1 = {{Pf12, 12}, {Pf8, 8}, {Pf7, 7}, {Pf10, 10}, {Pf13, 13}, {Pf10', 10}}
+foods2 = {{Pv14, 14}, {Pv44, 44}, {Pv6, 6}, {Pv23, 23}, {Pv27, 27}, {Pv36, 36}}
+
+Plt1 = Sequence(If(IsInRegion(Element(Element(foods1, k), 1), drag1), Element(Element(foods1, k), 2), 0), k, 1, Length(foods1))
+Plt2 = Sequence(If(IsInRegion(Element(Element(foods1, k), 1), drag2), Element(Element(foods1, k), 2), 0), k, 1, Length(foods1))
+Plt3 = Sequence(If(IsInRegion(Element(Element(foods2, k), 1), drag3), Element(Element(foods2, k), 2), 0), k, 1, Length(foods2))
+Plt4 = Sequence(If(IsInRegion(Element(Element(foods2, k), 1), drag4), Element(Element(foods2, k), 2), 0), k, 1, Length(foods2))
+
+checkq2 = sum(Plt1) == sum(Plt2) == 20
+checkq3 = sum(Plt3) == sum(Plt4) == 50
+
+
+# to show the food
+showFoods1 = {{Pf12, picF12}, {Pf8, picF8}, {Pf7, picF7}, {Pf10, picF10}, {Pf13, picF13}, {Pf10', picF10'}}
+showFoods2 = {{Pv14, picV14}, {Pv44, picV44}, {Pv6, picV6}, {Pv23, picV23}, {Pv27, picV27}, {Pv36, picV36}}
+showPlt1 = RemoveUndefined(Sequence(If(IsInRegion(Element(Element(showFoods1, k), 1), drag1), Element(showFoods1, k, 2), 0), k, 1, Length(showFoods1)))
+showPlt2 = RemoveUndefined(Sequence(If(IsInRegion(Element(Element(showFoods1, k), 1), drag2), Element(showFoods1, k, 2), ?), k, 1, Length(showFoods1)))
+showPlt3 = RemoveUndefined(Sequence(If(IsInRegion(Element(Element(showFoods2, k), 1), drag3), Element(showFoods2, k, 2), ?), k, 1, Length(showFoods1)))
+showPlt4 = RemoveUndefined(Sequence(If(IsInRegion(Element(Element(showFoods2, k), 1), drag4), Element(showFoods2, k, 2), ?), k, 1, Length(showFoods1)))
+
+
+#plates
+showP1F1_{ignore} = FormulaText( Element(showPlt1, 1 ) )
+showP1F2_{ignore} = FormulaText( Element(showPlt1, 2 ) )
+SetConditionToShowObject( showP1F1_{ignore}, q==4)
+SetConditionToShowObject( showP1F2_{ignore}, q==4)
+SetCoords(showP1F1_{ignore}, x(Pt11), y(Pt11))
+SetCoords(showP1F2_{ignore}, x(Pt12), y(Pt12))
+SetFixed( showP1F1_{ignore}, true )
+SetFixed( showP1F2_{ignore}, true )
+
+showP2F1_{ignore} = FormulaText( Element(showPlt2, 1 ) )
+showP2F2_{ignore} = FormulaText( Element(showPlt2, 2 ) )
+SetConditionToShowObject( showP2F1_{ignore}, q==4)
+SetConditionToShowObject( showP2F2_{ignore}, q==4)
+SetCoords(showP2F1_{ignore}, x(Pt21), y(Pt21))
+SetCoords(showP2F2_{ignore}, x(Pt22), y(Pt22))
+SetFixed( showP2F1_{ignore}, true )
+SetFixed( showP2F2_{ignore}, true )
+
+showP3F1_{ignore} = FormulaText( Element(showPlt3, 1 ) )
+showP3F2_{ignore} = FormulaText( Element(showPlt3, 2 ) )
+SetConditionToShowObject( showP3F1_{ignore}, q==4)
+SetConditionToShowObject( showP3F2_{ignore}, q==4)
+SetCoords(showP3F1_{ignore}, x(Pt31), y(Pt31))
+SetCoords(showP3F2_{ignore}, x(Pt32), y(Pt32))
+SetFixed( showP3F1_{ignore}, true )
+SetFixed( showP3F2_{ignore}, true )
+
+showP4F1_{ignore} = FormulaText( Element(showPlt4, 1 ) )
+showP4F2_{ignore} = FormulaText( Element(showPlt4, 2 ) )
+SetConditionToShowObject( showP4F1_{ignore}, q==4)
+SetConditionToShowObject( showP4F2_{ignore}, q==4)
+SetCoords(showP4F1_{ignore}, x(Pt41), y(Pt41))
+SetCoords(showP4F2_{ignore}, x(Pt42), y(Pt42))
+SetFixed( showP4F1_{ignore}, true )
+SetFixed( showP4F2_{ignore}, true )
+
+### different approach
+SetCoords(Element(showPlt1,1), x(Pt11), y(Pt11))
+SetCoords(Element(showPlt2,1), x(Pt21), y(Pt21))
+SetCoords(Element(showPlt3,1), x(Pt31), y(Pt31))
+SetCoords(Element(showPlt4,1), x(Pt41), y(Pt41))
+
+SetCoords(Element(showPlt1,2), x(Pt12), y(Pt12))
+SetCoords(Element(showPlt2,2), x(Pt22), y(Pt22))
+SetCoords(Element(showPlt3,2), x(Pt32), y(Pt32))
+SetCoords(Element(showPlt4,2), x(Pt42), y(Pt42))

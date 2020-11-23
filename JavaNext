@@ -1,0 +1,27 @@
+var GGB_obj =JSON.parse(atob(jsonData))
+var GGB_qdata = ggbApplet.getValue("q") - 3;
+if (ggbApplet.getValue("check")==1)
+{
+    GGB_obj.questions[GGB_qdata].answeredCorrectly=true
+    }else {
+        GGB_obj.questions[GGB_qdata].answeredCorrectly=false
+}
+GGB_obj['current_q']= ggbApplet.getValue("q")
+GGB_obj['finalScore']=ggbApplet.getValue("finalScore");
+var GGB_str=btoa(JSON.stringify(GGB_obj));
+ggbApplet.evalCommand("SetValue(jsonData,\"" + GGB_obj +"\")");
+if (ggbApplet.getValue("check")!=0) {
+    if(ggbApplet.getValue("q")==10 && ggbApplet.getValue("RightAnswers") < 7){
+        ggbApplet.setValue("q",16);
+    }
+    ggbApplet.setValue("q",ggbApplet.getValue("q")+1);
+    ggbApplet.setValue("check",0);
+    if(ggbApplet.getValue("q")==16){
+        ggbApplet.setValue("finalScore",ggbApplet.getValue("finalScore"));
+        if(ggbApplet.getValue("finalScore")>=6){
+            ggbApplet.setValue("finalResult",true);
+        }else{
+            ggbApplet.setValue("finalResult",false);
+        }
+    }
+}
