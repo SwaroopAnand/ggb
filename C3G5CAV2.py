@@ -17,9 +17,8 @@
 
 
 ## code for the st coords
-ptCs = ["Pc1", "Pc2", "Pc3", "Pc4", "Pc5", "Pc6", "Pc7", "Pc8", "Pc8"]
+ptCs = ["Pc1", "Pc2", "Pc3", "Pc4", "Pc5", "Pc6", "Pc7", "Pc8", "Pc9"]
 Cic = ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9"]
-ptsNum = [13.38, 14.7, 16.02, 17.34, 18.66, 19.98]
 listPts = ['Pop1', 'Pop2', 'Pop3', 'Pcp1', 'Pcp2', 'Pcp3', 'Pdiv1', 'Pdiv2', 'Pdiv3', 'Psub1', 'Psub2', 'Psub3', 'Pplu1', 'Pplu2', 'Pplu3', 'Pplu4', 'Pmul1', 'Pmul2', 'Pmul3']
 for p in range(len(listPts)):
     for c in range(len(Cic)):

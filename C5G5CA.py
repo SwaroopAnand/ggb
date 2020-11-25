@@ -148,25 +148,25 @@
     # print("SetCoords(picTree{}, x(Ptr - 0.07), y(Ptr+0.07))".format(i))
     # print("SetConditionToShowObject( picTree{},q>=6 && tree>={})".format(i, i, i))
     # print("SetLayer( picTree{}, 0 )".format(i))
-    # print("SetFixed( picTree{}, true ) \n".format(i))
 
+    #
     # print("picLake{} = FormulaText( picLake )".format(i, i, i))
     # print("SetCoords(picLake{}, x(Plk - 0.07), y(Plk+0.07))".format(i))
     # print("SetConditionToShowObject( picLake{},q>=6 && lake >= {})".format(i, i, i))
     # print("SetLayer( picLake{}, 0 )".format(i))
-    # print("SetFixed( picLake{}, true ) \n".format(i))
 
-for i in range(1,6):
 
-    print("picTree2{} = CopyFreeObject( picTree )".format(i, i, i))
-    print("SetCoords(picTree2{}, x(Ptr + xmove), y(Ptr - ymove))".format(i))
-    print("SetConditionToShowObject( picTree2{},q>=8 && tree2>={})".format(i, i, i))
-    print("SetLayer( picTree2{}, 0 )".format(i))
-    print("SetFixed( picTree2{}, true ) \n".format(i))
+for i in range(1,5):
 
-    # print("picLake2{} = CopyFreeObject( picLake )".format(i, i, i))
-    # print("SetCoords(picLake2{}, x(Plk + xmove), y(Plk - ymove))".format(i))
-    # print("SetConditionToShowObject( picLake2{},q>=8 && lake2 >= {})".format(i, i, i))
-    # print("SetLayer( picLake2{}, 0 )".format(i))
-    # print("SetFixed( picLake2{}, true ) \n".format(i))
+    # print("picTree2{} = CopyFreeObject( picTree )".format(i, i, i))
+    # print("SetCoords(picTree2{}, x(Ptr - xmove), y(Ptr - ymove))".format(i))
+    # print("SetConditionToShowObject( picTree2{},q>=8 && tree2>={})".format(i, i, i))
+    # print("SetLayer( picTree2{}, 0 ) \n".format(i))
+
+
+    print("picLake2{} = CopyFreeObject( picLake )".format(i, i, i))
+    print("SetCoords(picLake2{}, x(Plk - xmove), y(Plk - ymove))".format(i))
+    print("SetConditionToShowObject( picLake2{},q>=8 && lake2 >= {})".format(i, i, i))
+    print("SetLayer( picLake2{}, 0 ) \n".format(i))
+
 
