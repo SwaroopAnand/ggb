@@ -124,3 +124,117 @@ check1 = If( enterNPetal1 + enterNPetal2 + enterNPetal3 + enterNPetal4 == enterN
 ###CheckButton
 SetValue[check, -1]
 If(q==5, If(check1==true, SetValue[check, 1]))
+
+
+
+##color set for new colob
+SetDynamicColor( cl1_{ignore}, r1_{ignore},g1_{ignore},b1_{ignore} )
+SetDynamicColor( cl11_{ignore}, r1_{ignore},g1_{ignore},b1_{ignore} )
+SetDynamicColor( cl2_{ignore}, r2_{ignore},g2_{ignore},b2_{ignore} )
+SetDynamicColor( cl22_{ignore}, r2_{ignore},g2_{ignore},b2_{ignore} )
+SetDynamicColor( cl3_{ignore}, r3_{ignore},g3_{ignore},b3_{ignore} )
+SetDynamicColor( cl33_{ignore}, r3_{ignore},g3_{ignore},b3_{ignore} )
+SetDynamicColor( cl4_{ignore}, r4_{ignore},g4_{ignore},b4_{ignore} )
+SetDynamicColor( cl44_{ignore}, r4_{ignore},g4_{ignore},b4_{ignore} )
+
+SetDynamicColor( ptl1_{1}_{ignore}, r1_{ignore},g1_{ignore},b1_{ignore} )
+SetDynamicColor( ptl11_{1}_{ignore}, r1_{ignore},g1_{ignore},b1_{ignore} )
+SetDynamicColor( ptl2_{1}_{ignore}, r2_{ignore},g2_{ignore},b2_{ignore} )
+SetDynamicColor( ptl22_{1}_{ignore}, r2_{ignore},g2_{ignore},b2_{ignore} )
+SetDynamicColor( ptl3_{1}_{ignore}, r3_{ignore},g3_{ignore},b3_{ignore} )
+SetDynamicColor( ptl33_{1}_{ignore}, r3_{ignore},g3_{ignore},b3_{ignore} )
+SetDynamicColor( ptl4_{1}_{ignore}, r4_{ignore},g4_{ignore},b4_{ignore} )
+SetDynamicColor( ptl44_{1}_{ignore}, r4_{ignore},g4_{ignore},b4_{ignore} )
+
+
+#### in the sliders
+If(petals == 1, {SetValue[r1_{ignore}, r], SetValue[g1_{ignore}, g], SetValue[b1_{ignore}, b]})
+If(petals == 2, {SetValue[r2_{ignore}, r], SetValue[g2_{ignore}, g], SetValue[b2_{ignore}, b]})
+If(petals == 3, {SetValue[r3_{ignore}, r], SetValue[g3_{ignore}, g], SetValue[b3_{ignore}, b]})
+If(petals == 4, {SetValue[r4_{ignore}, r], SetValue[g4_{ignore}, g], SetValue[b4_{ignore}, b]})
+
+-- lighter
+If(petals == 1, SetValue[r1_{ignore}, r])
+If(petals == 2, SetValue[r2_{ignore}, r])
+If(petals == 3, SetValue[r3_{ignore}, r])
+If(petals == 4, SetValue[r4_{ignore}, r])
+
+If(petals == 1, SetValue[g1_{ignore}, g])
+If(petals == 2, SetValue[g2_{ignore}, g])
+If(petals == 3, SetValue[g3_{ignore}, g])
+If(petals == 4, SetValue[g4_{ignore}, g])
+
+If(petals == 1, SetValue[b1_{ignore}, b])
+If(petals == 2, SetValue[b2_{ignore}, b])
+If(petals == 3, SetValue[b3_{ignore}, b])
+If(petals == 4, SetValue[b4_{ignore}, b])
+
+
+### for the petals slider
+If(petals == 1&& q==2, {SetDynamicColor( ptl1_{ignore}, r1_{ignore}, g1_{ignore}, b1_{ignore} ), SetDynamicColor( Ptl11_{ignore}, r1_{ignore}, g1_{ignore}, b1_{ignore} )})
+If(petals == 2&& q==2, {SetDynamicColor( ptl2_{ignore}, r2_{ignore}, g2_{ignore}, b2_{ignore} ), SetDynamicColor( ptl22_{ignore}, r2_{ignore}, g2_{ignore}, b2_{ignore} )})
+If(petals == 3&& q==2, {SetDynamicColor( ptl3_{ignore}, r3_{ignore}, g3_{ignore}, b3_{ignore} ), SetDynamicColor( ptl33_{ignore}, r3_{ignore}, g3_{ignore}, b3_{ignore} )})
+If(petals == 4&& q==2, {SetDynamicColor( ptl4_{ignore}, r4_{ignore}, g4_{ignore}, b4_{ignore} ), SetDynamicColor( ptl44_{ignore}, r4_{ignore}, g4_{ignore}, b4_{ignore} )})
+
+###Creating new variables to slow down the lag
+
+enterNPetal1_{ignore} = enterNPetal1
+enterNPetal2_{ignore} = enterNPetal2
+enterNPetal3_{ignore} = enterNPetal3
+enterNPetal4_{ignore} = enterNPetal4
+
+enterNpetals = enterNPetals
+
+Sequence(Element(l4_{ignore}, k), k, enterNPetal1_{ignore} + enterNPetal2_{ignore} + enterNPetal3_{ignore} + 1, enterNPetal1_{ignore} + enterNPetal2_{ignore} + enterNPetal3_{ignore} + enterNPetal4_{ignore})
+
+
+####poc
+enterR = ?
+IBenterR_{ignore} = InputBox( enterR )
+SetConditionToShowObject( IBenterR_{ignore}, q==2)
+ShowLabel( IBenterR_{ignore}, false )
+
+enterG = ?
+IBenterG_{ignore} = InputBox( enterG )
+SetConditionToShowObject( IBenterG_{ignore}, q==2)
+ShowLabel( IBenterG_{ignore}, false )
+
+enterB = ?
+IBenterB_{ignore} = InputBox( enterB )
+SetConditionToShowObject( IBenterB_{ignore}, q==2)
+ShowLabel( IBenterB_{ignore}, false )
+
+#script inside inputboxs
+If(enterR>256, SetValue[enterR, 256])
+If(enterR<0, SetValue[enterR, 0])
+
+If(enterG>256, SetValue[enterG, 256])
+If(enterG<0, SetValue[enterG, 0])
+
+If(enterB>256, SetValue[enterB, 256])
+If(enterB<0, SetValue[enterB, 0])
+
+enterDR = ?
+IBenterDR_{ignore} = InputBox( enterDR )
+SetConditionToShowObject( IBenterDR_{ignore}, q==2)
+ShowLabel( IBenterDR_{ignore}, false )
+
+enterDG = ?
+IBenterDG_{ignore} = InputBox( enterDG )
+SetConditionToShowObject( IBenterDG_{ignore}, q==2)
+ShowLabel( IBenterDG_{ignore}, false )
+
+enterDB = ?
+IBenterDB_{ignore} = InputBox( enterDB )
+SetConditionToShowObject( IBenterDB_{ignore}, q==2)
+ShowLabel( IBenterDB_{ignore}, false )
+
+#script inside inputboxs
+If(enterDR>256, SetValue[enterDR, 256])
+If(enterDR<0, SetValue[enterDR, 0])
+
+If(enterDG>256, SetValue[enterDG, 256])
+If(enterDG<0, SetValue[enterDG, 0])
+
+If(enterDB>256, SetValue[enterDB, 256])
+If(enterDB<0, SetValue[enterDB, 0])

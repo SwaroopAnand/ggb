@@ -65,6 +65,9 @@ r12 = Slider(0, 255, 1, 1, 200, false, true, false, false)
 g12 = Slider(0, 255, 1, 1, 200, false, true, false, false)
 b12 = Slider(0, 255, 1, 1, 200, false, true, false, false)
 
+
+
+### old code for the slider color update
 If(Pno == 1, {SetValue[r1, r], SetValue[g1, g],SetValue[b1, b]})
 If(Pno == 2, {SetValue[r2, r], SetValue[g2, g],SetValue[b2, b]})
 If(Pno == 3, {SetValue[r3, r], SetValue[g3, g],SetValue[b3, b]})
@@ -77,6 +80,51 @@ If(Pno == 9, {SetValue[r9, r], SetValue[g9, g],SetValue[b9, b]})
 If(Pno == 10, {SetValue[r10, r], SetValue[g10, g],SetValue[b10, b]})
 If(Pno == 11, {SetValue[r11, r], SetValue[g11, g],SetValue[b11, b]})
 If(Pno == 12, {SetValue[r12, r], SetValue[g12, g],SetValue[b12, b]})
+
+
+
+### new code for slider color update
+If(Pno == 1, SetValue[r1, r])
+If(Pno == 2, SetValue[r2, r])
+If(Pno == 3, SetValue[r3, r])
+If(Pno == 4, SetValue[r4, r])
+If(Pno == 5, SetValue[r5, r])
+If(Pno == 6, SetValue[r6, r])
+If(Pno == 7, SetValue[r7, r])
+If(Pno == 8, SetValue[r8, r])
+If(Pno == 9, SetValue[r9, r])
+If(Pno == 10, SetValue[r10, r])
+If(Pno == 11, SetValue[r11, r])
+If(Pno == 12, SetValue[r12, r])
+
+
+If(Pno == 1, SetValue[g1, g])
+If(Pno == 2, SetValue[g2, g])
+If(Pno == 3, SetValue[g3, g])
+If(Pno == 4, SetValue[g4, g])
+If(Pno == 5, SetValue[g5, g])
+If(Pno == 6, SetValue[g6, g])
+If(Pno == 7, SetValue[g7, g])
+If(Pno == 8, SetValue[g8, g])
+If(Pno == 9, SetValue[g9, g])
+If(Pno == 10,SetValue[g10, g])
+If(Pno == 11 SetValue[g11, g])
+If(Pno == 12,SetValue[g12, g])
+
+
+If(Pno == 1, SetValue[b1, b])
+If(Pno == 2, SetValue[b2, b])
+If(Pno == 3, SetValue[b3, b])
+If(Pno == 4, SetValue[b4, b])
+If(Pno == 5, SetValue[b5, b])
+If(Pno == 6, SetValue[b6, b])
+If(Pno == 7, SetValue[b7, b])
+If(Pno == 8, SetValue[b8, b])
+If(Pno == 9, SetValue[b9, b])
+If(Pno == 10,SetValue[b10, b])
+If(Pno == 11,SetValue[b11, b])
+If(Pno == 12,SetValue[b12, b])
+
 
 p1 = Element( l4, 1 )
 p1n1 = Element( l3, 1 )

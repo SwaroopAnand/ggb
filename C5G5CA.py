@@ -29,10 +29,11 @@
 
 
 # points to be dragged
-# for q in range(1,5):
-#     for i in range(1,4):
-#         print("P{}q{} = (23.2, 8 - {})".format(i, q, i-1, i-1))
-        # print("SetConditionToShowObject( P{}q{}, q=={})".format(i, q, q))
+for q in range(1,5):
+    for i in range(1,4):
+        # print("P{}q{} = (23.2, 8 - {})".format(i, q, i-1, i-1))
+        # print("Rename(P{}q{}, P{}q{}_{{ignore}})".format(i,q,i,q))
+        print("SetConditionToShowObject( P{}q{}_{{ignore}}, q=={} && point{} ==1)".format(i, q, q, i))
 
 # create a list of points
 # List = []
@@ -156,7 +157,7 @@
     # print("SetLayer( picLake{}, 0 )".format(i))
 
 
-for i in range(1,5):
+# for i in range(1,5):
 
     # print("picTree2{} = CopyFreeObject( picTree )".format(i, i, i))
     # print("SetCoords(picTree2{}, x(Ptr - xmove), y(Ptr - ymove))".format(i))
@@ -164,9 +165,9 @@ for i in range(1,5):
     # print("SetLayer( picTree2{}, 0 ) \n".format(i))
 
 
-    print("picLake2{} = CopyFreeObject( picLake )".format(i, i, i))
-    print("SetCoords(picLake2{}, x(Plk - xmove), y(Plk - ymove))".format(i))
-    print("SetConditionToShowObject( picLake2{},q>=8 && lake2 >= {})".format(i, i, i))
-    print("SetLayer( picLake2{}, 0 ) \n".format(i))
+    # print("picLake2{} = CopyFreeObject( picLake )".format(i, i, i))
+    # print("SetCoords(picLake2{}, x(Plk - xmove), y(Plk - ymove))".format(i))
+    # print("SetConditionToShowObject( picLake2{},q>=8 && lake2 >= {})".format(i, i, i))
+    # print("SetLayer( picLake2{}, 0 ) \n".format(i))
 
 

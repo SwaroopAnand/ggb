@@ -82,13 +82,13 @@
 # sumRestaurants = []
 # sumChoice = []
 #
-for y in range(1,8):
-    for x in range(1,8):
-        # print("P{}{} = (x(P00) +(xDist*{}), y(P00) - (yDist*{}))".format(y, x, x, y))
-        # point = "P"
-        point = str(y)
-        point += str(x)
-#
+# for y in range(1,8):
+#     for x in range(1,8):
+#         # print("P{}{} = (x(P00) +(xDist*{}), y(P00) - (yDist*{}))".format(y, x, x, y))
+#         # point = "P"
+#         point = str(y)
+#         point += str(x)
+#         sumAppartments.append("0".format(point))
 #         sumAppartments.append("+A{}".format(point))
 #         sumHospitals.append("+H{}".format(point))
 #         sumSchools.append("+S{}".format(point))
@@ -112,6 +112,14 @@ for y in range(1,8):
         # print("SetValue[PS{},0]".format(point))
         # print("SetValue[R{},0]".format(point))
         # print("SetValue[C{},0]\n".format(point))
+
+        # print("Delete(A{})".format(point))
+        # print("Delete(H{})".format(point))
+        # print("Delete(S{})".format(point))
+        # print("Delete(M{})".format(point))
+        # print("Delete(PS{})".format(point))
+        # print("Delete(R{})".format(point))
+        # print("Delete(C{})\n".format(point))
 
 
 

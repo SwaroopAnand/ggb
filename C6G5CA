@@ -33,28 +33,28 @@ listRelation3' = {"y = x/5", "y  =  x*2", "y = x*5", "y = 50+x", "y = x-50"}
 
 #update the values
 
-enterqSP = Text(Element(listNumb, 2, selectP)/5 * sumSP)
-enterqPS = Text(Element(listNumb, 4, selectP)/5 * sumPS)
-enterqS = Text(Element(listNumb, 5, selectP)/5 * sumS)
-enterqF = Text(Element(listNumb, 1, selectP)/5 * sumF)
-enterqH = Text(Element(listNumb, 3, selectP)/5 * sumH)
+enterqSP = Text(Element(listNumb_{ignore}, 2, selectP)/5 * Sum(listSP))
+enterqPS = Text(Element(listNumb_{ignore}, 4, selectP)/5 * Sum(listPS))
+enterqS = Text(Element(listNumb_{ignore}, 5, selectP)/5 * Sum(listS))
+enterqF = Text(Element(listNumb_{ignore}, 1, selectP)/5 * Sum(listF))
+enterqH = Text(Element(listNumb_{ignore}, 3, selectP)/5 * Sum(listH))
 
 
 #check button
 SetValue[check, -1]
-If(sumSP == 5 && sumPS == 5 && sumS == 5 && sumF == 5 && sumH == 5, SetValue[check, 1])
+If(Sum(listSP) == 5 && Sum(listPS) == 5 && Sum(listS) == 5 && Sum(listF) == 5 && Sum(listH) == 5, SetValue[check, 1])
 
 # order = {{farms}, {solar panels}, {hospitals}, {PS}, {School}}
-listNumb = {{20, 40, 60, 80, 100}, {200, 400, 600, 800, 1000}, {500, 1000, 1500, 2000, 2500}, {150, 250, 350, 450, 550}, {50, 150, 250, 350, 450}}
+listNumb_{ignore} = {{20, 40, 60, 80, 100}, {200, 400, 600, 800, 1000}, {500, 1000, 1500, 2000, 2500}, {150, 250, 350, 450, 550}, {50, 150, 250, 350, 450}}
 
-Element(listNumb, 2, selectP)
-Element(listNumb, 4, selectP)
-Element(listNumb, 5, selectP)
-Element(listNumb, 1, selectP)
-Element(listNumb, 3, selectP)
+Element(listNumb_{ignore}, 2, selectP)
+Element(listNumb_{ignore}, 4, selectP)
+Element(listNumb_{ignore}, 5, selectP)
+Element(listNumb_{ignore}, 1, selectP)
+Element(listNumb_{ignore}, 3, selectP)
 
 # oder this is to check  order = {{farms}, {hospitals}, {solar panels},  {PS}, {School}}
-listNumb2 = {{20, 40, 60, 80, 100}, {500, 1000, 1500, 2000, 2500}, {200, 400, 600, 800, 1000}, {150, 250, 350, 450, 550}, {50, 150, 250, 350, 450}}
+listNumb2_{ignore} = {{20, 40, 60, 80, 100}, {500, 1000, 1500, 2000, 2500}, {200, 400, 600, 800, 1000}, {150, 250, 350, 450, 550}, {50, 150, 250, 350, 450}}
 
 
 enterX1 = ?
@@ -170,30 +170,59 @@ yDist = 1.2
 (x(P6), y(P6 + 1.2))
 
 
-enterqSP = 00
+enterqSP = Text(Element(listNumb_{ignore}, 2, selectP)/5 * Sum(listSP))
 IBenterqSP = InputBox( enterqSP )
 SetConditionToShowObject( IBenterqSP, 9<=q<=15)
 ShowLabel( IBenterqSP, false )
 
-enterqPS = 00
+enterqPS = Text(Element(listNumb_{ignore}, 4, selectP)/5 * Sum(listPS))
 IBenterqPS = InputBox( enterqPS )
 SetConditionToShowObject( IBenterqPS, 9<=q<=15)
 ShowLabel( IBenterqPS, false )
 
-enterqS = 00
+enterqS = Text(Element(listNumb_{ignore}, 5, selectP)/5 * Sum(listS))
 IBenterqS = InputBox( enterqS )
 SetConditionToShowObject( IBenterqS, 9<=q<=15)
 ShowLabel( IBenterqS, false )
 
-enterqF = 00
+enterqF = Text(Element(listNumb_{ignore}, 1, selectP)/5 * Sum(listF))
 IBenterqF = InputBox( enterqF )
 SetConditionToShowObject( IBenterqF, 9<=q<=15)
 ShowLabel( IBenterqF, false )
 
-enterqH = 00
+enterqH = Text(Element(listNumb_{ignore}, 3, selectP)/5 * Sum(listH))
 IBenterqH = InputBox( enterqH )
 SetConditionToShowObject( IBenterqH, 9<=q<=15)
 ShowLabel( IBenterqH, false )
 
+enterqSP = Text(Element(listNumb_{ignore}, 2, selectP)/5 * Sum(listSP))
+enterqPS = Text(Element(listNumb_{ignore}, 4, selectP)/5 * Sum(listPS))
+enterqS = Text(Element(listNumb_{ignore}, 5, selectP)/5 * Sum(listS))
+enterqF = Text(Element(listNumb_{ignore}, 1, selectP)/5 * Sum(listF))
+enterqH = Text(Element(listNumb_{ignore}, 3, selectP)/5 * Sum(listH))
+
 
 If(q==15, {SetValue[addFarms, false], SetValue[addHospitals, false], SetValue[addPS, false], SetValue[addSchools, false], SetValue[addSolarPanels, false]})
+
+## creating a list for all the variables
+listF = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+listSP = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+listH = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+listPS = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+listS = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+listM = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+listPk = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+listBS = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+
+
+## remove button
+If(q==12, SetValue[q,q+1])
+If(q<=15, SetValue[addFarms, false])
+If(q<=15, SetValue[addHospitals, false])
+If(q<=15, SetValue[addSolarPanels, false])
+If(q<=15, SetValue[addPS, false])
+If(q<=15, SetValue[addSchools, false])
+
+If(q==16, SetValue[addMalls, false])
+If(q==16, SetValue[addParks, false])
+If(q==16, SetValue[addBusStops, false])

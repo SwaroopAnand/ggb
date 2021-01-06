@@ -1,0 +1,32 @@
+q = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+qtotal = Slider( 0, 20, 1, 1, 200, false, true, false, false )
+check = Slider( -1, 1, 1, 1, 200, false, true, false, false )
+
+ans = {30, 2}
+
+enter1 = ?
+IBenter1 = InputBox( enter1 )
+SetConditionToShowObject( IBenter1, q==1)
+ShowLabel( IBenter1, false )
+check1 = enter1 == Element(ans, q)
+
+
+a = false
+b = false
+c = false
+d = false
+checkA = If(a ≟ true, 1, ?)
+checkB = If(b ≟ true, 2, ?)
+checkC = If(c ≟ true, 3, ?)
+checkD = If(d ≟ true, 4, ?)
+checkAns = {checkA, checkB, checkC, checkD}
+checkAns1 = RemoveUndefined(checkAns)
+rightAns = {Element(ans, q)}
+eval = checkAns1 ≟ rightAns
+
+
+##Check script
+
+
+
+If(q==2, Pa,If(q==3, Pc))

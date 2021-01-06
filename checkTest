@@ -1,0 +1,4 @@
+picLake25 = FormulaText( picLake )
+SetCoords(picLake25, x(Plk - xmove_{ignore}), y(Plk - ymove_{ignore}))
+SetConditionToShowObject( picLake25,q>=8 && lake2 >= 4)
+SetLayer( picLake25, 0 )
