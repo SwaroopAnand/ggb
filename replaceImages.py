@@ -12,3 +12,5 @@ for root, subdirs, files in os.walk(DIRS):
     for file in files:
         path = os.path.join(root, file)
         shutil.move(path, MAIN)
+
+

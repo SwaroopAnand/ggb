@@ -193,6 +193,7 @@ ListAll = {{"Facebook ads", "$3 per 100 ads", 3/100, 100/100},
 {"Public channels", "$180 per 3 ads", 180 / 3, 600 / 3},
 {"Private channels", "$270 per 6 ads", 270 / 6, 450 / 6}}
 
+
 checkCst = checkCst1 == checkCst2 == checkCst3 == checkCst4 == checkCst5 == checkCst6 == true
 totalCost = enterCst1 + enterCst2 + enterCst3 + enterCst4 + enterCst5 + enterCst6 + enterCst7 + enterCst8
 reached = enterAd1 * Element(ListAll, Element(order, 1), 4) + enterAd2 * Element(ListAll, Element(order, 2), 4) + enterAd3 * Element(ListAll, Element(order, 3), 4) + enterAd4 * Element(ListAll, Element(order, 4), 4) + enterAd5 * Element(ListAll, Element(order, 5), 4) + enterAd6 * Element(ListAll, Element(order, 6), 4) + enterAd7 * 50 + enterAd8 * 50

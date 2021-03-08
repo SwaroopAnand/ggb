@@ -1,0 +1,5 @@
+If(sel==2,SetValue[Bcount,Bcount-1])
+If(sel==3,SetValue[Mcount,Mcount-1])
+If(sel==4,SetValue[Ccount,Ccount-1])
+If(sel==5,SetValue[Blcount,Blcount-1])
+If(sel==6,SetValue[Scount,Scount-1])
