@@ -3,10 +3,7 @@ import shutil
 
 
 def ExtractImages (GGBFile, ReplaceImages):
-    # ReplaceImages = r'/Users/anandswaroop/Documents/test/C6G6Pics'
-    #
-    # GGBFile = r'/Users/anandswaroop/Documents/ReplaceTest/GGB Files/C1G1CA-V3.ggb'
-    #
+
     for root, subdir, files in os.walk(GGBFile):
         print('root', root)
         print('subdir', subdir)
